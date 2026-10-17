@@ -34,7 +34,7 @@ auxiliary = [
 ]
 for relative, original in auxiliary:
     target = PACKAGE / relative
-    if target.exists() and target.stat().st_nlink > 1:
+    if target.exists() and original.exists() and target.stat().st_nlink > 1:
         pristine = original.read_bytes()
         digest = "sha256=" + base64.urlsafe_b64encode(hashlib.sha256(pristine).digest()).decode().rstrip("=")
         assert record["sglang/" + relative] == digest

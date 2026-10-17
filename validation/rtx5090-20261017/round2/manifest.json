@@ -26,7 +26,7 @@
     },
     {
       "path": "reproduce/prepare_sglang_arm.py",
-      "sha256": "a24b1d9ab5184a85daa54c03d2e330ebcec5c6c7a3ea2066bd59d7982e5e8609"
+      "sha256": "b856711b7e2798889d2fed1213facedc41fd15e99e1fdcbf149c1b33acbe3d57"
     },
     {
       "path": "reproduce/gsm8k-LICENSE.txt",
@@ -435,6 +435,10 @@
     {
       "path": "evidence/sglang-fp8-extended-patched-graph-whole.log",
       "sha256": "502c6b0932edee9aeb0cc33f272b85cbbcab491b5343631d199779c8c1bb2b4c"
+    },
+    {
+      "path": "evidence/public-evidence-commit.txt",
+      "sha256": "a9cd8bc48f901b5e69cbaea97933e0ec6ef1ee1d050addd7adc100a7d1e5a11b"
     },
     {
       "path": "evidence/heldout-eval-full-main-cutlass-clean-smoke.json",
