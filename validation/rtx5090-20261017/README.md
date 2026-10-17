@@ -1,5 +1,8 @@
 # RTX 5090 validation records — 2026-10-17
 
+> **Updated validation:** [Second-round exact-base vLLM and optimized FP8 results](round2/README.md). This includes numerical diagnosis, matching official binaries/dependencies, full regressions,128-question evaluations, Graph timing tradeoffs and negative controls. The sections below retain the original submission snapshot.
+
+
 Supporting evidence for three independent bug fixes: vLLM compressed-tensors NVFP4 weight offload, SGLang diffusion ancestor-cgroup headroom, and SGLang SM12x deterministic ModelOpt FP8. This evidence branch is separate from each production PR diff.
 
 ## Scope and limitations

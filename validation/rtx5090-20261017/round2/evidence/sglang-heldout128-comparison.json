@@ -1,0 +1,2063 @@
+{
+  "count": 128,
+  "baseline_correct": 119,
+  "candidate_correct": 117,
+  "both_correct": 116,
+  "baseline_only_correct": 3,
+  "candidate_only_correct": 1,
+  "both_wrong": 8,
+  "baseline_missing": 1,
+  "candidate_missing": 2,
+  "identical_texts": 20,
+  "rows": [
+    {
+      "index": 32,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 33,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 34,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 35,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 36,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 37,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 38,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 39,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 40,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 41,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 42,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 43,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 44,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 45,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 46,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 47,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 48,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 49,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 50,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 51,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 52,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 53,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 54,
+      "baseline_correct": true,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": true,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 55,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 56,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 57,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 58,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 59,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 60,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 61,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 62,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": true,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "length",
+        "length": 512
+      }
+    },
+    {
+      "index": 63,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 64,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 65,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 66,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 67,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 68,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 69,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 70,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 71,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 72,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 73,
+      "baseline_correct": true,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 74,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 75,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 76,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 77,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 78,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 79,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 80,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 81,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 82,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 83,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 84,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 85,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 86,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 87,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 88,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 89,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 90,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 91,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 92,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 93,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 94,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 95,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 96,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 97,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 98,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 99,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 100,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 101,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 102,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 103,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 104,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 105,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 106,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 107,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 108,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 109,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 110,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 111,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 112,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 113,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 114,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 115,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 116,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 117,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 118,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 119,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": true,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "length",
+        "length": 512
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 120,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 121,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 122,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 123,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 124,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 125,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 126,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 127,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 128,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 129,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 130,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 131,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 132,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 133,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 134,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 135,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 136,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 137,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 138,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 139,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 140,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 141,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 142,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 143,
+      "baseline_correct": true,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 144,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 145,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 146,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 147,
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 148,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 149,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 150,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 151,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 152,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 153,
+      "baseline_correct": false,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 154,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 155,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 156,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 157,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": false,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 158,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    },
+    {
+      "index": 159,
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "text_equal": true,
+      "baseline_missing": false,
+      "candidate_missing": false,
+      "baseline_finish": {
+        "type": "stop",
+        "matched": 151645
+      },
+      "candidate_finish": {
+        "type": "stop",
+        "matched": 151645
+      }
+    }
+  ],
+  "scope": "One paired regression check, not evidence of general accuracy improvement or statistical equivalence."
+}

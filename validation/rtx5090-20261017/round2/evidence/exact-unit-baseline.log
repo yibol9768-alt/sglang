@@ -1,0 +1,30 @@
+EXACT_MAIN_ARM {"arm": "baseline", "vllm": "0.32.0rc1.dev323+gce49c47cb", "torch": "2.14.0+cu130", "flashinfer": "0.7.2", "files": {"model_executor/layers/quantization/base_config.py": "df1ce1efb380e23c9685c378c2d5fcf14170618e68f0addbf8aed18ed2cbc5fe", "model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py": "8d2f16193042ba2274c9259396107b5956a07158e98791c1780aba7d8ea62fdd", "model_executor/model_loader/utils.py": "f81091610299bd1a18333a1d7cd3cce7bf35211e82ae8cb05ad381e79f15554f"}}
+GPU guard: {"temperature_c": 46.0, "power_limit_w": 400.0, "memory_used_mib": 1830.015625, "measured_monotonic": 493643.478934064}
+W1017 01:49:37.341000 3136610 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1017 01:49:37.341000 3136610 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1017 01:49:37.342000 3136610 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+____________ test_nvfp4_expert_rename_preserves_cpu_offload[False] _____________
+../selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py:141: in test_nvfp4_expert_rename_preserves_cpu_offload
+    assert _is_offloaded(parameter), name
+E   AssertionError: w13_weight
+E   assert False
+E    +  where False = _is_offloaded(Parameter containing:\ntensor([[[ 52, 176,  45,  ..., 118,  26, 145],\n         [166, 105, 103,  ..., 151, 232, 224],\n  ... 206,  ...,  78, 206, 193],\n         [ 81, 173, 226,  ..., 202, 149, 131]]], device='cuda:0',\n       dtype=torch.uint8))
+_____________ test_nvfp4_expert_rename_preserves_cpu_offload[True] _____________
+../selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py:141: in test_nvfp4_expert_rename_preserves_cpu_offload
+    assert _is_offloaded(parameter), name
+E   AssertionError: w13_weight
+E   assert False
+E    +  where False = _is_offloaded(Parameter containing:\ntensor([[[109, 225,  85,  ..., 237, 213,  19],\n         [208, 236, 152,  ..., 135,  23,   9],\n  ...  89,  ..., 189, 178,  64],\n         [ 47,  14, 178,  ...,  65,  90,  90]]], device='cuda:0',\n       dtype=torch.uint8))
+=============================== warnings summary ===============================
+../envs/vllm-main/lib/python3.12/site-packages/_pytest/config/__init__.py:1345
+  /path/to/pr5090/envs/vllm-main/lib/python3.12/site-packages/_pytest/config/__init__.py:1345: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py::test_nvfp4_expert_rename_preserves_cpu_offload[False]
+FAILED ../selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py::test_nvfp4_expert_rename_preserves_cpu_offload[True]
+2 failed, 8 deselected, 1 warning in 5.34s
+GPU guard result: {"max_temperature_c": 46.0, "power_limit_w": 400, "exit_code": 1, "interrupted": null}

@@ -1,0 +1,1085 @@
+{
+  "scope": "Exploratory; no production change implied",
+  "rows": [
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.011772799491882324
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.014967679977416992
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.016687999963760376
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02541248083114624
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.01189568042755127
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.016859840154647827
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.018725759983062744
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.025565760135650636
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.01199839949607849
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.015070079565048218
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.018743040561676024
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.025484158992767333
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.022246720790863036
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.017558399438858032
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.021326720714569092
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02581183910369873
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08370880126953124
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.054105281829833984
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.04431583881378174
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.049983038902282714
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.16010847091674804
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.12199647903442383
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08700639724731446
+    },
+    {
+      "n": 6144,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07831039905548096
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.01377984046936035
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.01504863977432251
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.017015039920806885
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02607775926589966
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.011854079961776733
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.015049920082092286
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.018990720510482787
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02581216096878052
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.01189568042755127
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.015070079565048218
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.018746240139007567
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02555583953857422
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.016073600053787232
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0164793598651886
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02017983913421631
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.02590399980545044
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.05364448070526123
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.03653343915939331
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.03087071895599365
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.029334399700164795
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.12802783966064454
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.06856383800506592
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.056941437721252444
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0527843189239502
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07063231945037841
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07081696033477783
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07155392169952393
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 1,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08930975914001466
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07327424049377441
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07098048210144042
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0722707176208496
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 4,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08985247611999511
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07357120037078857
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07120575904846191
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07292640209197998
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 8,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.09052895545959473
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.13117919921875
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08337087631225586
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.07890655994415283
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 64,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.1002569580078125
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.47522529602050784
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.2977456092834473
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.2428268814086914
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 248,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.20251359939575195
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 1.1376611328125
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.8616825866699219
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.5077276611328125
+    },
+    {
+      "n": 28672,
+      "k": 4096,
+      "m": 512,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.40042110443115236
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 1,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.03858112096786499
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 1,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.049077119827270504
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 1,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.05597919940948486
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 1,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08844991683959962
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 4,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.03868351936340332
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 4,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.04980447769165039
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 4,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.06329055786132813
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 4,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08659680366516113
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 8,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.039113600254058835
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 8,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.049968318939208986
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 8,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0624508810043335
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 8,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.085797758102417
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 64,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.05368288040161133
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 64,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.05380832195281982
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 64,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.06691520214080811
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 64,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.08665792465209961
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 248,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.18964223861694335
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 248,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.12721856117248534
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 248,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.1057043170928955
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 248,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.09775839805603027
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 512,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.4650672149658203
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 512,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.2417430305480957
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 512,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.20809440612792968
+    },
+    {
+      "n": 4096,
+      "k": 14336,
+      "m": 512,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.1841222381591797
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 1,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.003158400058746338
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 1,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0014902399480342865
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 1,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0016556799411773682
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 1,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.002147199958562851
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 4,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0013686400651931763
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 4,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0015123200416564942
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 4,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0016716800630092621
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 4,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0021676799654960634
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 8,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0013689599931240083
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 8,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0015123200416564942
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 8,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0017539200186729431
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 8,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0021500800549983977
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 64,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0014511999487876893
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 64,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0015958400070667266
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 64,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.001817920058965683
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 64,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0022495999932289124
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 248,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.001491519957780838
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 248,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0016556799411773682
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 248,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0019398400187492372
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 248,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0024342399835586546
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 512,
+      "row_tile": 16,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0016556799411773682
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 512,
+      "row_tile": 32,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0016495999693870544
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 512,
+      "row_tile": 64,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.001860480010509491
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "m": 512,
+      "row_tile": 128,
+      "equal_to_fixed32_full_batch_suffix": true,
+      "max_abs_vs_fixed32": 0.0,
+      "kernel_ms": 0.0024694399535655975
+    }
+  ]
+}

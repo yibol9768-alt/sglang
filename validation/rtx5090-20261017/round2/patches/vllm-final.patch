@@ -1,0 +1,144 @@
+diff --git a/tests/basic_correctness/cpu_offload/test_cpu_offload.py b/tests/basic_correctness/cpu_offload/test_cpu_offload.py
+index 46bdb72..698fee7 100644
+--- a/tests/basic_correctness/cpu_offload/test_cpu_offload.py
++++ b/tests/basic_correctness/cpu_offload/test_cpu_offload.py
+@@ -4,15 +4,21 @@
+ from operator import attrgetter
+ 
+ import pytest
++import torch
+ import torch.nn as nn
+ 
+ import vllm.envs as envs
++from vllm.model_executor.layers.quantization.compressed_tensors.compressed_tensors_moe.compressed_tensors_moe_w4a4_nvfp4 import (  # noqa: E501
++    CompressedTensorsW4A4Nvfp4MoEMethod,
++)
++from vllm.model_executor.model_loader.utils import device_loading_context
+ from vllm.model_executor.offloader import (
+     PrefetchOffloader,
+     UVAOffloader,
+     get_offloader,
+     set_offloader,
+ )
++from vllm.model_executor.utils import replace_parameter
+ from vllm.v1.worker.gpu.model_runner import GPUModelRunner
+ 
+ from ...utils import compare_two_settings
+@@ -91,6 +97,53 @@ def _is_offloaded(p: nn.Parameter) -> bool:
+     return p.device.type == "cpu" or getattr(p, "_vllm_is_uva_offloaded", False)
+ 
+ 
++@pytest.mark.parametrize("disable_uva", [False, True])
++def test_nvfp4_expert_rename_preserves_cpu_offload(monkeypatch, disable_uva):
++    """Repacking must not silently return selected NVFP4 experts to VRAM."""
++    monkeypatch.setenv("VLLM_WEIGHT_OFFLOADING_DISABLE_UVA", str(int(disable_uva)))
++    envs.disable_envs_cache()
++    layer = nn.Module()
++    layer.quant_method = object.__new__(CompressedTensorsW4A4Nvfp4MoEMethod)
++    layer.resident_weight = nn.Parameter(
++        torch.ones(8, device="cuda"), requires_grad=False
++    )
++    expected = {}
++    for name in ("w13_weight_packed", "w2_weight_packed"):
++        data = torch.randint(0, 256, (16, 64, 32), dtype=torch.uint8, device="cuda")
++        expected[name.removesuffix("_packed")] = data.flip(-1).cpu()
++        layer.register_parameter(name, nn.Parameter(data, requires_grad=False))
++
++    offloader = UVAOffloader(
++        cpu_offload_max_bytes=1024**2,
++        cpu_offload_params={"w13_weight_packed", "w2_weight_packed"},
++    )
++    offloader.wrap_modules(iter([layer]))
++    assert all(
++        _is_offloaded(getattr(layer, name))
++        for name in ("w13_weight_packed", "w2_weight_packed")
++    )
++
++    with device_loading_context(layer, torch.device("cuda")):
++        for old_name in ("w13_weight_packed", "w2_weight_packed"):
++            name = old_name.removesuffix("_packed")
++            # The quantizer renames serialized weights and replaces the
++            # parameter with a new device tensor in its kernel layout.
++            setattr(
++                layer,
++                name,
++                nn.Parameter(getattr(layer, old_name).data, requires_grad=False),
++            )
++            delattr(layer, old_name)
++            replace_parameter(layer, name, getattr(layer, name).flip(-1))
++
++    for name, reference in expected.items():
++        parameter = getattr(layer, name)
++        assert _is_offloaded(parameter), name
++        torch.testing.assert_close(parameter.cpu(), reference, rtol=0, atol=0)
++    assert layer.resident_weight.device.type == "cuda"
++    assert not _is_offloaded(layer.resident_weight)
++
++
+ @pytest.mark.parametrize("disable_uva", [False, True])
+ def test_tower_weight_offloading(vllm_runner, monkeypatch, disable_uva):
+     """`cpu_offload_params` segments must reach towers built outside make_layers.
+diff --git a/vllm/model_executor/layers/quantization/base_config.py b/vllm/model_executor/layers/quantization/base_config.py
+index 5bc1e42..d12d980 100644
+--- a/vllm/model_executor/layers/quantization/base_config.py
++++ b/vllm/model_executor/layers/quantization/base_config.py
+@@ -84,6 +84,14 @@ class QuantizeMethodBase(ABC):
+         """
+         return
+ 
++    def get_post_load_parameter_name(self, name: str) -> str:
++        """Resolve a parameter renamed by weight post-processing.
++
++        The loader uses this to restore CPU residency after processing weights
++        on the accelerator. Methods that rename parameters override it.
++        """
++        return name
++
+     def dequantize_weight(
+         self, layer: nn.Module
+     ) -> torch.Tensor | tuple[torch.Tensor, torch.Tensor]:
+diff --git a/vllm/model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py b/vllm/model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py
+index e7fc3f1..b86f75f 100644
+--- a/vllm/model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py
++++ b/vllm/model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py
+@@ -204,6 +204,12 @@ class CompressedTensorsW4A4Nvfp4MoEMethod(CompressedTensorsMoEMethod):
+             invert_global_scales=True,
+         )
+ 
++    def get_post_load_parameter_name(self, name: str) -> str:
++        return {
++            "w13_weight_packed": "w13_weight",
++            "w2_weight_packed": "w2_weight",
++        }.get(name, name)
++
+     def process_weights_after_loading(self, layer: RoutedExperts) -> None:
+         """Convert NVFP4 MoE weights into kernel format and setup the kernel."""
+         # NOTE(rob): wN_weight_packed -> wN_weight is because ModularKernelMethod
+diff --git a/vllm/model_executor/model_loader/utils.py b/vllm/model_executor/model_loader/utils.py
+index 8a23694..fa7c754 100644
+--- a/vllm/model_executor/model_loader/utils.py
++++ b/vllm/model_executor/model_loader/utils.py
+@@ -223,15 +223,20 @@ def device_loading_context(module: torch.nn.Module, target_device: torch.device)
+         return
+ 
+     cpu_params: set[str] = set()
+-    uva_offloaded_parameters: list[str] = []
++    uva_offloaded_parameters: set[str] = set()
++    quant_method = getattr(module, "quant_method", None)
++    post_load_name = getattr(
++        quant_method, "get_post_load_parameter_name", lambda name: name
++    )
+ 
+     # Store which parameters are on CPU and move them to the GPU
+     for name, p in module.named_parameters():
++        restore_names = (name, post_load_name(name))
+         if p.device.type == "cpu":
+-            cpu_params.add(name)
++            cpu_params.update(restore_names)
+             p.data = p.data.to(target_device)
+         if getattr(p, "_vllm_is_uva_offloaded", False):
+-            uva_offloaded_parameters.append(name)
++            uva_offloaded_parameters.update(restore_names)
+         # Parameters already on target device are not touched
+ 
+     try:

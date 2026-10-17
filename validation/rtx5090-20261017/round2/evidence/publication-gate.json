@@ -1,0 +1,10 @@
+{
+  "status": "ready_to_update_existing_PRs",
+  "sglang_full_tests": 137,
+  "sglang_optimized_outputs_identical_to_fixed32_on_128_questions": true,
+  "vllm_exact_base_score": 122,
+  "vllm_exact_candidate_score": 121,
+  "vllm_equal_parameter_hashes": 1299,
+  "vllm_canonical_raw_logit_checks": 20,
+  "vllm_canonical_generated_requests": 12
+}

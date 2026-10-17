@@ -1,0 +1,11 @@
+{
+  "scope": "Historical setup/thermal failures; not passed checks",
+  "attempts": [
+    "FP8 baseline with chunk_size512 got scheduler spin for long score requests; stopped only that own scope. Whole-prefill8192 succeeded.",
+    "Large default prefill Graph capture/bench triggered72C guard (both arms); not counted as passed. Retained logs. Retest uses seven shapes and passive cooling.",
+    "Initial full-main8 attempt did not start: guard rejected start at72C; cooled retry queued.",
+    "Full-main Python initially lacked wheel-generated FlashMLA bindings; linked build outputs from wheel, no tracked source overwrite.",
+    "Default main dense FlashInfer backend first compilation hit own8GiB cgroup OOM limit; no other service stopped. MAX_JOBS reduced to1; explicit CUTLASS dense/Marlin MoE matches original tested backend.",
+    "First explicit-CUTLASS main run found stale _ModelInfo interface: model inspection child imported the installed wheel, and/or old registry cache. Fixed PYTHONPATH inheritance and a private new VLLM_CACHE_ROOT; retry pending."
+  ]
+}

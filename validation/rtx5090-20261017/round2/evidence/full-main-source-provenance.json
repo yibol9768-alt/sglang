@@ -1,0 +1,13 @@
+{
+  "python_trees": {
+    "baseline": "ce49c47cbb241b59a32ef110079a5261dbd08e49",
+    "patched": "43ffd3f89c0f70999cabd909a2cf79c6640eedf1"
+  },
+  "compiled_artifacts": "existing task-private vLLM 0.31.0 wheel; no C++/CUDA rebuild claimed",
+  "archives": {
+    "vllm-main-patched.tar.gz": "0545473e315dbce28166a5b270c021c76a1030635ea666281fb3c73baa340fff",
+    "vllm-main-baseline.tar.gz": "6944be6804f3a29241834875f1ebc6303af502cd7c7ea7060d192b18c13f141a"
+  },
+  "source_preparation": "git archive of complete tracked vllm/ package; only compiled .so files and generated build/version files linked from the existing wheel",
+  "definition_injection": "disabled when PR5090_FULL_MAIN=1"
+}

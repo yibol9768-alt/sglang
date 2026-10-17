@@ -1,0 +1,6 @@
+{
+  "base_commit": "ce49c47cbb241b59a32ef110079a5261dbd08e49",
+  "wheel_url": "https://wheels.vllm.ai/ce49c47cbb241b59a32ef110079a5261dbd08e49/vllm-0.32.0rc1.dev323%2Bgce49c47cb-cp38-abi3-manylinux_2_28_x86_64.whl",
+  "environment": "/path/to/pr5090/envs/vllm-main",
+  "status": "installed"
+}

@@ -1,0 +1,60 @@
+{
+  "scope": "RTX 5090, vLLM 0.31.0 + exact changed main Python definitions; diagnostic controls are not production changes",
+  "all_parameter_hashes": {
+    "count": 1443,
+    "mismatches": []
+  },
+  "first_equal_input_unequal_output_in_unmodified_engine": {
+    "module": "model.layers.1.mlp.experts",
+    "input": [
+      {
+        "equal": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "argmax_equal": true,
+        "changed": 0
+      },
+      {
+        "equal": true,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "argmax_equal": true,
+        "changed": 0
+      }
+    ],
+    "output": [
+      {
+        "equal": false,
+        "max_abs": 6.103515625e-05,
+        "mean_abs": 2.93724822242325e-09,
+        "argmax_equal": true,
+        "changed": 6
+      }
+    ]
+  },
+  "expert_replay": {
+    "native_calls": 12,
+    "frozen_alignment_calls": 12,
+    "frozen_all_gemms_and_outputs_bit_exact": true,
+    "native_token_packing_changes_observed": true,
+    "expert_labels_and_padded_counts_unchanged": true
+  },
+  "whole_engine_canonical_order_control": {
+    "next_token_raw_logit_comparisons": 20,
+    "all_bit_exact": true,
+    "residency_sequence": [
+      "CPU/UVA",
+      "GPU",
+      "CPU/UVA restored"
+    ],
+    "generated_requests": 12,
+    "tokens_and_top5_logprobs_bit_exact": true,
+    "tokens_per_four_requests": [
+      4,
+      53,
+      96,
+      21
+    ]
+  },
+  "conclusion": "Observed stock output variability is reproduced without our patch and causally isolated to routed-token packing order in the Marlin path. Canonicalizing only that order eliminates measured differences, including when switching actual expert-weight residency. Stock inference remains non-deterministic; these controls do not guarantee every possible model/shape/backend."
+}

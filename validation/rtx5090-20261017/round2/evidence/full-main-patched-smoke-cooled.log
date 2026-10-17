@@ -1,0 +1,69 @@
+GPU guard: {"temperature_c": 52.0, "power_limit_w": 400.0, "memory_used_mib": 1830.140625, "measured_monotonic": 490181.529915471}
+(MainProcess pid=3105354) INFO 10-17 00:52:03 [api_utils.py:357] non-default args: {'dtype': 'bfloat16', 'max_model_len': 2048, 'moe_backend': 'marlin', 'enable_prefix_caching': False, 'cpu_offload_gb': 1, 'cpu_offload_params': {'experts'}, 'gpu_memory_utilization': 0.8, 'kv_cache_memory_bytes': 1073741824, 'max_num_batched_tokens': 2048, 'max_num_seqs': 4, 'disable_log_stats': True, 'enforce_eager': True, 'compilation_config': {'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': None, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': None, 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}, 'attention_backend': 'TRITON_ATTN', 'model': '/path/to/pr5090/gpu_payload/models/Qwen3-30B-A3B-NVFP4'}
+(MainProcess pid=3105354) WARNING 10-17 00:52:03 [arg_utils.py:1967] The global random seed is set to 0. Since VLLM_ENABLE_V1_MULTIPROCESSING is set to False, this may affect the random state of the Python process that launched vLLM.
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041] Error saving model info cache.
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041] Traceback (most recent call last):
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]   File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/model_executor/models/registry.py", line 1033, in _save_modelinfo_to_cache
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]     "modelinfo": asdict(mi),
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]                  ^^^^^^^^^^
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]   File "/usr/lib/python3.12/dataclasses.py", line 1322, in asdict
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]     return _asdict_inner(obj, dict_factory)
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]   File "/usr/lib/python3.12/dataclasses.py", line 1332, in _asdict_inner
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]     f.name: _asdict_inner(getattr(obj, f.name), dict)
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041]                           ^^^^^^^^^^^^^^^^^^^^
+(MainProcess pid=3105354) ERROR 10-17 00:52:10 [registry.py:1041] AttributeError: '_ModelInfo' object has no attribute 'supports_hc_sp'. Did you mean: 'supports_pp'?
+(MainProcess pid=3105354) INFO 10-17 00:52:10 [model.py:733] Resolved architecture: Qwen3MoeForCausalLM
+(MainProcess pid=3105354) INFO 10-17 00:52:10 [model.py:2152] Using max model len 2048
+Traceback (most recent call last):
+  File "/path/to/pr5090/gpu_payload/run_main_source.py", line 13, in <module>
+    runpy.run_path(str(ROOT / f"{module}.py"), run_name="__main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/path/to/pr5090/gpu_payload/heldout_model_eval.py", line 110, in <module>
+    main()
+  File "/path/to/pr5090/gpu_payload/heldout_model_eval.py", line 45, in main
+    engine = LLM(model=str(ROOT / "models/Qwen3-30B-A3B-NVFP4"), dtype="bfloat16",
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/entrypoints/llm.py", line 342, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/v1/engine/llm_engine.py", line 183, in from_engine_args
+    vllm_config = engine_args.create_engine_config(usage_context)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/engine/arg_utils.py", line 2262, in create_engine_config
+    model_config = self.create_model_config()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/engine/arg_utils.py", line 1977, in create_model_config
+    return ModelConfig(
+           ^^^^^^^^^^^^
+  File "/path/to/pr5090/envs/vllm/lib/python3.12/site-packages/pydantic/_internal/_dataclasses.py", line 121, in __init__
+    s.__pydantic_validator__.validate_python(ArgsKwargs(args, kwargs), self_instance=s)
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/config/model.py", line 909, in __post_init__
+    self._verify_quantization()
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/config/model.py", line 1417, in _verify_quantization
+    method = me_quant.get_quantization_config(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/model_executor/layers/quantization/__init__.py", line 124, in get_quantization_config
+    from vllm.models.deepseek_v41 import (
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v41/__init__.py", line 13, in <module>
+    from .nvidia.dspark import DSparkDeepseekV4ForCausalLM
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v41/nvidia/dspark.py", line 51, in <module>
+    from .model import (
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v41/nvidia/model.py", line 78, in <module>
+    from vllm.models.deepseek_v4.nvidia.model import (
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v4/__init__.py", line 44, in <module>
+    from .nvidia.dspark import (  # type: ignore[assignment]
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v4/nvidia/dspark.py", line 54, in <module>
+    from .model import (
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v4/nvidia/model.py", line 77, in <module>
+    from vllm.models.deepseek_v4.attention import DeepseekV4Attention
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/models/deepseek_v4/attention.py", line 65, in <module>
+    from vllm.v1.attention.backends.mla.sparse_swa import DeepseekV4SWACache
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/v1/attention/backends/mla/sparse_swa.py", line 37, in <module>
+    from vllm.v1.attention.ops.flashmla import FlashMLASchedMeta, get_mla_metadata
+  File "/path/to/pr5090/gpu_payload/full-source/vllm-main-patched/vllm/v1/attention/ops/flashmla.py", line 83, in <module>
+    from vllm.third_party.flashmla.flash_mla_interface import (  # noqa: F401
+ModuleNotFoundError: No module named 'vllm.third_party.flashmla.flash_mla_interface'
+GPU guard result: {"max_temperature_c": 52.0, "power_limit_w": 400, "exit_code": 1, "interrupted": null}

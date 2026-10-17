@@ -1,0 +1,11 @@
+{
+  "arm": "patched",
+  "vllm": "0.32.0rc1.dev323+gce49c47cb",
+  "torch": "2.14.0+cu130",
+  "flashinfer": "0.7.2",
+  "files": {
+    "model_executor/layers/quantization/base_config.py": "f5d7160fb5c82ea6a407c248881aec44b0b0bd0fbc3f1b76301a22ef8daccb29",
+    "model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py": "23f060d634bb9322678a2b36685ecdc457488d77a11ddac0b3268aa4a1445eec",
+    "model_executor/model_loader/utils.py": "e4f019d1bd7a842ad42070dc04e21924af526bce24237c507c6b09db616994d1"
+  }
+}
