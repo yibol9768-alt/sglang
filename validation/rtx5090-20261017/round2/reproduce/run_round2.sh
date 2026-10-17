@@ -12,6 +12,7 @@ if [ "${PR5090_MEMORY_SCOPED:-0}" != 1 ]; then
         --unit="codex-pr5090-r2-$RUN_TAG-$(date +%s)-$$" \
         -p MemoryMax=8G -p MemorySwapMax=256M -p RuntimeMaxSec=2400 \
         --setenv=PR5090_MEMORY_SCOPED=1 \
+        --setenv="PR5090_TASK_ROOT=$TASK_ROOT" \
         --setenv="PR5090_CUDA_GRAPH=${PR5090_CUDA_GRAPH:-0}" \
         bash "$0" "$@"
 fi

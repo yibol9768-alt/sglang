@@ -22,7 +22,7 @@
     },
     {
       "path": "reproduce/run_round2.sh",
-      "sha256": "ae3b371b0e4bfd4b193c4a8429572797c43463e28c02e0f865d2939ecdda9f7e"
+      "sha256": "29b25f8d667ef30532c4385047620178e165761214015cb2c0a0c4187dbed3f7"
     },
     {
       "path": "reproduce/prepare_sglang_arm.py",
@@ -438,7 +438,7 @@
     },
     {
       "path": "evidence/public-evidence-commit.txt",
-      "sha256": "a9cd8bc48f901b5e69cbaea97933e0ec6ef1ee1d050addd7adc100a7d1e5a11b"
+      "sha256": "826582b3ff3ab2f49451cc02a11aff23474b6a3603481705ac7282f5a3ba5f9c"
     },
     {
       "path": "evidence/heldout-eval-full-main-cutlass-clean-smoke.json",
