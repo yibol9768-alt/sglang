@@ -1,0 +1,33 @@
+{
+  "arm": "baseline",
+  "nested_cgroup": true,
+  "model": "Efficient-Large-Model/Sana_600M_1024px_diffusers",
+  "autoencoder_checkpoint_fix": true,
+  "revision": "28f3af7689de15f3883d5863059a2fca0aa9b829",
+  "load_seconds": 23.762336689978838,
+  "mode": "Full SGLang Diffusion pipeline; eager execution; main-source host budget; one streamed DiT block in live nested cgroup",
+  "cases": [
+    {
+      "prompt": "A small red wooden cabin beside a calm lake, green pine trees and distant mountains, watercolor illustration.",
+      "seed": 42,
+      "seconds": 4.068060518999118,
+      "generation_seconds": 0.0,
+      "peak_memory_mb": 8708.0,
+      "image_path": "/path/to/pr5090/gpu_payload/sana-images/baseline-nested-0.png",
+      "pixel_sha256": "d5e2b9220d95ed7235da8842b56dc13a56722a820e5e355ce2e3f3e3b90c645a",
+      "pixel_mean": 170.8458709716797,
+      "pixel_std": 82.69937673387079
+    },
+    {
+      "prompt": "A ceramic teapot and two blue cups on a wooden table, soft window light, still life photograph.",
+      "seed": 17,
+      "seconds": 0.9522055470151827,
+      "generation_seconds": 0.0,
+      "peak_memory_mb": 8710.0,
+      "image_path": "/path/to/pr5090/gpu_payload/sana-images/baseline-nested-1.png",
+      "pixel_sha256": "7643616250442a55662bc1c604fc025ce6c27be5d22dcbc1b26f9b09afbff2dc",
+      "pixel_mean": 111.74111557006836,
+      "pixel_std": 91.1086827521719
+    }
+  ]
+}

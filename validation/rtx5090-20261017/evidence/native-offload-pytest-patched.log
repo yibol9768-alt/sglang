@@ -1,0 +1,10 @@
+GPU guard: {"temperature_c": 42.0, "power_limit_w": 400.0, "utilization_pct": 0.0, "memory_used_mib": 1414.0}
+..                                                                       [100%]
+=============================== warnings summary ===============================
+codex-workspaces/pr5090/envs/vllm/lib/python3.12/site-packages/_pytest/config/__init__.py:1345
+  /path/to/pr5090/envs/vllm/lib/python3.12/site-packages/_pytest/config/__init__.py:1345: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2 passed, 8 deselected, 1 warning in 1.86s
+GPU guard result: {"max_temperature_c": 43.0, "power_limit_w": 400, "exit_code": 0, "interrupted": null}

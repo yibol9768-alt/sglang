@@ -1,0 +1,24 @@
+{
+  "level": "live delegated cgroup v2; real 512 MiB sibling anonymous memory; no cgroup-file mocks",
+  "parent": {
+    "limit": 2576351232,
+    "usage": 538484736
+  },
+  "leaf": {
+    "limit": 2361393152,
+    "usage": 262144
+  },
+  "baseline_selected": [
+    2361393152,
+    262144
+  ],
+  "patched_selected": [
+    2576351232,
+    538484736
+  ],
+  "baseline_headroom": 2361131008,
+  "patched_headroom": 2037866496,
+  "baseline_128MiB_pin_allowed": true,
+  "patched_128MiB_pin_allowed": false,
+  "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+}

@@ -1,0 +1,2621 @@
+{
+  "arm": "patched",
+  "model": "RedHatAI/Qwen3-30B-A3B-NVFP4",
+  "revision": "a4df9f017835830cbb588cfe72bc4e50294183c0",
+  "vllm": "0.31.0",
+  "mode": "full engine, TP=1, Marlin MoE, fixed batch limit 4",
+  "cuda_graph": true,
+  "load_seconds": 47.090968241973314,
+  "experts": [
+    {
+      "name": "model.layers.0.mlp.experts.routed_experts.w13_weight",
+      "offloaded": true,
+      "bytes": 201326592,
+      "sha256": "5419739d5c8439c63be43d0f2d376e61a3ae3ab5eb53690df06abbee6c50f947"
+    },
+    {
+      "name": "model.layers.0.mlp.experts.routed_experts.w2_weight",
+      "offloaded": true,
+      "bytes": 100663296,
+      "sha256": "dbad759fa815bc4c1d798aeabede7f15611b5e210fcfa4cccf53d5a93f1ee29b"
+    },
+    {
+      "name": "model.layers.1.mlp.experts.routed_experts.w13_weight",
+      "offloaded": true,
+      "bytes": 201326592,
+      "sha256": "e519c405554394c0372063f9f433cd0ddcc168254b7f04ca7c265ee521651158"
+    },
+    {
+      "name": "model.layers.1.mlp.experts.routed_experts.w2_weight",
+      "offloaded": true,
+      "bytes": 100663296,
+      "sha256": "c76ea694a14967ce14d8e69392df33888e6847dc7e3f725a52c12304327645a9"
+    },
+    {
+      "name": "model.layers.2.mlp.experts.routed_experts.w13_weight",
+      "offloaded": true,
+      "bytes": 201326592,
+      "sha256": "9098c85eee7410d2a4a42c2c2864b7e69a4afd3d0c71edb79b1602d02b6ea10b"
+    },
+    {
+      "name": "model.layers.2.mlp.experts.routed_experts.w2_weight",
+      "offloaded": true,
+      "bytes": 100663296,
+      "sha256": "bef54eaf66ffa0ef6e8df4c4ceddcef836a002354144a6e496fa4c7c0ba25045"
+    },
+    {
+      "name": "model.layers.3.mlp.experts.routed_experts.w13_weight",
+      "offloaded": true,
+      "bytes": 201326592,
+      "sha256": "0598025280c262548406be220db1a7bcfa144b8588746c8e43e13ef60ea09593"
+    },
+    {
+      "name": "model.layers.3.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "1fa2f5e983a507ce18ed5b435da108213109ba64145c86cc0b136438ce71fe8f"
+    },
+    {
+      "name": "model.layers.4.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "48e70ace96c4bf9532bfce2da66916eca76812ef3f8af70edcfd5b0d9bb9401e"
+    },
+    {
+      "name": "model.layers.4.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "3e3662919b24470ee5077ce2fd96c00c4d4c98436da06c6580a7e373bcb717e8"
+    },
+    {
+      "name": "model.layers.5.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "20987abe11bbbc802ecdf41fbcef616a3f0e95ca388f6655d5ecd6fe4e8fef7a"
+    },
+    {
+      "name": "model.layers.5.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "66fe5df3c6e67779095fa34c37a1b791a1148c6dec4e00da4e99e4b5a2579d69"
+    },
+    {
+      "name": "model.layers.6.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "927602384ea05dfca87817eca8be4a38f90dd3aea9dea991d2c540eae40b76eb"
+    },
+    {
+      "name": "model.layers.6.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "358334c06e452a2b15de4da33c6cda6a48fbebe59e397312bce89e707135416c"
+    },
+    {
+      "name": "model.layers.7.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "99cc447fe92a907424d30e9a81513bd616fb920f2bf6bcb8d3166ba4cb7b8cfd"
+    },
+    {
+      "name": "model.layers.7.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "0b08c433df5af25b37b3af3532ef12ae4ae0384320e4d386fa4ca14dc91564bc"
+    },
+    {
+      "name": "model.layers.8.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "4a352bab8aa6401a09c549d9f23afc01584aabbbc3fb117788b2c14048b6653e"
+    },
+    {
+      "name": "model.layers.8.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "2fec149b0e001bce65a034660df2c46bda4ea9abaffdc6038239bcb785d043cc"
+    },
+    {
+      "name": "model.layers.9.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "1cb17e3edf2c587e547059eea5bd087887760e26ed4db7af1554c899a0cc9781"
+    },
+    {
+      "name": "model.layers.9.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "a69ccec3467b033e554d429e23405940c1e8c31da600fb9d104cf868a4315545"
+    },
+    {
+      "name": "model.layers.10.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "8157fcf4b9240460ec2dc1ecfe7c14669bfc92553d08fa2205d067d869773f51"
+    },
+    {
+      "name": "model.layers.10.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "b81ca6097456cb9a5f24df34dfabd85cdbb3c4eed62ed9afd249b134681a93b0"
+    },
+    {
+      "name": "model.layers.11.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "26b191a60fbaf36be19ead6fea3d95b37f16defeb53b8be0c5ac867272e66717"
+    },
+    {
+      "name": "model.layers.11.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "279201dad08452059452247ac174020a646d5f07cebbd4ad65847a5ba2770bda"
+    },
+    {
+      "name": "model.layers.12.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "4617d36fa717ad71dd3351c9f81e64738c9089700293bc08957f0cd06b3e45c9"
+    },
+    {
+      "name": "model.layers.12.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "f3c2e9734cddaf5b3056083ae1e6233b70d9f260a6b8b4e595686c88d2d8d7ce"
+    },
+    {
+      "name": "model.layers.13.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "376cd970cb5150fc3438b1a57be7fbb112d80d1984fe42e5c7e7a8610bc0d872"
+    },
+    {
+      "name": "model.layers.13.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "0f22498ba5ce282fe4dd9f9e953d2a8af21679138b12603cbb54c5e3f552cf6b"
+    },
+    {
+      "name": "model.layers.14.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "2fc3fafbbf71b4170e3d161f9c85d0482cd4f855be23d20085e799e9cd2a2dd2"
+    },
+    {
+      "name": "model.layers.14.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "1c034a5ee29fff04cabd6c35f07870c9ba10c87d9043f2cd3dd61c0146411488"
+    },
+    {
+      "name": "model.layers.15.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "77826d9dcffe2ff2bd81c731ad82a870fdd0e3fea7e8eba6c6d776731ad66996"
+    },
+    {
+      "name": "model.layers.15.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "89d556c856e97c22a2dfc83c58926fb7faa3700a0687fa64001c4f0028aa3672"
+    },
+    {
+      "name": "model.layers.16.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "51fe9f54c87f428f7c3e2756d8ef14b27d564a1fb25c9d8200559d1c103e75e6"
+    },
+    {
+      "name": "model.layers.16.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "ad3891b75c657c8b62bf3cf9afa6ded912557a9fb24c2f13e826d09f5b004ab0"
+    },
+    {
+      "name": "model.layers.17.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "4487aec69ff3ae55817e0e5324644aeff3dbfac2b2b753ae2f332c9e4b015328"
+    },
+    {
+      "name": "model.layers.17.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "0263c086e2fc17c9d3313b776c03a0701ae799f91a3379db81e66cb519005e95"
+    },
+    {
+      "name": "model.layers.18.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "ac44fc99f5e47ff6124291509d4ab0f39d97569389953912402cc9b8e79c866b"
+    },
+    {
+      "name": "model.layers.18.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "91c09447747579ee326e791645b049a0c59c981cc9ccefb175234a0236bf6a49"
+    },
+    {
+      "name": "model.layers.19.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "4099a1ca30b6b54b46e409aa18ced17f04c21f0ed0c56616b3a5125a94a919ed"
+    },
+    {
+      "name": "model.layers.19.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "4ed468545ceeb184e6e77d2fc09f50c10d81eb2f7edbde3aa89fc79d298ed4f6"
+    },
+    {
+      "name": "model.layers.20.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "9b3a83571434c8471a505abb1c911bbb6603bdcf177ffc586e2e40cf5eab2fc8"
+    },
+    {
+      "name": "model.layers.20.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "5d00e79f1e5a04a240f9356f09bca1228d197cbe6543b50d36f9881c2bc267a0"
+    },
+    {
+      "name": "model.layers.21.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "38a7da399da151c1fa576a42a526b84ab93f003ce70635d7a302235662660479"
+    },
+    {
+      "name": "model.layers.21.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "480c68f0fe528929d85d1594e89c93eac5f0587a19109f9d0a91d5c35a5690d3"
+    },
+    {
+      "name": "model.layers.22.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "e06d4f868a65d11cb13c98b55f8d6c91e99c746f9aa4efb25f29dfe96ef2cf9e"
+    },
+    {
+      "name": "model.layers.22.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "ec1515d7e2a28fa0094f0b43ea51d494fbcf6c95dfee1845b8fe668f86933104"
+    },
+    {
+      "name": "model.layers.23.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "23bb23ca92dc6a16ad7be2ae8b491b3f7c029d08b5918e0f5509a633983c3616"
+    },
+    {
+      "name": "model.layers.23.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "650f7fb72142153da7be3e7618010d2304892c58ca2007346adfa086f3e59d8a"
+    },
+    {
+      "name": "model.layers.24.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "d7ea1651220cfc421aca8dd1e58633992d508c6d715cdc5a98fbd52347a59172"
+    },
+    {
+      "name": "model.layers.24.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "1e02687df8a6a95359832cbd94af433691083170f6dba59fa519182d43cd46eb"
+    },
+    {
+      "name": "model.layers.25.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "8fef524ebc0d4426728fdbfa0ec2facada5ba530ba1bac1244eef9f70c678fe9"
+    },
+    {
+      "name": "model.layers.25.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "3dd38f96f8bcb7e9f5147702443d39ff45b8f9d31f2ca2c6f9a3258992c8227d"
+    },
+    {
+      "name": "model.layers.26.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "298de32872c56d8db14df02d63a7a7eb8c9466f40c5938c6a0502409336913f3"
+    },
+    {
+      "name": "model.layers.26.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "6237c9ebc18b40f0618b5f17ea51a28e42c47ffd96ee0d3c3c5aec5de480fa66"
+    },
+    {
+      "name": "model.layers.27.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "53a500c6d43bf84b09060786bcfbe74b8a35aa4f4848c24044edc33b7c2d2a96"
+    },
+    {
+      "name": "model.layers.27.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "6edc7a77a39a6c722b8db41a10bf72dc019ae77a20bc899bcff1a43cb824c0d4"
+    },
+    {
+      "name": "model.layers.28.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "97bca621d717916fc262438b86ba2279c722096fb1f69af939ab21a7e72115f1"
+    },
+    {
+      "name": "model.layers.28.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "8dccef0312947dbfbbd272bd562d6fd4c5d4403a225f8245807418b1fd32abfd"
+    },
+    {
+      "name": "model.layers.29.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "5c13b3008f7e153c52eddd000d024f0a6161b2f57870624144f0cfa4d79cd457"
+    },
+    {
+      "name": "model.layers.29.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "790fb6b9b72fbffe888d1e71485888844e59a57ce5c0c8fa47c27868e9464674"
+    },
+    {
+      "name": "model.layers.30.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "10bc12421063b583394b12b69be5c11f246027272320a3f15639c562df066691"
+    },
+    {
+      "name": "model.layers.30.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "10cfa3767371c41d503232de5d63c4854f3fb7f26eeeb324eacd13b613196233"
+    },
+    {
+      "name": "model.layers.31.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "dad6f06eefccbfa5602db96209297f40301d7b30353c52e8dc5636ef3b367827"
+    },
+    {
+      "name": "model.layers.31.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "42948ab431cbeeebee4e7bd37f935c28541c7b04954c4565b9e1c4e135d8698e"
+    },
+    {
+      "name": "model.layers.32.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "4e08384d0ff2496160390e86edebd361809d5635c6def1b3fc6342193799e80d"
+    },
+    {
+      "name": "model.layers.32.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "f3514cef742d52837811a19d429dad99759df8a54da042b8b6ae05f613460dee"
+    },
+    {
+      "name": "model.layers.33.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "c5052c450cf5ab347b086651c54fbc00dfce2caae8a5eb81a1baa183aa769d96"
+    },
+    {
+      "name": "model.layers.33.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "87cf17838604af375f0b911073269fd99d48a9696d05ceefbbb1333cb56e9ecb"
+    },
+    {
+      "name": "model.layers.34.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "3dd6c212a9820c5912062fd86a6c0c1ccfea08f7e198914c98a9136176481eea"
+    },
+    {
+      "name": "model.layers.34.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "9a4bf1fe633f571b4043bf74f6ba3ed2d2d8f44e818bff3a2d481a04f23a9720"
+    },
+    {
+      "name": "model.layers.35.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "176401c711810fb1db3d011649af7d51f0317f3f50c60b217efb8db271e5b912"
+    },
+    {
+      "name": "model.layers.35.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "fcaa949d892d982c1a14961d40c88afc5e511242ad8db86e78b8ba6d97144ae3"
+    },
+    {
+      "name": "model.layers.36.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "3c2f822f51948e58a333e6b3ea58361109fd82057477055fd60f0f6660573a70"
+    },
+    {
+      "name": "model.layers.36.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "196de4fda7ba87510030d96e8ffa1ad8db62d4020c35727f38808ccad9757695"
+    },
+    {
+      "name": "model.layers.37.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "87b39d558adc61c8bf0ff76e4700f1fe190fee1a0f4838da94b240cb2bfe2f79"
+    },
+    {
+      "name": "model.layers.37.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "7f833b2074682d6aa231445a6f552737a33786c65547a23a830d2bf2e9ab09ab"
+    },
+    {
+      "name": "model.layers.38.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "526c9431558c12c2c5bf06dba05bfdfe73867096f06f6805d5cb73e6957f6293"
+    },
+    {
+      "name": "model.layers.38.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "44679d0aac76b64727e4cca96dba89f56b1e2db6fc4daa9de31335cbb2edfbee"
+    },
+    {
+      "name": "model.layers.39.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "17169e9c4f3f64aafcb282b861989a4c82a209efda71773d38ac38894d44d103"
+    },
+    {
+      "name": "model.layers.39.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "7285fbe5d70ef6ac9a82daba2dfee981e0256518cbbd9060bd987a4bf5a89f7d"
+    },
+    {
+      "name": "model.layers.40.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "899b9cecf8131de84292224674d424af25549219362d646324235910f263572c"
+    },
+    {
+      "name": "model.layers.40.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "93bdfdde02960c7dc1e868c908b3b7edc6faab5b6c516b43d6aae64e574c9181"
+    },
+    {
+      "name": "model.layers.41.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "2b293de98b2973b3b908373738fa02e071f8ef0299837853abc2e582a0be9912"
+    },
+    {
+      "name": "model.layers.41.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "dfad704986a021092cc62baa8ac2a79eac018908d261b16c77875f13350a6884"
+    },
+    {
+      "name": "model.layers.42.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "a0164f0eb7e13a36c674d6d621c3621b459fcee4477c8b6c30d4f5ad47aa7a26"
+    },
+    {
+      "name": "model.layers.42.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "2adfcf1efa686e5590094378ba865d534fc6c16153b3ef90e5eae0e50e0608b6"
+    },
+    {
+      "name": "model.layers.43.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "5d3102b32da5bbae4abe44259a38e26261b3ffdaff3da4bc045bd583cb76c655"
+    },
+    {
+      "name": "model.layers.43.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "2c804feed0956216da1428cca2d0024fc3c786da347b58c58128b8dc76656205"
+    },
+    {
+      "name": "model.layers.44.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "776fa1a58967697e0c1565ea9285cacd0b801f3b0b08f0ba8b352523dda67bba"
+    },
+    {
+      "name": "model.layers.44.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "2ec0eb3ee31c8ae64ba150892f1593f522a32ec69b7da845f56b512efa17fd61"
+    },
+    {
+      "name": "model.layers.45.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "d8583b7cc591c71ecb2d0d46d3f99f6ce0264561a447c92ec594693550594c28"
+    },
+    {
+      "name": "model.layers.45.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "e5ccb8fa8c64d9734d6dc02fe26767ac459358fe9ffe3eceae9d746fcbc29ee6"
+    },
+    {
+      "name": "model.layers.46.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "b1d2866a81a085d98cc84a86a40d872c4dfa5b8e65d489e5e68cfacec83a7c09"
+    },
+    {
+      "name": "model.layers.46.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "4ac8be234380ffd6bbe66239503c62927990aeff90bfa7769f30c61d105715c9"
+    },
+    {
+      "name": "model.layers.47.mlp.experts.routed_experts.w13_weight",
+      "offloaded": false,
+      "bytes": 201326592,
+      "sha256": "653c65e780e88980c4adcbf6c8b7b1a360a66c73d9c41e1f6ab8ea720ced3e65"
+    },
+    {
+      "name": "model.layers.47.mlp.experts.routed_experts.w2_weight",
+      "offloaded": false,
+      "bytes": 100663296,
+      "sha256": "a3392b32bdc7eefb8de6304f8f05d1d117c87afae87a962f6144c285f8f6172b"
+    }
+  ],
+  "offloaded_expert_bytes": 1107296256,
+  "allocated_bytes": 17592489984,
+  "reserved_bytes": 17737711616,
+  "runner_model_memory_usage": 16879905792,
+  "max_allocated_bytes": 17605299712,
+  "repeat_four_prompt_seconds": [
+    1.1569712130003609,
+    1.1783446109620854,
+    1.194462776009459
+  ],
+  "requests": [
+    "Calculate 17 * 23. Give only the number.",
+    "用中文用两句话解释为什么天空是蓝色的。",
+    "Write a Python function that checks whether a string is a palindrome.",
+    "Return a JSON object with keys city and country for Paris.",
+    "Translate into English: 我们正在验证模型推理结果是否一致。",
+    "Continue the sequence and explain the rule: 2, 4, 8, 16,",
+    "Summarize: A library lets readers borrow books for two weeks. Late returns incur a small fee.",
+    "In one sentence, explain the difference between CPU memory and GPU memory."
+  ],
+  "text": [
+    "391",
+    "太阳光由多种颜色的光组成，这些光在穿过地球大气层时会与空气中的分子发生散射。蓝光的波长较短，更容易被散射，因此我们看到的天空呈现蓝色。",
+    "Here's a Python function that checks whether a given string is a **palindrome**:\n\n```python\ndef is_palindrome(s):\n    \"\"\"\n    Check if a string is a palindrome.\n\n    A palindrome is a string that reads the same",
+    "```json\n{\n  \"city\": \"Paris\",\n  \"country\": \"France\"\n}\n```",
+    "We are verifying whether the model's reasoning results are consistent.",
+    "The sequence given is:\n\n**2, 4, 8, 16, ?**\n\n### Step 1: Identify the pattern\n\nLet's look at the relationship between the numbers:\n\n- 2 → 4: Multiply by",
+    "A library allows readers to borrow books for two weeks, and a small fee is charged for late returns.",
+    "CPU memory (RAM) is general-purpose and managed by the CPU for overall system operations, while GPU memory (VRAM) is specialized and used by the GPU for rendering graphics and accelerating parallel processing tasks."
+  ],
+  "tokens": [
+    [
+      18,
+      24,
+      16,
+      151645
+    ],
+    [
+      101281,
+      99225,
+      67071,
+      101312,
+      102284,
+      9370,
+      99225,
+      101286,
+      3837,
+      100001,
+      99225,
+      18493,
+      109239,
+      102493,
+      105797,
+      99371,
+      13343,
+      36993,
+      57218,
+      100819,
+      101047,
+      102388,
+      99726,
+      99632,
+      99759,
+      1773,
+      100400,
+      99225,
+      9370,
+      99804,
+      45861,
+      99260,
+      99534,
+      3837,
+      108478,
+      99250,
+      99632,
+      99759,
+      3837,
+      101886,
+      97639,
+      101038,
+      9370,
+      101916,
+      104401,
+      105681,
+      1773,
+      151645
+    ],
+    [
+      8420,
+      594,
+      264,
+      13027,
+      729,
+      429,
+      12341,
+      3425,
+      264,
+      2661,
+      914,
+      374,
+      264,
+      3070,
+      19308,
+      36058,
+      334,
+      1447,
+      73594,
+      12669,
+      198,
+      750,
+      374,
+      73310,
+      36058,
+      1141,
+      982,
+      262,
+      3190,
+      262,
+      4248,
+      421,
+      264,
+      914,
+      374,
+      264,
+      73097,
+      382,
+      262,
+      362,
+      73097,
+      374,
+      264,
+      914,
+      429,
+      15804,
+      279,
+      1852
+    ],
+    [
+      73594,
+      2236,
+      198,
+      515,
+      220,
+      330,
+      8926,
+      788,
+      330,
+      59604,
+      756,
+      220,
+      330,
+      11141,
+      788,
+      330,
+      49000,
+      698,
+      532,
+      73594,
+      151645
+    ],
+    [
+      1654,
+      525,
+      68863,
+      3425,
+      279,
+      1614,
+      594,
+      32711,
+      3059,
+      525,
+      12966,
+      13,
+      151645
+    ],
+    [
+      785,
+      8500,
+      2661,
+      374,
+      1447,
+      334,
+      17,
+      11,
+      220,
+      19,
+      11,
+      220,
+      23,
+      11,
+      220,
+      16,
+      21,
+      11,
+      937,
+      56177,
+      14374,
+      14822,
+      220,
+      16,
+      25,
+      64547,
+      279,
+      5383,
+      271,
+      10061,
+      594,
+      1401,
+      518,
+      279,
+      5025,
+      1948,
+      279,
+      5109,
+      1447,
+      12,
+      220,
+      17,
+      11397,
+      220,
+      19,
+      25,
+      71059,
+      553
+    ],
+    [
+      32,
+      6733,
+      6147,
+      12726,
+      311,
+      17193,
+      6467,
+      369,
+      1378,
+      5555,
+      11,
+      323,
+      264,
+      2613,
+      11060,
+      374,
+      11430,
+      369,
+      3309,
+      4675,
+      13,
+      151645
+    ],
+    [
+      31615,
+      4938,
+      320,
+      33905,
+      8,
+      374,
+      4586,
+      58238,
+      323,
+      8975,
+      553,
+      279,
+      13940,
+      369,
+      8084,
+      1849,
+      7525,
+      11,
+      1393,
+      22670,
+      4938,
+      320,
+      18800,
+      1402,
+      8,
+      374,
+      27076,
+      323,
+      1483,
+      553,
+      279,
+      22670,
+      369,
+      20898,
+      14181,
+      323,
+      68641,
+      15279,
+      8692,
+      9079,
+      13,
+      151645
+    ]
+  ],
+  "logprobs": [
+    [
+      {
+        "18": -1.5497195136049413e-06,
+        "16": -13.375001907348633,
+        "10061": -20.750001907348633,
+        "7": -21.750001907348633,
+        "11395": -22.000001907348633
+      },
+      {
+        "24": 0.0,
+        "19": -20.5,
+        "23": -22.625,
+        "22": -23.75,
+        "21": -23.875
+      },
+      {
+        "16": 0.0,
+        "18": -29.125,
+        "15": -29.875,
+        "22": -31.875,
+        "17": -32.0
+      },
+      {
+        "151645": -2.3841855067985307e-07,
+        "271": -16.0,
+        "13": -16.875,
+        "25521": -17.375,
+        "11162": -18.375
+      }
+    ],
+    [
+      {
+        "101281": -0.7392886877059937,
+        "101916": -0.8642886877059937,
+        "104166": -3.114288806915283,
+        "99519": -3.239288806915283,
+        "101887": -4.614288806915283
+      },
+      {
+        "99225": -9.775113539944869e-06,
+        "109587": -11.750009536743164,
+        "115691": -13.750009536743164,
+        "9370": -14.375009536743164,
+        "104351": -15.125009536743164
+      },
+      {
+        "67071": -0.13061469793319702,
+        "109239": -3.130614757537842,
+        "101040": -3.630614757537842,
+        "104625": -4.005614757537842,
+        "113788": -4.130614757537842
+      },
+      {
+        "101312": -0.01987670175731182,
+        "99604": -4.269876480102539,
+        "100646": -5.269876480102539,
+        "100694": -7.519876480102539,
+        "101970": -11.894876480102539
+      },
+      {
+        "102284": -3.0636318115284666e-05,
+        "99604": -10.500030517578125,
+        "104604": -12.750030517578125,
+        "38035": -15.250030517578125,
+        "110350": -17.000030517578125
+      },
+      {
+        "9370": -2.3841855067985307e-07,
+        "101286": -15.25,
+        "107339": -20.0,
+        "104384": -21.5,
+        "99225": -21.625
+      },
+      {
+        "99225": -3.6954811548639555e-06,
+        "109587": -12.500003814697266,
+        "108084": -22.250003814697266,
+        "115691": -22.500003814697266,
+        "3100": -23.125003814697266
+      },
+      {
+        "101286": -1.4781842764932662e-05,
+        "101220": -11.750014305114746,
+        "107339": -12.250014305114746,
+        "104384": -13.500014305114746,
+        "105063": -14.125014305114746
+      },
+      {
+        "3837": -3.6954811548639555e-06,
+        "1773": -12.750003814697266,
+        "96050": -14.000003814697266,
+        "11": -24.000003814697266,
+        "78903": -24.625003814697266
+      },
+      {
+        "100001": -0.21475744247436523,
+        "39165": -1.7147574424743652,
+        "90919": -4.589757442474365,
+        "99604": -6.464757442474365,
+        "68536": -6.839757442474365
+      },
+      {
+        "99225": -0.25510552525520325,
+        "102284": -1.5051054954528809,
+        "109587": -5.755105495452881,
+        "99604": -12.505105972290039,
+        "38035": -13.755105972290039
+      },
+      {
+        "18493": -0.0005505952867679298,
+        "99804": -7.875550746917725,
+        "9370": -9.000550270080566,
+        "109239": -11.250550270080566,
+        "114046": -11.375550270080566
+      },
+      {
+        "109239": -0.2616693675518036,
+        "101040": -1.511669397354126,
+        "67338": -4.761669158935547,
+        "116725": -7.136669158935547,
+        "106063": -8.636669158935547
+      },
+      {
+        "102493": -0.3132650554180145,
+        "105797": -1.313265085220337,
+        "101916": -12.938264846801758,
+        "9237": -14.438264846801758,
+        "100819": -15.688264846801758
+      },
+      {
+        "105797": -2.169585604860913e-05,
+        "104197": -10.750021934509277,
+        "16566": -15.500021934509277,
+        "13720": -16.75002098083496,
+        "9370": -17.37502098083496
+      },
+      {
+        "99371": -0.04858732968568802,
+        "13343": -3.0485873222351074,
+        "106953": -19.048587799072266,
+        "103920": -21.173587799072266,
+        "38077": -21.548587799072266
+      },
+      {
+        "13343": 0.0,
+        "38077": -19.0,
+        "105129": -20.125,
+        "114500": -20.125,
+        "103920": -20.375
+      },
+      {
+        "36993": -0.139968603849411,
+        "112489": -2.6399686336517334,
+        "106764": -3.1399686336517334,
+        "3837": -4.139968395233154,
+        "104011": -10.389968872070312
+      },
+      {
+        "57218": -0.19497768580913544,
+        "69041": -1.9449776411056519,
+        "99632": -3.9449777603149414,
+        "104011": -4.569977760314941,
+        "62112": -6.194977760314941
+      },
+      {
+        "100819": -0.1723259836435318,
+        "105797": -1.9223259687423706,
+        "107155": -4.42232608795166,
+        "113798": -10.92232608795166,
+        "90919": -12.92232608795166
+      },
+      {
+        "101047": -1.0251946150674485e-05,
+        "102388": -11.50001049041748,
+        "102073": -16.375009536743164,
+        "48934": -19.000009536743164,
+        "33108": -19.125009536743164
+      },
+      {
+        "102388": -0.0649842768907547,
+        "107155": -2.8149843215942383,
+        "48934": -6.064984321594238,
+        "117184": -7.314984321594238,
+        "34615": -10.814984321594238
+      },
+      {
+        "99726": -0.00020740265608765185,
+        "33108": -8.50020694732666,
+        "100394": -13.37520694732666,
+        "107845": -13.75020694732666,
+        "104225": -14.25020694732666
+      },
+      {
+        "99632": -0.049200113862752914,
+        "107845": -3.0492000579833984,
+        "104225": -7.799200057983398,
+        "100154": -8.674200057983398,
+        "100705": -11.299200057983398
+      },
+      {
+        "99759": 0.0,
+        "75650": -18.625,
+        "100397": -18.875,
+        "99632": -20.375,
+        "31118": -22.125
+      },
+      {
+        "1773": -1.1920922133867862e-06,
+        "100154": -13.750000953674316,
+        "3837": -15.750000953674316,
+        "102060": -21.250001907348633,
+        "104175": -23.500001907348633
+      },
+      {
+        "100400": -0.2983115017414093,
+        "90919": -1.548311471939087,
+        "99804": -3.298311471939087,
+        "105681": -5.548311710357666,
+        "101887": -5.548311710357666
+      },
+      {
+        "99225": -1.311301275563892e-06,
+        "102284": -14.000000953674316,
+        "115691": -14.500000953674316,
+        "109587": -17.125001907348633,
+        "3100": -18.500001907348633
+      },
+      {
+        "9370": -0.5761617422103882,
+        "99804": -0.8261617422103882,
+        "101887": -8.57616138458252,
+        "99519": -10.45116138458252,
+        "62112": -12.45116138458252
+      },
+      {
+        "99804": -9.536738616588991e-07,
+        "105524": -14.250000953674316,
+        "45306": -15.125000953674316,
+        "92859": -17.0,
+        "101170": -21.125
+      },
+      {
+        "45861": -1.0251946150674485e-05,
+        "116464": -11.50001049041748,
+        "100435": -15.62501049041748,
+        "107255": -18.125009536743164,
+        "99534": -18.875009536743164
+      },
+      {
+        "99260": -4.172316494077677e-06,
+        "33126": -12.750003814697266,
+        "99792": -14.250003814697266,
+        "31235": -14.500003814697266,
+        "110426": -15.750003814697266
+      },
+      {
+        "99534": 0.0,
+        "106793": -18.75,
+        "2805": -21.25,
+        "12472": -22.5,
+        "10698": -22.5
+      },
+      {
+        "3837": -1.6927575416048057e-05,
+        "96050": -11.000017166137695,
+        "5373": -15.250017166137695,
+        "108478": -19.875017166137695,
+        "1773": -21.000017166137695
+      },
+      {
+        "108478": -0.14924393594264984,
+        "100047": -2.8992438316345215,
+        "99632": -2.8992438316345215,
+        "111335": -3.6492438316345215,
+        "101886": -6.0242438316345215
+      },
+      {
+        "99250": -2.586808113846928e-05,
+        "99632": -11.000025749206543,
+        "99726": -12.375025749206543,
+        "100683": -12.375025749206543,
+        "69041": -14.250025749206543
+      },
+      {
+        "99632": -0.0006293461774475873,
+        "105797": -7.750629425048828,
+        "100819": -8.750629425048828,
+        "105211": -10.250629425048828,
+        "107155": -13.000629425048828
+      },
+      {
+        "99759": -1.1920928244535389e-07,
+        "99632": -16.375,
+        "29767": -20.25,
+        "111500": -20.875,
+        "100397": -22.125
+      },
+      {
+        "3837": -0.038044970482587814,
+        "26939": -3.2880449295043945,
+        "56137": -13.288044929504395,
+        "96050": -13.788044929504395,
+        "69041": -14.538044929504395
+      },
+      {
+        "101886": -0.011986843310296535,
+        "99999": -4.51198673248291,
+        "108728": -7.51198673248291,
+        "104193": -8.76198673248291,
+        "32555": -9.51198673248291
+      },
+      {
+        "97639": -0.2766459286212921,
+        "101916": -2.0266458988189697,
+        "18493": -3.2766458988189697,
+        "101908": -3.5266458988189697,
+        "104952": -3.6516458988189697
+      },
+      {
+        "101038": -0.0011792379664257169,
+        "108149": -7.751179218292236,
+        "104544": -7.876179218292236,
+        "45181": -8.751179695129395,
+        "104356": -9.626179695129395
+      },
+      {
+        "9370": -0.00020597243565134704,
+        "101916": -8.500205993652344,
+        "101908": -13.125205993652344,
+        "100146": -14.750205993652344,
+        "104197": -16.625205993652344
+      },
+      {
+        "101916": -7.271740287251305e-06,
+        "101908": -11.875007629394531,
+        "35727": -15.125007629394531,
+        "108960": -16.37500762939453,
+        "63431": -18.87500762939453
+      },
+      {
+        "104401": -0.1567617952823639,
+        "20412": -2.156761884689331,
+        "107433": -3.656761884689331,
+        "100827": -5.656761646270752,
+        "104544": -9.90676212310791
+      },
+      {
+        "105681": 0.0,
+        "103442": -18.25,
+        "100400": -19.125,
+        "17714": -20.875,
+        "108960": -21.75
+      },
+      {
+        "1773": -0.2014133334159851,
+        "3407": -1.7014133930206299,
+        "8997": -19.451414108276367,
+        "66898": -20.076414108276367,
+        "37132": -20.326414108276367
+      },
+      {
+        "151645": -0.13093549013137817,
+        "104746": -3.1309354305267334,
+        "68536": -3.1309354305267334,
+        "18493": -3.8809354305267334,
+        "2303": -5.3809356689453125
+      }
+    ],
+    [
+      {
+        "8420": -0.6335221529006958,
+        "39814": -0.8835221529006958,
+        "95456": -2.8835220336914062,
+        "32": -10.883522033691406,
+        "22555": -17.508522033691406
+      },
+      {
+        "594": -0.00530822342261672,
+        "374": -5.255308151245117,
+        "748": -9.505308151245117,
+        "525": -22.505308151245117,
+        "39829": -23.005308151245117
+      },
+      {
+        "264": 0.0,
+        "458": -25.375,
+        "279": -25.375,
+        "13027": -26.5,
+        "1246": -27.625
+      },
+      {
+        "13027": -0.4740772247314453,
+        "4285": -0.9740772247314453,
+        "30280": -15.349077224731445,
+        "4936": -19.224077224731445,
+        "30339": -20.099077224731445
+      },
+      {
+        "729": 0.0,
+        "1688": -25.75,
+        "32804": -26.125,
+        "5712": -26.75,
+        "5746": -27.125
+      },
+      {
+        "429": 0.0,
+        "311": -17.5,
+        "9033": -19.75,
+        "2938": -23.125,
+        "4792": -24.125
+      },
+      {
+        "12341": 0.0,
+        "13295": -19.5,
+        "1779": -21.25,
+        "49383": -21.5,
+        "24843": -21.875
+      },
+      {
+        "3425": -0.00015841660206206143,
+        "421": -8.750158309936523,
+        "48764": -20.125158309936523,
+        "13139": -23.000158309936523,
+        "24700": -25.875158309936523
+      },
+      {
+        "264": 0.0,
+        "279": -24.375,
+        "458": -25.5,
+        "476": -30.875,
+        "323": -31.5
+      },
+      {
+        "2661": -0.25192904472351074,
+        "914": -1.5019290447235107,
+        "3897": -19.501928329467773,
+        "66558": -21.876928329467773,
+        "1946": -21.876928329467773
+      },
+      {
+        "914": 0.0,
+        "66558": -21.75,
+        "917": -24.625,
+        "3070": -25.125,
+        "9069": -26.25
+      },
+      {
+        "374": 0.0,
+        "3070": -27.25,
+        "20412": -27.875,
+        "320": -29.5,
+        "525": -29.625
+      },
+      {
+        "264": 0.0,
+        "3070": -22.625,
+        "458": -28.625,
+        "1083": -32.0,
+        "4306": -32.125
+      },
+      {
+        "3070": -0.3132625222206116,
+        "73097": -1.3132624626159668,
+        "353": -14.063262939453125,
+        "1565": -19.688262939453125,
+        "334": -20.063262939453125
+      },
+      {
+        "19308": -8.344646857949556e-07,
+        "68694": -14.750000953674316,
+        "73097": -15.000000953674316,
+        "73310": -16.0,
+        "20772": -19.875
+      },
+      {
+        "36058": -3.576278118089249e-07,
+        "484": -14.75,
+        "307": -23.0,
+        "57763": -23.375,
+        "5744": -24.125
+      },
+      {
+        "334": -0.005235176533460617,
+        "97219": -5.255235195159912,
+        "95518": -13.505234718322754,
+        "56177": -21.00523567199707,
+        "3070": -21.13023567199707
+      },
+      {
+        "1447": -0.0687115266919136,
+        "13": -3.068711519241333,
+        "1959": -4.318711757659912,
+        "320": -5.068711757659912,
+        "2293": -8.068711280822754
+      },
+      {
+        "73594": -0.023289820179343224,
+        "32": -3.773289918899536,
+        "14374": -10.023289680480957,
+        "334": -18.023290634155273,
+        "362": -19.023290634155273
+      },
+      {
+        "12669": 0.0,
+        "10135": -18.75,
+        "3288": -20.0,
+        "30280": -21.875,
+        "71929": -23.375
+      },
+      {
+        "198": 0.0,
+        "271": -20.375,
+        "2303": -22.5,
+        "715": -25.875,
+        "1066": -26.0
+      },
+      {
+        "750": 0.0,
+        "707": -25.0,
+        "474": -28.5,
+        "2": -29.0,
+        "1499": -29.625
+      },
+      {
+        "374": 0.0,
+        "2079": -25.0,
+        "2160": -25.375,
+        "1779": -26.25,
+        "285": -26.875
+      },
+      {
+        "73310": -2.3841855067985307e-07,
+        "68694": -16.25,
+        "620": -16.25,
+        "73097": -17.125,
+        "10925": -19.125
+      },
+      {
+        "36058": -1.1920928244535389e-07,
+        "484": -16.0,
+        "5744": -22.875,
+        "307": -25.625,
+        "408": -28.625
+      },
+      {
+        "1141": -2.0265558760002023e-06,
+        "3609": -13.375001907348633,
+        "7235": -14.875001907348633,
+        "5384": -16.250001907348633,
+        "274": -18.250001907348633
+      },
+      {
+        "982": -6.794698856538162e-05,
+        "25": -9.625067710876465,
+        "510": -13.250067710876465,
+        "7731": -15.750067710876465,
+        "10343": -19.50006866455078
+      },
+      {
+        "262": 0.0,
+        "286": -23.125,
+        "256": -24.875,
+        "414": -25.25,
+        "257": -25.875
+      },
+      {
+        "3190": -0.03032200038433075,
+        "671": -3.5303220748901367,
+        "470": -7.530322074890137,
+        "4210": -10.280322074890137,
+        "7129": -14.905322074890137
+      },
+      {
+        "262": -2.3841855067985307e-07,
+        "257": -16.0,
+        "286": -16.625,
+        "256": -17.875,
+        "414": -18.375
+      },
+      {
+        "4248": -0.16022512316703796,
+        "24843": -1.9102251529693604,
+        "12341": -14.785224914550781,
+        "52712": -15.660224914550781,
+        "49820": -16.16022491455078
+      },
+      {
+        "421": -4.768370445162873e-07,
+        "3425": -14.5,
+        "62244": -23.25,
+        "743": -24.625,
+        "333": -25.125
+      },
+      {
+        "264": -0.4740769863128662,
+        "279": -0.9740769863128662,
+        "1946": -21.974077224731445,
+        "914": -25.974077224731445,
+        "458": -26.224077224731445
+      },
+      {
+        "914": -0.0015023384476080537,
+        "2661": -6.501502513885498,
+        "66558": -17.501502990722656,
+        "917": -19.251502990722656,
+        "9069": -22.251502990722656
+      },
+      {
+        "374": 0.0,
+        "15804": -22.25,
+        "274": -23.375,
+        "20412": -28.75,
+        "264": -29.0
+      },
+      {
+        "264": 0.0,
+        "279": -26.375,
+        "73097": -26.875,
+        "10854": -27.875,
+        "458": -28.125
+      },
+      {
+        "73097": 0.0,
+        "10854": -20.5,
+        "10925": -23.5,
+        "68694": -23.75,
+        "73310": -24.0
+      },
+      {
+        "382": -0.07888996601104736,
+        "624": -2.578889846801758,
+        "320": -15.328889846801758,
+        "11": -20.328889846801758,
+        "553": -21.578889846801758
+      },
+      {
+        "262": 0.0,
+        "286": -17.875,
+        "257": -19.5,
+        "414": -20.625,
+        "256": -20.625
+      },
+      {
+        "362": -0.10127236694097519,
+        "13522": -2.3512723445892334,
+        "17693": -6.8512725830078125,
+        "549": -11.851272583007812,
+        "27702": -18.101272583007812
+      },
+      {
+        "73097": -1.2993727978027891e-05,
+        "914": -11.25001335144043,
+        "10854": -18.00001335144043,
+        "10925": -21.00001335144043,
+        "73310": -23.75001335144043
+      },
+      {
+        "374": -0.0015023384476080537,
+        "15804": -6.501502513885498,
+        "1349": -21.751502990722656,
+        "43721": -23.876502990722656,
+        "5290": -24.376502990722656
+      },
+      {
+        "264": 0.0,
+        "4512": -22.75,
+        "1349": -24.375,
+        "914": -26.125,
+        "458": -26.25
+      },
+      {
+        "914": -0.0004646890447475016,
+        "3409": -8.25046443939209,
+        "8500": -8.50046443939209,
+        "917": -20.250465393066406,
+        "66558": -22.250465393066406
+      },
+      {
+        "429": 0.0,
+        "892": -21.125,
+        "15804": -21.5,
+        "9033": -21.625,
+        "1349": -24.125
+      },
+      {
+        "15804": -3.576278118089249e-07,
+        "1349": -15.5,
+        "374": -16.125,
+        "30358": -17.625,
+        "8458": -17.625
+      },
+      {
+        "279": 0.0,
+        "1852": -21.875,
+        "198": -23.625,
+        "19516": -26.125,
+        "1782": -28.125
+      },
+      {
+        "1852": 0.0,
+        "24063": -27.75,
+        "33574": -29.125,
+        "198": -29.5,
+        "25739": -30.375
+      }
+    ],
+    [
+      {
+        "73594": -0.002479457063600421,
+        "515": -6.002479553222656,
+        "4913": -12.502479553222656,
+        "90": -18.752479553222656,
+        "13874": -20.752479553222656
+      },
+      {
+        "2236": 0.0,
+        "5370": -20.75,
+        "2951": -21.875,
+        "30847": -22.125,
+        "9455": -22.125
+      },
+      {
+        "198": 0.0,
+        "271": -22.625,
+        "319": -30.875,
+        "510": -31.375,
+        "715": -31.625
+      },
+      {
+        "515": -3.576278118089249e-07,
+        "4913": -14.75,
+        "341": -24.0,
+        "90": -26.125,
+        "9640": -26.25
+      },
+      {
+        "220": 0.0,
+        "262": -21.5,
+        "256": -29.375,
+        "330": -31.875,
+        "1": -34.5
+      },
+      {
+        "330": 0.0,
+        "5201": -26.75,
+        "9000": -27.5,
+        "8428": -29.125,
+        "1036": -32.125
+      },
+      {
+        "8926": 0.0,
+        "11141": -24.75,
+        "3283": -25.0,
+        "53009": -27.125,
+        "53329": -27.25
+      },
+      {
+        "788": 0.0,
+        "1": -21.0,
+        "11693": -25.375,
+        "3252": -26.625,
+        "13022": -27.125
+      },
+      {
+        "330": 0.0,
+        "220": -29.0,
+        "5201": -33.375,
+        "9000": -33.5,
+        "262": -34.125
+      },
+      {
+        "59604": 0.0,
+        "4272": -16.75,
+        "106004": -17.5,
+        "12095": -19.25,
+        "1732": -22.75
+      },
+      {
+        "756": 0.0,
+        "345": -20.5,
+        "497": -21.625,
+        "751": -23.125,
+        "12892": -24.0
+      },
+      {
+        "220": 0.0,
+        "256": -24.75,
+        "262": -27.625,
+        "197": -28.625,
+        "330": -28.875
+      },
+      {
+        "330": 0.0,
+        "5201": -23.125,
+        "6523": -23.875,
+        "9000": -23.875,
+        "364": -24.125
+      },
+      {
+        "11141": 0.0,
+        "8926": -22.5,
+        "64926": -22.75,
+        "46708": -23.0,
+        "3146": -23.25
+      },
+      {
+        "788": 0.0,
+        "95518": -21.0,
+        "56533": -21.25,
+        "11693": -21.375,
+        "13022": -22.375
+      },
+      {
+        "330": 0.0,
+        "8389": -30.75,
+        "220": -31.5,
+        "11993": -32.25,
+        "6228": -32.25
+      },
+      {
+        "49000": -2.861018856492592e-06,
+        "9625": -12.75000286102295,
+        "104328": -19.000001907348633,
+        "43197": -20.125001907348633,
+        "37326": -20.625001907348633
+      },
+      {
+        "698": 0.0,
+        "198": -24.5,
+        "5031": -25.25,
+        "1138": -26.125,
+        "1248": -26.25
+      },
+      {
+        "532": 0.0,
+        "630": -22.0625,
+        "92": -22.6875,
+        "921": -23.25,
+        "456": -23.4375
+      },
+      {
+        "73594": 0.0,
+        "13874": -19.125,
+        "14085": -24.25,
+        "54275": -26.0,
+        "12599": -27.75
+      },
+      {
+        "151645": 0.0,
+        "25521": -21.625,
+        "151668": -21.75,
+        "151665": -21.875,
+        "42945": -22.0
+      }
+    ],
+    [
+      {
+        "1654": 0.0,
+        "1205": -22.0,
+        "896": -22.25,
+        "10713": -24.25,
+        "22404": -25.25
+      },
+      {
+        "525": 0.0,
+        "2299": -22.25,
+        "374": -24.5,
+        "546": -26.375,
+        "1033": -26.75
+      },
+      {
+        "68863": -0.004989790264517069,
+        "68672": -5.5049896240234375,
+        "13295": -7.0049896240234375,
+        "22901": -13.254989624023438,
+        "23933": -14.379989624023438
+      },
+      {
+        "3425": -2.264974000354414e-06,
+        "421": -13.000001907348633,
+        "279": -18.250001907348633,
+        "48764": -21.750001907348633,
+        "429": -22.750001907348633
+      },
+      {
+        "279": 0.0,
+        "1052": -25.125,
+        "1782": -26.125,
+        "264": -26.5,
+        "1614": -27.375
+      },
+      {
+        "1614": -7.748573807475623e-06,
+        "32711": -12.875007629394531,
+        "4119": -12.875007629394531,
+        "3059": -13.000007629394531,
+        "44378": -15.500007629394531
+      },
+      {
+        "594": 0.0,
+        "44378": -17.0,
+        "32711": -17.25,
+        "6": -19.5,
+        "748": -21.25
+      },
+      {
+        "32711": -0.3199174106121063,
+        "44378": -1.3199174404144287,
+        "304": -5.06991720199585,
+        "113272": -8.569917678833008,
+        "23583": -8.944917678833008
+      },
+      {
+        "3059": -0.0003564914222806692,
+        "19554": -8.250356674194336,
+        "16275": -9.500356674194336,
+        "30242": -11.250356674194336,
+        "374": -12.125356674194336
+      },
+      {
+        "525": 0.0,
+        "7503": -17.5,
+        "7146": -19.375,
+        "546": -20.625,
+        "374": -21.25
+      },
+      {
+        "12966": 0.0,
+        "55787": -17.0,
+        "78399": -18.75,
+        "28137": -20.25,
+        "39140": -20.875
+      },
+      {
+        "13": 0.0,
+        "1189": -21.75,
+        "58883": -22.625,
+        "659": -23.75,
+        "1773": -24.125
+      },
+      {
+        "151645": 0.0,
+        "25521": -18.0,
+        "320": -19.625,
+        "11162": -20.5,
+        "508": -20.5
+      }
+    ],
+    [
+      {
+        "785": -0.07891751080751419,
+        "10061": -2.5789175033569336,
+        "39814": -10.578917503356934,
+        "36139": -13.953917503356934,
+        "8420": -14.453917503356934
+      },
+      {
+        "8500": -0.014174144715070724,
+        "2661": -4.264173984527588,
+        "1790": -11.514174461364746,
+        "1372": -14.514174461364746,
+        "5383": -15.764174461364746
+      },
+      {
+        "2661": -0.1644432693719864,
+        "374": -1.9144432544708252,
+        "498": -5.664443492889404,
+        "3897": -7.664443492889404,
+        "25": -8.414443016052246
+      },
+      {
+        "374": 0.0,
+        "525": -24.5,
+        "773": -25.0,
+        "572": -25.0,
+        "25": -25.0
+      },
+      {
+        "1447": -0.12692825496196747,
+        "25": -2.1269283294677734,
+        "510": -15.126928329467773,
+        "48443": -17.876928329467773,
+        "3070": -18.251928329467773
+      },
+      {
+        "334": -3.540453326422721e-05,
+        "17": -10.250035285949707,
+        "29": -16.250036239624023,
+        "13874": -18.500036239624023,
+        "83725": -19.250036239624023
+      },
+      {
+        "17": 0.0,
+        "31807": -24.75,
+        "29456": -26.75,
+        "334": -26.875,
+        "16": -27.125
+      },
+      {
+        "11": -1.1920928244535389e-07,
+        "97219": -16.625,
+        "334": -20.625,
+        "11397": -22.875,
+        "378": -23.75
+      },
+      {
+        "220": 0.0,
+        "3070": -25.625,
+        "378": -27.0,
+        "2303": -30.25,
+        "334": -31.375
+      },
+      {
+        "19": 0.0,
+        "23": -25.0,
+        "17": -25.5,
+        "21": -25.75,
+        "20": -26.125
+      },
+      {
+        "11": 0.0,
+        "97219": -25.5,
+        "12314": -28.625,
+        "334": -29.625,
+        "1154": -29.875
+      },
+      {
+        "220": 0.0,
+        "3070": -18.875,
+        "353": -26.5,
+        "1304": -28.125,
+        "2858": -28.5625
+      },
+      {
+        "23": 0.0,
+        "21": -20.0,
+        "22": -23.75,
+        "16": -25.75,
+        "20": -26.875
+      },
+      {
+        "11": 0.0,
+        "97219": -28.375,
+        "12314": -32.0,
+        "1154": -32.625,
+        "334": -33.125
+      },
+      {
+        "220": 0.0,
+        "3070": -19.0,
+        "93920": -27.875,
+        "1565": -28.25,
+        "353": -28.4375
+      },
+      {
+        "16": 0.0,
+        "21": -25.75,
+        "17": -26.125,
+        "23": -26.5,
+        "18": -29.625
+      },
+      {
+        "21": 0.0,
+        "17": -25.0,
+        "19": -27.0,
+        "16": -27.625,
+        "18": -28.5
+      },
+      {
+        "11": -0.009266817942261696,
+        "56177": -5.0092668533325195,
+        "28675": -6.0092668533325195,
+        "69979": -9.38426685333252,
+        "98213": -12.50926685333252
+      },
+      {
+        "937": -0.4934539198875427,
+        "2503": -0.9934539198875427,
+        "7436": -4.3684539794921875,
+        "1304": -5.1184539794921875,
+        "56177": -8.493453979492188
+      },
+      {
+        "56177": -4.0649541915627196e-05,
+        "334": -10.125041007995605,
+        "1112": -14.875041007995605,
+        "97219": -16.62504005432129,
+        "1019": -16.62504005432129
+      },
+      {
+        "14374": -0.059957947582006454,
+        "10061": -3.559957981109619,
+        "1986": -3.559957981109619,
+        "1249": -7.059957981109619,
+        "44364": -8.059957504272461
+      },
+      {
+        "14822": -0.007166631519794464,
+        "18100": -5.507166862487793,
+        "6771": -6.507166862487793,
+        "18834": -7.257166862487793,
+        "3070": -7.257166862487793
+      },
+      {
+        "220": -0.474079966545105,
+        "14319": -0.974079966545105,
+        "553": -12.724080085754395,
+        "25": -17.599079132080078,
+        "12": -18.099079132080078
+      },
+      {
+        "16": 0.0,
+        "17": -21.0,
+        "18": -23.875,
+        "19": -24.875,
+        "15": -25.625
+      },
+      {
+        "25": 0.0,
+        "1365": -17.75,
+        "481": -23.125,
+        "5122": -24.0,
+        "1959": -24.0
+      },
+      {
+        "64547": -0.7716200947761536,
+        "9192": -1.2716200351715088,
+        "37427": -1.5216200351715088,
+        "4657": -3.521620035171509,
+        "1374": -4.771620273590088
+      },
+      {
+        "279": 0.0,
+        "264": -17.625,
+        "18834": -19.75,
+        "576": -20.75,
+        "12624": -21.25
+      },
+      {
+        "5383": -0.1272474080324173,
+        "18834": -2.1272473335266113,
+        "18100": -8.62724781036377,
+        "5912": -8.87724781036377,
+        "943": -14.62724781036377
+      },
+      {
+        "271": -0.3228897452354431,
+        "198": -1.322889804840088,
+        "382": -5.197889804840088,
+        "2303": -5.697889804840088,
+        "624": -7.322889804840088
+      },
+      {
+        "10061": -0.039364174008369446,
+        "10380": -3.5393640995025635,
+        "22464": -4.789364337921143,
+        "1654": -6.789364337921143,
+        "4854": -9.914363861083984
+      },
+      {
+        "594": -0.07888974994421005,
+        "748": -2.578889846801758,
+        "601": -17.078889846801758,
+        "1401": -18.953889846801758,
+        "6": -20.641389846801758
+      },
+      {
+        "1401": -0.00872632022947073,
+        "20961": -4.758726119995117,
+        "23643": -9.633726119995117,
+        "1490": -10.633726119995117,
+        "22986": -11.258726119995117
+      },
+      {
+        "518": -5.960462772236497e-07,
+        "15148": -14.250000953674316,
+        "15516": -19.75,
+        "3019": -20.0,
+        "1246": -20.125
+      },
+      {
+        "279": -0.5765661597251892,
+        "1246": -0.8265661597251892,
+        "1817": -7.951566219329834,
+        "1128": -8.201565742492676,
+        "3070": -15.451565742492676
+      },
+      {
+        "5025": -0.4236808121204376,
+        "5109": -1.1736807823181152,
+        "8500": -4.173680782318115,
+        "11799": -4.423680782318115,
+        "32724": -5.548680782318115
+      },
+      {
+        "1948": -3.576278118089249e-07,
+        "504": -14.875,
+        "4221": -20.0,
+        "130724": -20.5,
+        "3070": -21.625
+      },
+      {
+        "279": -0.08736943453550339,
+        "1817": -2.587369441986084,
+        "23921": -4.837369441986084,
+        "48924": -7.962369441986084,
+        "3793": -8.712368965148926
+      },
+      {
+        "5109": -0.04858778417110443,
+        "3793": -3.0485877990722656,
+        "23921": -15.048587799072266,
+        "1372": -16.673587799072266,
+        "5424": -16.798587799072266
+      },
+      {
+        "1447": -0.002664113650098443,
+        "382": -6.002664089202881,
+        "304": -8.752664566040039,
+        "510": -10.502664566040039,
+        "3019": -13.502664566040039
+      },
+      {
+        "12": 0.0,
+        "16": -18.5,
+        "14085": -20.0,
+        "91": -20.5,
+        "13874": -20.625
+      },
+      {
+        "220": -0.0021956877317279577,
+        "3070": -6.252195835113525,
+        "400": -8.252195358276367,
+        "5542": -12.127195358276367,
+        "1565": -14.127195358276367
+      },
+      {
+        "17": -0.0001234931987710297,
+        "19": -9.000123023986816,
+        "16": -16.375123977661133,
+        "18": -20.000123977661133,
+        "15": -20.750123977661133
+      },
+      {
+        "11397": -0.3929387629032135,
+        "24768": -1.1429387331008911,
+        "311": -5.642938613891602,
+        "2303": -6.142938613891602,
+        "82706": -8.767938613891602
+      },
+      {
+        "220": -5.722029527532868e-06,
+        "3070": -12.125005722045898,
+        "24768": -15.625005722045898,
+        "30270": -15.625005722045898,
+        "71059": -17.7500057220459
+      },
+      {
+        "19": 0.0,
+        "17": -18.375,
+        "16": -20.75,
+        "23": -21.25,
+        "18": -21.625
+      },
+      {
+        "25": -0.07390034198760986,
+        "320": -2.8239002227783203,
+        "11397": -4.57390022277832,
+        "284": -6.57390022277832,
+        "549": -9.82390022277832
+      },
+      {
+        "71059": -0.5344069004058838,
+        "220": -2.034406900405884,
+        "3070": -2.284406900405884,
+        "30270": -2.534406900405884,
+        "24768": -3.034406900405884
+      },
+      {
+        "553": 0.0,
+        "220": -19.125,
+        "3070": -21.625,
+        "24768": -23.5,
+        "14319": -24.5
+      }
+    ],
+    [
+      {
+        "32": -2.861018856492592e-06,
+        "785": -12.75000286102295,
+        "1986": -19.750001907348633,
+        "9194": -22.000001907348633,
+        "362": -22.625001907348633
+      },
+      {
+        "6733": 0.0,
+        "18065": -20.5,
+        "93299": -22.0,
+        "584": -22.125,
+        "11635": -23.875
+      },
+      {
+        "6147": -2.658331868587993e-05,
+        "77918": -11.50002670288086,
+        "6081": -11.50002670288086,
+        "15354": -12.75002670288086,
+        "16606": -13.37502670288086
+      },
+      {
+        "12726": -0.000248043768806383,
+        "63388": -9.000247955322266,
+        "3847": -9.500247955322266,
+        "1251": -10.000247955322266,
+        "51760": -12.500247955322266
+      },
+      {
+        "311": 0.0,
+        "220": -30.125,
+        "2014": -31.5,
+        "1378": -32.6875,
+        "26764": -32.75
+      },
+      {
+        "17193": -2.3245540432981215e-05,
+        "1779": -11.875022888183594,
+        "11679": -12.125022888183594,
+        "8016": -12.375022888183594,
+        "45564": -12.625022888183594
+      },
+      {
+        "6467": 0.0,
+        "12110": -19.0,
+        "73084": -20.625,
+        "107041": -21.25,
+        "2311": -21.625
+      },
+      {
+        "369": 0.0,
+        "448": -19.375,
+        "323": -19.5,
+        "11": -19.5,
+        "1958": -20.875
+      },
+      {
+        "1378": -0.00319589558057487,
+        "264": -5.753195762634277,
+        "705": -11.003195762634277,
+        "220": -13.503195762634277,
+        "9043": -15.753195762634277
+      },
+      {
+        "5555": 0.0,
+        "2003": -21.25,
+        "80989": -23.0,
+        "29509": -25.125,
+        "63037": -25.875
+      },
+      {
+        "11": -3.3378546504536644e-06,
+        "323": -13.25000286102295,
+        "13": -13.37500286102295,
+        "448": -17.125003814697266,
+        "26": -23.500003814697266
+      },
+      {
+        "323": -0.018150897696614265,
+        "448": -4.018150806427002,
+        "714": -13.89315128326416,
+        "1393": -20.393150329589844,
+        "22641": -20.518150329589844
+      },
+      {
+        "264": -0.004180265124887228,
+        "1052": -5.754180431365967,
+        "10195": -7.504180431365967,
+        "4675": -9.004179954528809,
+        "421": -9.004179954528809
+      },
+      {
+        "2613": -5.125986263010418e-06,
+        "11060": -12.250004768371582,
+        "8922": -15.250004768371582,
+        "8112": -16.0000057220459,
+        "26848": -17.7500057220459
+      },
+      {
+        "11060": -1.1920928244535389e-07,
+        "6915": -16.5,
+        "6757": -16.5,
+        "16346": -16.75,
+        "30017": -18.0
+      },
+      {
+        "374": 0.0,
+        "16790": -17.25,
+        "1969": -23.5,
+        "525": -25.125,
+        "646": -25.25
+      },
+      {
+        "11430": -3.349725011503324e-05,
+        "9251": -10.625033378601074,
+        "10195": -12.375033378601074,
+        "6757": -12.750033378601074,
+        "3694": -13.750033378601074
+      },
+      {
+        "369": -0.0019286142196506262,
+        "421": -6.251928806304932,
+        "979": -19.376928329467773,
+        "1958": -22.001928329467773,
+        "2023": -24.251928329467773
+      },
+      {
+        "3309": -0.00044800734031014144,
+        "13451": -7.750448226928711,
+        "72526": -11.000448226928711,
+        "4675": -14.875448226928711,
+        "1817": -15.625448226928711
+      },
+      {
+        "4675": -1.1920928244535389e-07,
+        "470": -15.75,
+        "4216": -17.75,
+        "5184": -18.375,
+        "13451": -20.375
+      },
+      {
+        "13": 0.0,
+        "624": -21.25,
+        "382": -25.375,
+        "659": -26.375,
+        "1189": -26.875
+      },
+      {
+        "151645": 0.0,
+        "25521": -19.5,
+        "334": -22.25,
+        "11162": -22.375,
+        "151668": -22.6875
+      }
+    ],
+    [
+      {
+        "31615": -0.25193682312965393,
+        "785": -1.5019367933273315,
+        "32": -12.001936912536621,
+        "7983": -14.001936912536621,
+        "7123": -14.251936912536621
+      },
+      {
+        "4938": 0.0,
+        "111390": -22.125,
+        "13850": -22.75,
+        "17269": -23.125,
+        "36611": -24.625
+      },
+      {
+        "320": -0.0023460264783352613,
+        "19257": -6.752346038818359,
+        "374": -6.752346038818359,
+        "11": -11.87734603881836,
+        "11136": -16.62734603881836
+      },
+      {
+        "33905": -0.0006554362480528653,
+        "86084": -7.875655651092529,
+        "3817": -9.250655174255371,
+        "60817": -9.625655174255371,
+        "42966": -9.750655174255371
+      },
+      {
+        "8": 0.0,
+        "7552": -25.375,
+        "701": -26.375,
+        "873": -27.125,
+        "374": -27.625
+      },
+      {
+        "374": 0.0,
+        "17045": -18.25,
+        "14056": -21.875,
+        "10533": -22.375,
+        "19257": -22.5
+      },
+      {
+        "4586": -0.09027721732854843,
+        "8131": -3.0902771949768066,
+        "1483": -4.090277194976807,
+        "10596": -4.215277194976807,
+        "6188": -5.840277194976807
+      },
+      {
+        "58238": 0.0,
+        "12": -17.5,
+        "7428": -18.0,
+        "24673": -18.125,
+        "2268": -20.375
+      },
+      {
+        "323": -0.46512752771377563,
+        "4938": -1.4651274681091309,
+        "5819": -1.9651274681091309,
+        "11": -7.465127468109131,
+        "4194": -8.840127944946289
+      },
+      {
+        "8975": -0.11706741899251938,
+        "28872": -2.742067337036133,
+        "14071": -4.492067337036133,
+        "1483": -4.492067337036133,
+        "28393": -4.742067337036133
+      },
+      {
+        "553": -1.1920928244535389e-07,
+        "5961": -16.0,
+        "1526": -19.375,
+        "42011": -20.125,
+        "448": -20.875
+      },
+      {
+        "279": 0.0,
+        "264": -17.5,
+        "1782": -21.0,
+        "458": -22.125,
+        "1849": -24.25
+      },
+      {
+        "13940": -0.026316586881875992,
+        "1849": -3.7763166427612305,
+        "10350": -6.7763166427612305,
+        "17654": -7.0263166427612305,
+        "8622": -7.0263166427612305
+      },
+      {
+        "369": -0.16022531688213348,
+        "11": -1.91022527217865,
+        "448": -14.035224914550781,
+        "311": -14.785224914550781,
+        "323": -17.53522491455078
+      },
+      {
+        "8084": -0.11512362211942673,
+        "264": -2.3651235103607178,
+        "27572": -4.990123748779297,
+        "1849": -6.365123748779297,
+        "11589": -6.615123748779297
+      },
+      {
+        "1849": -1.7881377516459906e-06,
+        "6366": -13.500001907348633,
+        "24231": -15.500001907348633,
+        "72448": -16.250001907348633,
+        "8948": -18.375001907348633
+      },
+      {
+        "7525": -0.16072000563144684,
+        "9079": -1.9107199907302856,
+        "11364": -8.410719871520996,
+        "5666": -8.910719871520996,
+        "5068": -9.660719871520996
+      },
+      {
+        "11": 0.0,
+        "323": -21.125,
+        "1154": -23.25,
+        "13": -24.75,
+        "345": -24.875
+      },
+      {
+        "1393": -5.960462772236497e-07,
+        "19853": -14.250000953674316,
+        "3472": -20.0,
+        "5217": -22.0,
+        "5976": -22.5
+      },
+      {
+        "22670": 0.0,
+        "49891": -18.0,
+        "68716": -22.125,
+        "70403": -23.875,
+        "35628": -25.5
+      },
+      {
+        "4938": 0.0,
+        "111390": -19.625,
+        "36611": -21.625,
+        "17269": -22.25,
+        "13850": -22.5
+      },
+      {
+        "320": -0.006715348921716213,
+        "374": -5.006715297698975,
+        "11": -24.381715774536133,
+        "3489": -25.006715774536133,
+        "10293": -26.006715774536133
+      },
+      {
+        "18800": -2.1576648578047752e-05,
+        "19168": -11.125021934509277,
+        "53": -12.625021934509277,
+        "9986": -13.000021934509277,
+        "85": -13.750021934509277
+      },
+      {
+        "1402": 0.0,
+        "6769": -21.25,
+        "309": -23.375,
+        "44": -24.0,
+        "2729": -24.375
+      },
+      {
+        "8": 0.0,
+        "476": -22.25,
+        "873": -25.5,
+        "7552": -25.625,
+        "701": -25.75
+      },
+      {
+        "374": 0.0,
+        "525": -23.375,
+        "285": -23.75,
+        "20412": -25.25,
+        "54851": -25.75
+      },
+      {
+        "27076": -0.12927883863449097,
+        "12235": -2.1292788982391357,
+        "11689": -7.004278659820557,
+        "1550": -7.379278659820557,
+        "33340": -7.879278659820557
+      },
+      {
+        "323": -0.0665697380900383,
+        "11": -2.8165698051452637,
+        "369": -6.191569805145264,
+        "1550": -6.191569805145264,
+        "4938": -8.316569328308105
+      },
+      {
+        "1483": -0.39870771765708923,
+        "8975": -1.6487077474594116,
+        "33340": -2.148707628250122,
+        "12235": -4.273707866668701,
+        "5961": -6.023707866668701
+      },
+      {
+        "553": -0.01850835047662258,
+        "23242": -4.018508434295654,
+        "369": -8.143507957458496,
+        "21063": -10.143507957458496,
+        "15503": -11.268507957458496
+      },
+      {
+        "279": 0.0,
+        "264": -19.5,
+        "1782": -20.875,
+        "14181": -23.25,
+        "70403": -24.875
+      },
+      {
+        "22670": -0.00035720644518733025,
+        "14181": -8.000357627868652,
+        "49891": -10.750357627868652,
+        "20296": -15.000357627868652,
+        "68716": -17.125356674194336
+      },
+      {
+        "369": -0.001510670525021851,
+        "311": -6.5015106201171875,
+        "23242": -12.126510620117188,
+        "15503": -12.876510620117188,
+        "11689": -14.876510620117188
+      },
+      {
+        "20898": -0.5261296033859253,
+        "27572": -1.2761296033859253,
+        "8692": -2.276129722595215,
+        "4937": -4.276129722595215,
+        "11589": -4.526129722595215
+      },
+      {
+        "14181": -4.8993817472364753e-05,
+        "323": -10.250048637390137,
+        "5335": -11.500048637390137,
+        "53143": -13.625048637390137,
+        "20514": -14.250048637390137
+      },
+      {
+        "323": 0.0,
+        "476": -17.125,
+        "11": -23.125,
+        "437": -23.625,
+        "33108": -23.875
+      },
+      {
+        "68641": -0.35305118560791016,
+        "15279": -2.10305118560791,
+        "8692": -2.35305118560791,
+        "11589": -2.60305118560791,
+        "30220": -5.85305118560791
+      },
+      {
+        "15279": -0.00024971229140646756,
+        "3151": -8.625249862670898,
+        "12564": -10.625249862670898,
+        "54480": -11.625249862670898,
+        "2766": -11.625249862670898
+      },
+      {
+        "8692": -0.7326470613479614,
+        "82599": -0.7326470613479614,
+        "24231": -3.982646942138672,
+        "9079": -3.982646942138672,
+        "54480": -6.732646942138672
+      },
+      {
+        "9079": -2.7656173188006505e-05,
+        "13": -10.500027656555176,
+        "24760": -15.625027656555176,
+        "6887": -17.62502670288086,
+        "46471": -18.12502670288086
+      },
+      {
+        "13": 0.0,
+        "382": -19.625,
+        "624": -21.25,
+        "1075": -22.0,
+        "1189": -22.625
+      },
+      {
+        "151645": 0.0,
+        "334": -18.125,
+        "25521": -18.25,
+        "11162": -20.25,
+        "151668": -20.75
+      }
+    ]
+  ]
+}

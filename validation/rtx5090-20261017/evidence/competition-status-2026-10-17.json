@@ -1,0 +1,651 @@
+{
+  "checked_at_utc": "2026-10-17T06:17:51.981207+00:00",
+  "searches": [
+    {
+      "query": "repo:vllm-project/vllm is:pr is:open \"58178\" in:body",
+      "total": 0,
+      "incomplete": false,
+      "items": []
+    },
+    {
+      "query": "repo:vllm-project/vllm is:pr is:open \"NVFP4\" \"offload\"",
+      "total": 50,
+      "incomplete": false,
+      "items": [
+        {
+          "number": 59958,
+          "title": "[Qwen4Exp] PLE disk offload",
+          "url": "https://github.com/vllm-project/vllm/pull/59958",
+          "author": "stecasta",
+          "updated_at": "2026-10-14T03:58:30Z"
+        },
+        {
+          "number": 59848,
+          "title": "[Bugfix][Qwen4Exp] Pin the offloaded PLE table at its exact size",
+          "url": "https://github.com/vllm-project/vllm/pull/59848",
+          "author": "gitbisector",
+          "updated_at": "2026-10-14T01:55:43Z"
+        },
+        {
+          "number": 55492,
+          "title": "[CI] Wire missing CPU, GPU, and service tests",
+          "url": "https://github.com/vllm-project/vllm/pull/55492",
+          "author": "ZJY0516",
+          "updated_at": "2026-09-29T14:41:48Z"
+        },
+        {
+          "number": 61407,
+          "title": "[CI][Feature] Meta-device mode for CPU-only end-to-end engine CI",
+          "url": "https://github.com/vllm-project/vllm/pull/61407",
+          "author": "zhuzi-z",
+          "updated_at": "2026-10-15T06:39:24Z"
+        },
+        {
+          "number": 56613,
+          "title": "[Bugfix][Kernel] Break native top-k cutoff ties by token index",
+          "url": "https://github.com/vllm-project/vllm/pull/56613",
+          "author": "LucasWilkinson",
+          "updated_at": "2026-09-12T15:29:51Z"
+        },
+        {
+          "number": 56552,
+          "title": "[Spec Decode] SM120 DFlash/MTP: PP2 aux relay, NVFP4 draft startup, last-block drop",
+          "url": "https://github.com/vllm-project/vllm/pull/56552",
+          "author": "ch2lab",
+          "updated_at": "2026-09-12T08:27:33Z"
+        },
+        {
+          "number": 56116,
+          "title": "[Quantization] Support ModelOpt layer-wise mixed KV cache",
+          "url": "https://github.com/vllm-project/vllm/pull/56116",
+          "author": "meenchen",
+          "updated_at": "2026-10-16T19:14:43Z"
+        },
+        {
+          "number": 60390,
+          "title": "[Model][Core] Share the Qwen4Exp PLE table between co-located replicas",
+          "url": "https://github.com/vllm-project/vllm/pull/60390",
+          "author": "AntonioAngelino",
+          "updated_at": "2026-10-15T09:27:57Z"
+        },
+        {
+          "number": 43453,
+          "title": "[Offloader] Skip per-tensor scale parameters from CPU offload",
+          "url": "https://github.com/vllm-project/vllm/pull/43453",
+          "author": "zemf4you",
+          "updated_at": "2026-07-23T00:05:54Z"
+        },
+        {
+          "number": 54070,
+          "title": "[Feature] Disk-backed PLE n-gram tables (`VLLM_PLE_DISK_OFFLOAD_DIR`)",
+          "url": "https://github.com/vllm-project/vllm/pull/54070",
+          "author": "jagat-primitive-org",
+          "updated_at": "2026-09-24T11:13:13Z"
+        },
+        {
+          "number": 53981,
+          "title": "[Bugfix] Route directly constructed embeddings through CPU offload",
+          "url": "https://github.com/vllm-project/vllm/pull/53981",
+          "author": "waizuichougou",
+          "updated_at": "2026-10-10T01:33:08Z"
+        },
+        {
+          "number": 61370,
+          "title": "[CI][MiniMax-M3] Serving features compatibility matrix",
+          "url": "https://github.com/vllm-project/vllm/pull/61370",
+          "author": "abmfy",
+          "updated_at": "2026-10-14T06:25:45Z"
+        },
+        {
+          "number": 50653,
+          "title": "[Bugfix][KV Offloading] Fix CPU offload block count mismatch across PP ranks",
+          "url": "https://github.com/vllm-project/vllm/pull/50653",
+          "author": "StellaH-ter",
+          "updated_at": "2026-10-13T03:12:36Z"
+        },
+        {
+          "number": 54972,
+          "title": "[Bugfix][Offloading] UVA offloader: release the accelerator blocks it frees",
+          "url": "https://github.com/vllm-project/vllm/pull/54972",
+          "author": "pctablet505",
+          "updated_at": "2026-10-15T06:05:39Z"
+        },
+        {
+          "number": 56177,
+          "title": "[MoE][Offload] Shared GPU expert pool with a device-side planner for NVFP4 Marlin experts (moe_expert_pool_rows)",
+          "url": "https://github.com/vllm-project/vllm/pull/56177",
+          "author": "01554",
+          "updated_at": "2026-09-26T00:03:23Z"
+        },
+        {
+          "number": 59503,
+          "title": "[Bugfix][Kernel] Bump DeepGEMM pin for SM107 JIT compatibility",
+          "url": "https://github.com/vllm-project/vllm/pull/59503",
+          "author": "lisawym",
+          "updated_at": "2026-10-06T17:29:16Z"
+        },
+        {
+          "number": 60566,
+          "title": "[MRV2][Perf] Screened lm_head",
+          "url": "https://github.com/vllm-project/vllm/pull/60566",
+          "author": "stecasta",
+          "updated_at": "2026-10-13T00:58:34Z"
+        },
+        {
+          "number": 48468,
+          "title": "[Bugfix] Wire up weight offloader in V2 Model Runner (`--cpu-offload-gb` was silently a no-op)",
+          "url": "https://github.com/vllm-project/vllm/pull/48468",
+          "author": "Looong01",
+          "updated_at": "2026-08-08T03:01:19Z"
+        },
+        {
+          "number": 54268,
+          "title": "[MoE] enable all2all fi_one_sided by default only for GB200/GB300",
+          "url": "https://github.com/vllm-project/vllm/pull/54268",
+          "author": "arpera",
+          "updated_at": "2026-10-12T14:15:56Z"
+        },
+        {
+          "number": 56964,
+          "title": "[MoE] Generalize unquantized backend fallback for all quantization-only backends (follow-up to #60219)         ",
+          "url": "https://github.com/vllm-project/vllm/pull/56964",
+          "author": "Aravind0403",
+          "updated_at": "2026-10-15T06:10:31Z"
+        },
+        {
+          "number": 58439,
+          "title": "[Qwen4Exp] Checkpoint-mapped PLE storage for unified-memory GPUs (DGX Spark)",
+          "url": "https://github.com/vllm-project/vllm/pull/58439",
+          "author": "jschmied",
+          "updated_at": "2026-10-14T00:31:28Z"
+        },
+        {
+          "number": 61888,
+          "title": "[Distributed] Opt-in FP16 partial sums for tensor-parallel row-parallel layers",
+          "url": "https://github.com/vllm-project/vllm/pull/61888",
+          "author": "ValerioDolci",
+          "updated_at": "2026-10-15T19:52:39Z"
+        },
+        {
+          "number": 61287,
+          "title": "[Bugfix][Reload] Reload fixes, and a refit-equals-fresh harness",
+          "url": "https://github.com/vllm-project/vllm/pull/61287",
+          "author": "hao-aaron",
+          "updated_at": "2026-10-17T00:26:48Z"
+        },
+        {
+          "number": 61530,
+          "title": "[Model][DSV4.1] Support MXFP4-packed Engram embedding tables",
+          "url": "https://github.com/vllm-project/vllm/pull/61530",
+          "author": "Zhehao-Hu",
+          "updated_at": "2026-10-15T08:57:00Z"
+        },
+        {
+          "number": 57656,
+          "title": "[Bugfix] Clamp the kv-cache-memory advisory by memory allocated since startup",
+          "url": "https://github.com/vllm-project/vllm/pull/57656",
+          "author": "ssubbotin",
+          "updated_at": "2026-09-19T03:46:08Z"
+        },
+        {
+          "number": 58985,
+          "title": "[Perf][DCP] DeepSeek-V3.2: skip other ranks' top-k slots in FP8 sparse attention on Hopper",
+          "url": "https://github.com/vllm-project/vllm/pull/58985",
+          "author": "LoongPei",
+          "updated_at": "2026-10-14T02:37:17Z"
+        },
+        {
+          "number": 57865,
+          "title": "[Bugfix] Account for workspace retained by graph profiling before KV sizing",
+          "url": "https://github.com/vllm-project/vllm/pull/57865",
+          "author": "AndreasKaratzas",
+          "updated_at": "2026-10-04T01:25:56Z"
+        },
+        {
+          "number": 60861,
+          "title": "[Bugfix][Qwen4Exp] Carry and checkpoint the PLE short-conv state in align mode",
+          "url": "https://github.com/vllm-project/vllm/pull/60861",
+          "author": "aijanai",
+          "updated_at": "2026-10-16T18:57:05Z"
+        },
+        {
+          "number": 50897,
+          "title": "[Core][Spec Decode] Add lookahead-aware prefix cache hashing for EAGLE-style draft models",
+          "url": "https://github.com/vllm-project/vllm/pull/50897",
+          "author": "ZJY0516",
+          "updated_at": "2026-10-14T08:19:54Z"
+        },
+        {
+          "number": 59912,
+          "title": "[Bugfix] flashinfer_moe_ep_cutedsl: reject it without nvshmem4py and install nvshmem4py",
+          "url": "https://github.com/vllm-project/vllm/pull/59912",
+          "author": "wangshangsam",
+          "updated_at": "2026-10-16T00:18:12Z"
+        },
+        {
+          "number": 46329,
+          "title": "[Attention] Gemma 4 NVFP4 VO split and calibrated KV loading",
+          "url": "https://github.com/vllm-project/vllm/pull/46329",
+          "author": "jethac",
+          "updated_at": "2026-10-10T08:59:57Z"
+        },
+        {
+          "number": 49151,
+          "title": "[Bugfix][Memory] Load weights outside the CuMem pool and re-home them for sleep mode",
+          "url": "https://github.com/vllm-project/vllm/pull/49151",
+          "author": "JasonVranek",
+          "updated_at": "2026-07-20T04:28:41Z"
+        },
+        {
+          "number": 54109,
+          "title": "[MoE][DeepEPV2] Add PaddedStandard activation format",
+          "url": "https://github.com/vllm-project/vllm/pull/54109",
+          "author": "bnellnm",
+          "updated_at": "2026-10-12T18:56:51Z"
+        },
+        {
+          "number": 59368,
+          "title": "[Bugfix][MRV2] Measure the CUDA graph pool for the memory estimate, not the capture's free-memory delta",
+          "url": "https://github.com/vllm-project/vllm/pull/59368",
+          "author": "drakosha",
+          "updated_at": "2026-10-10T17:26:11Z"
+        },
+        {
+          "number": 58815,
+          "title": "[Qwen4Exp] Gather PLE rows on the host from the checkpoint files (`host_file_gather`)",
+          "url": "https://github.com/vllm-project/vllm/pull/58815",
+          "author": "Trosfy",
+          "updated_at": "2026-10-15T15:34:38Z"
+        },
+        {
+          "number": 57925,
+          "title": "[ROCm][DO NOT MERGE] RDNA3 (gfx1100) full inference stack — tracking branch for splitting into landable PRs",
+          "url": "https://github.com/vllm-project/vllm/pull/57925",
+          "author": "JartX",
+          "updated_at": "2026-10-09T13:15:01Z"
+        },
+        {
+          "number": 48375,
+          "title": "[BugFix] Honor drop_eagle_block in MambaManager",
+          "url": "https://github.com/vllm-project/vllm/pull/48375",
+          "author": "potto007",
+          "updated_at": "2026-09-08T21:31:00Z"
+        },
+        {
+          "number": 50551,
+          "title": "[Hybrid KV Cache] Retain finalized Mamba decode checkpoints for prefix caching",
+          "url": "https://github.com/vllm-project/vllm/pull/50551",
+          "author": "qianlihuang",
+          "updated_at": "2026-10-13T20:37:06Z"
+        },
+        {
+          "number": 37824,
+          "title": "[Feature] RIY: Runtime expert pruning for MoE models",
+          "url": "https://github.com/vllm-project/vllm/pull/37824",
+          "author": "flash7777",
+          "updated_at": "2026-07-31T20:01:07Z"
+        },
+        {
+          "number": 59980,
+          "title": "[Model][MiniMax-M3] Context-parallel indexer decode scoring across TP ranks",
+          "url": "https://github.com/vllm-project/vllm/pull/59980",
+          "author": "nbommi19",
+          "updated_at": "2026-10-08T19:45:10Z"
+        },
+        {
+          "number": 59367,
+          "title": "[Bugfix][Attention] Reserve the sparse indexer's DCP top-k merge scratch through the workspace manager",
+          "url": "https://github.com/vllm-project/vllm/pull/59367",
+          "author": "drakosha",
+          "updated_at": "2026-10-13T06:56:39Z"
+        },
+        {
+          "number": 60895,
+          "title": "[Perf][GLM-5.3-Flash] DeepGEMM FP8 MegaMoE with fused shared experts",
+          "url": "https://github.com/vllm-project/vllm/pull/60895",
+          "author": "gcanlin",
+          "updated_at": "2026-10-13T19:47:28Z"
+        },
+        {
+          "number": 55206,
+          "title": "[Core][Sleep Mode] Optionally release pinned host memory after wake_up",
+          "url": "https://github.com/vllm-project/vllm/pull/55206",
+          "author": "fartek",
+          "updated_at": "2026-10-12T17:04:49Z"
+        },
+        {
+          "number": 55122,
+          "title": "[Kernel] persistent_topk: deterministic select, faster than the exact-topk workaround",
+          "url": "https://github.com/vllm-project/vllm/pull/55122",
+          "author": "jschmied",
+          "updated_at": "2026-10-13T07:15:27Z"
+        },
+        {
+          "number": 54076,
+          "title": "[Bugfix][V1] Use the Mamba cache group's block size for align-mode chunk splitting",
+          "url": "https://github.com/vllm-project/vllm/pull/54076",
+          "author": "wickist",
+          "updated_at": "2026-09-29T11:59:00Z"
+        },
+        {
+          "number": 55232,
+          "title": "[Bugfix] Fix compressed tensors MXFP4 MoE backend",
+          "url": "https://github.com/vllm-project/vllm/pull/55232",
+          "author": "mikeshawcode",
+          "updated_at": "2026-10-05T21:08:41Z"
+        },
+        {
+          "number": 56258,
+          "title": "[Perf][PCP] Enable TP-sharded Indexer prefill and direct TopK publication",
+          "url": "https://github.com/vllm-project/vllm/pull/56258",
+          "author": "foraxe",
+          "updated_at": "2026-09-11T22:08:00Z"
+        },
+        {
+          "number": 59976,
+          "title": "[Model Runner V2] Optional post-capture warmup of every decode batch size, logits row count and graph size",
+          "url": "https://github.com/vllm-project/vllm/pull/59976",
+          "author": "nbommi19",
+          "updated_at": "2026-10-13T02:47:08Z"
+        },
+        {
+          "number": 41834,
+          "title": "[New Model][Nvidia] Add SM12x support for DeepSeek V4 Flash with essential fixes",
+          "url": "https://github.com/vllm-project/vllm/pull/41834",
+          "author": "jasl",
+          "updated_at": "2026-09-19T05:54:51Z"
+        },
+        {
+          "number": 57678,
+          "title": "[Refactor][Model Loader] Share post-load module iteration order",
+          "url": "https://github.com/vllm-project/vllm/pull/57678",
+          "author": "aoshen02",
+          "updated_at": "2026-09-23T10:11:33Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:vllm-project/vllm is:pr is:open \"w13_weight_packed\" \"offload\"",
+      "total": 0,
+      "incomplete": false,
+      "items": []
+    },
+    {
+      "query": "repo:sgl-project/sglang is:pr is:open \"41351\" in:body",
+      "total": 0,
+      "incomplete": false,
+      "items": []
+    },
+    {
+      "query": "repo:sgl-project/sglang is:pr is:open \"modelopt\" \"deterministic\"",
+      "total": 13,
+      "incomplete": false,
+      "items": [
+        {
+          "number": 38900,
+          "title": "[Qwen4] Release loader parameter snapshot before quantization post-processing",
+          "url": "https://github.com/sgl-project/sglang/pull/38900",
+          "author": "200lz",
+          "updated_at": "2026-10-10T03:31:03Z"
+        },
+        {
+          "number": 36788,
+          "title": "[AMD] Add dense NVFP4 support for gfx1201",
+          "url": "https://github.com/sgl-project/sglang/pull/36788",
+          "author": "jyohukuchan",
+          "updated_at": "2026-08-28T11:04:47Z"
+        },
+        {
+          "number": 35259,
+          "title": "[Model Loader] Harden startup weight-load overlap and expand model coverage",
+          "url": "https://github.com/sgl-project/sglang/pull/35259",
+          "author": "yh0903",
+          "updated_at": "2026-09-30T19:53:35Z"
+        },
+        {
+          "number": 39519,
+          "title": "[Bugfix] Honor per-module quantization settings in Persimmon",
+          "url": "https://github.com/sgl-project/sglang/pull/39519",
+          "author": "gpulost",
+          "updated_at": "2026-09-15T04:07:57Z"
+        },
+        {
+          "number": 33036,
+          "title": "[diffusion] feat: overlap declared-parallel pipeline stages",
+          "url": "https://github.com/sgl-project/sglang/pull/33036",
+          "author": "mickqian",
+          "updated_at": "2026-08-21T00:07:18Z"
+        },
+        {
+          "number": 44842,
+          "title": "[Perf] deepseek_v4: run FlashInfer autotune for block-FP8 models served as MXFP8",
+          "url": "https://github.com/sgl-project/sglang/pull/44842",
+          "author": "kpham-sgl",
+          "updated_at": "2026-10-17T04:25:30Z"
+        },
+        {
+          "number": 38921,
+          "title": "[Kernel][FP8] Fuse SiluAndMul with static FP8 quantization",
+          "url": "https://github.com/sgl-project/sglang/pull/38921",
+          "author": "Taimys",
+          "updated_at": "2026-09-15T02:58:04Z"
+        },
+        {
+          "number": 43347,
+          "title": "fix(spec): assemble --speculative-token-map hot lm_head rows across vocab shards at TP>1",
+          "url": "https://github.com/sgl-project/sglang/pull/43347",
+          "author": "jvzibro",
+          "updated_at": "2026-10-09T12:50:27Z"
+        },
+        {
+          "number": 36644,
+          "title": "[Qwen3.8] Fix FP8 KV cache support in QSA",
+          "url": "https://github.com/sgl-project/sglang/pull/36644",
+          "author": "LingZ315",
+          "updated_at": "2026-09-14T09:42:18Z"
+        },
+        {
+          "number": 42406,
+          "title": "[cake_kernels] opt-in model routes: Qwen3.5 GDN prefill/decode, FP8 grouped MoE, NVFP4 warp-decode MoE (SGLANG_CAKE_ROUTES) + Qwen3.5 e2e report",
+          "url": "https://github.com/sgl-project/sglang/pull/42406",
+          "author": "yyihuang",
+          "updated_at": "2026-10-07T04:35:39Z"
+        },
+        {
+          "number": 36556,
+          "title": "fix(qsa): support SM120/SM121 sparse decode paths",
+          "url": "https://github.com/sgl-project/sglang/pull/36556",
+          "author": "poorpaper",
+          "updated_at": "2026-09-14T09:41:37Z"
+        },
+        {
+          "number": 40235,
+          "title": "[Qwen4-Exp] Add host staging for file-backed PLE",
+          "url": "https://github.com/sgl-project/sglang/pull/40235",
+          "author": "Dev-Jahn",
+          "updated_at": "2026-10-03T15:44:33Z"
+        },
+        {
+          "number": 17356,
+          "title": "[WIP][VLM] Support Eagle2_5_VL",
+          "url": "https://github.com/sgl-project/sglang/pull/17356",
+          "author": "yuan-luo",
+          "updated_at": "2026-04-16T21:47:59Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:sgl-project/sglang is:pr is:open \"cgroup\" \"headroom\"",
+      "total": 4,
+      "incomplete": false,
+      "items": [
+        {
+          "number": 27267,
+          "title": "MEM_CACHE: add hugepage preflight and allocation modes",
+          "url": "https://github.com/sgl-project/sglang/pull/27267",
+          "author": "jeynmann",
+          "updated_at": "2026-10-12T10:14:40Z"
+        },
+        {
+          "number": 36727,
+          "title": "[Diffusion] Preserve mapped component weights during low-memory offload",
+          "url": "https://github.com/sgl-project/sglang/pull/36727",
+          "author": "kevin-mii",
+          "updated_at": "2026-10-05T10:49:15Z"
+        },
+        {
+          "number": 44540,
+          "title": "[Fix] hicache: Budget deduplicated host pools by physical ownership",
+          "url": "https://github.com/sgl-project/sglang/pull/44540",
+          "author": "HZY-Wade",
+          "updated_at": "2026-10-15T18:25:22Z"
+        },
+        {
+          "number": 38382,
+          "title": "[diffusion] Test grouped QKV shard ownership and rejection boundaries",
+          "url": "https://github.com/sgl-project/sglang/pull/38382",
+          "author": "0z5a",
+          "updated_at": "2026-09-24T07:08:55Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:sgl-project/sglang is:pr is:open \"host_memory_budget\"",
+      "total": 1,
+      "incomplete": false,
+      "items": [
+        {
+          "number": 37917,
+          "title": "[diffusion] Plan component residency from calibrated warmup records (2/4)",
+          "url": "https://github.com/sgl-project/sglang/pull/37917",
+          "author": "mickqian",
+          "updated_at": "2026-10-16T02:15:55Z"
+        }
+      ]
+    },
+    {
+      "query": "repo:sgl-project/sglang is:pr is:open \"cgroup\" \"ancestor\"",
+      "total": 1,
+      "incomplete": false,
+      "items": [
+        {
+          "number": 41274,
+          "title": "[sglang-miles] Recover disk-delta checkpoints safely across resets and retries",
+          "url": "https://github.com/sgl-project/sglang/pull/41274",
+          "author": "zianglih",
+          "updated_at": "2026-10-17T00:28:52Z"
+        }
+      ]
+    }
+  ],
+  "author_searches": [
+    {
+      "query": "repo:sgl-project/sglang is:pr author:twu3202",
+      "total": 2,
+      "items": [
+        {
+          "number": 40884,
+          "title": "[Spec] Build DFlash draft layers under their checkpoint names and refuse tensors the draft would drop",
+          "state": "open",
+          "url": "https://github.com/sgl-project/sglang/pull/40884"
+        },
+        {
+          "number": 40883,
+          "title": "[Spec] Let NEXTN and the DFlash2 selector reuse a packed target lm_head",
+          "state": "open",
+          "url": "https://github.com/sgl-project/sglang/pull/40883"
+        }
+      ]
+    },
+    {
+      "query": "repo:vllm-project/vllm is:pr author:Hivenet-Igor offload",
+      "total": 0,
+      "items": []
+    },
+    {
+      "query": "repo:sgl-project/sglang is:pr \"batch-invariant\" \"ModelOpt\"",
+      "total": 5,
+      "items": [
+        {
+          "number": 44842,
+          "title": "[Perf] deepseek_v4: run FlashInfer autotune for block-FP8 models served as MXFP8",
+          "state": "open",
+          "url": "https://github.com/sgl-project/sglang/pull/44842"
+        },
+        {
+          "number": 35451,
+          "title": "[Feature] Support PP in full prefill CUDA graphs",
+          "state": "closed",
+          "url": "https://github.com/sgl-project/sglang/pull/35451"
+        },
+        {
+          "number": 32373,
+          "title": "Fix --hicache-size allocating ~2x host memory on hybrid SWA",
+          "state": "closed",
+          "url": "https://github.com/sgl-project/sglang/pull/32373"
+        },
+        {
+          "number": 13653,
+          "title": "[POC] [CI] Setup test suite infrastructure for staged migration",
+          "state": "closed",
+          "url": "https://github.com/sgl-project/sglang/pull/13653"
+        },
+        {
+          "number": 20631,
+          "title": "[CI] Move existing unit tests into unit directory",
+          "state": "closed",
+          "url": "https://github.com/sgl-project/sglang/pull/20631"
+        }
+      ]
+    },
+    {
+      "query": "repo:vllm-project/vllm is:pr is:open \"device_loading_context\" \"NVFP4\"",
+      "total": 2,
+      "items": [
+        {
+          "number": 60009,
+          "title": "[Model][Core] Register every persistent device tensor as a parameter or buffer",
+          "state": "open",
+          "url": "https://github.com/vllm-project/vllm/pull/60009"
+        },
+        {
+          "number": 57678,
+          "title": "[Refactor][Model Loader] Share post-load module iteration order",
+          "state": "open",
+          "url": "https://github.com/vllm-project/vllm/pull/57678"
+        }
+      ]
+    }
+  ],
+  "fp8_potential_competitor": {
+    "login": "twu3202",
+    "offer": "https://github.com/sgl-project/sglang/issues/41351#issuecomment-5853051517",
+    "date": "2026-09-27",
+    "corresponding_public_fix_found": false,
+    "inspected_prs": [
+      {
+        "number": 40883,
+        "head_sha": "c5a6af23dad3076ab34ef57861b6b3adbaf5dc0e",
+        "files": [
+          "python/sglang/srt/layers/logits_processor.py",
+          "python/sglang/srt/models/qwen3_5.py",
+          "python/sglang/srt/models/qwen3_5_text.py",
+          "python/sglang/srt/speculative/eagle_worker_v2.py",
+          "python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py",
+          "python/sglang/srt/speculative/spec_utils.py",
+          "test/registered/unit/spec/test_dflash_logits.py",
+          "test/registered/unit/spec/test_spec_packed_target_lm_head.py"
+        ]
+      },
+      {
+        "number": 40884,
+        "head_sha": "685e9b74d350ea37ffd1dd9f739901837870f36b",
+        "files": [
+          "python/sglang/srt/models/dflash.py",
+          "test/registered/unit/spec/test_dflash_quantized_draft_layout.py"
+        ]
+      }
+    ]
+  },
+  "conclusion": "No exact open duplicate found for the three retained candidates. FP8 has an explicit offer to take on related work, so coordinate before submission. Search cannot reveal unpublished work. No external messages or PRs sent."
+}

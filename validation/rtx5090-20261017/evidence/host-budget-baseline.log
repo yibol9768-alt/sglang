@@ -1,0 +1,28 @@
+............FFFF....................                                     [100%]
+=================================== FAILURES ===================================
+____ TestNestedCgroup.test_parent_consumption_limits_host_pin_budget[32-v1] ____
+codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py:171: in test_parent_consumption_limits_host_pin_budget
+    assert host_memory_available_bytes() == 4 * GIB_BYTES
+E   assert 23622320128 == (4 * 1073741824)
+E    +  where 23622320128 = host_memory_available_bytes()
+____ TestNestedCgroup.test_parent_consumption_limits_host_pin_budget[32-v2] ____
+codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py:171: in test_parent_consumption_limits_host_pin_budget
+    assert host_memory_available_bytes() == 4 * GIB_BYTES
+E   assert 23622320128 == (4 * 1073741824)
+E    +  where 23622320128 = host_memory_available_bytes()
+____ TestNestedCgroup.test_parent_consumption_limits_host_pin_budget[64-v1] ____
+codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py:171: in test_parent_consumption_limits_host_pin_budget
+    assert host_memory_available_bytes() == 4 * GIB_BYTES
+E   assert 57982058496 == (4 * 1073741824)
+E    +  where 57982058496 = host_memory_available_bytes()
+____ TestNestedCgroup.test_parent_consumption_limits_host_pin_budget[64-v2] ____
+codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py:171: in test_parent_consumption_limits_host_pin_budget
+    assert host_memory_available_bytes() == 4 * GIB_BYTES
+E   assert 57982058496 == (4 * 1073741824)
+E    +  where 57982058496 = host_memory_available_bytes()
+=========================== short test summary info ============================
+FAILED codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py::TestNestedCgroup::test_parent_consumption_limits_host_pin_budget[32-v1]
+FAILED codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py::TestNestedCgroup::test_parent_consumption_limits_host_pin_budget[32-v2]
+FAILED codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py::TestNestedCgroup::test_parent_consumption_limits_host_pin_budget[64-v1]
+FAILED codex-workspaces/pr5090/gpu_payload/sources/test_host_memory_budget.py::TestNestedCgroup::test_parent_consumption_limits_host_pin_budget[64-v2]
+4 failed, 32 passed in 0.29s

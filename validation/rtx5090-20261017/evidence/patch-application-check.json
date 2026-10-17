@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "vllm",
+    "patch": "vllm-nvfp4-cpu-offload.patch",
+    "applies_to_latest_fetched_main": true,
+    "diagnostics": ""
+  },
+  {
+    "repository": "sglang",
+    "patch": "sglang-fp8-deterministic-experimental.patch",
+    "applies_to_latest_fetched_main": true,
+    "diagnostics": ""
+  },
+  {
+    "repository": "sglang-memory",
+    "patch": "sglang-host-memory-headroom.patch",
+    "applies_to_latest_fetched_main": true,
+    "diagnostics": ""
+  }
+]

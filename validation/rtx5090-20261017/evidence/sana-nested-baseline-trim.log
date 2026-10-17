@@ -1,0 +1,165 @@
+AUTOENCODER_SOURCE_ARM patched
+Private SGLang diffusion host-budget arm: baseline
+GPU guard: {"temperature_c": 41.0, "power_limit_w": 400.0, "memory_used_mib": 1830.015625, "measured_monotonic": 481914.436505825}
+[10-16 22:34:14] Auto memory policy for SanaPipelineConfig: 30.2 GiB of free device memory selects layerwise offload for image_encoder. Explicit placement flags always win, and the per-component lines below say where each one's weights landed -- see the model's cookbook page for what to expect from your memory budget.
+[10-16 22:34:14] Using layerwise offload components: image_encoder, dit. This reduces peak GPU memory and can increase latency; use --performance-mode speed for GPU-resident defaults when memory allows.
+[10-16 22:34:14] server_args: {"model_path": "/path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers", "model_subfolder": null, "model_variant": null, "model_id": null, "served_model_name": "/path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers", "backend": "auto", "attention_backend": "torch_sdpa", "enable_attention_backend_autotune": false, "attention_backend_config": {}, "component_attention_backends": {}, "cache_dit_config": null, "nccl_port": null, "enable_nccl_nvls": false, "trust_remote_code": false, "revision": null, "num_gpus": 1, "performance_mode": "auto", "base_gpu_id": 0, "gpu_ids": null, "nnodes": 1, "node_rank": 0, "dist_init_addr": null, "tp_size": 1, "sp_degree": 1, "ulysses_degree": 1, "ring_degree": 1, "kv_gather_degree": 1, "sp_split_auto": false, "dp_size": 1, "enable_cfg_parallel": false, "cfg_parallel_degree": 1, "encoder_parallel": "auto", "hsdp_replicate_dim": 1, "hsdp_shard_dim": 1, "dist_timeout": 3600, "scheduler_rpc_timeout": null, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "lora_alpha": null, "lora_merge_mode": "auto", "lora_weight_name": null, "component_paths": {}, "component_weights_paths": {}, "component_direct_gpu_weight_loading": {}, "component_quantizations": {}, "component_precisions": {}, "component_quantization_ignored_layers": {}, "load_diffusion_decoder": false, "transformer_weights_path": null, "minimax_h3_adaln_cache_path": null, "minimax_h3_adaln_online": false, "minimax_h3_adaln_plan_width": 4, "minimax_h3_adaln_host_cache_gb": 8.0, "quantization": null, "quantization_ignored_layers": null, "lora_target_modules": null, "component_residency": {"dit": "layerwise-offload", "vae": "resident", "text_encoder": "resident"}, "cpu_offload_components": null, "dit_cpu_offload": true, "direct_gpu_weight_loading": false, "dit_layerwise_offload": false, "layerwise_offload_components": ["image_encoder"], "dit_offload_prefetch_size": 0.0, "dit_layerwise_resident_layers": 27, "dit_layerwise_residency_policy": "leading", "dit_layerwise_residency_lifetime": "permanent", "layerwise_prefetch_size": {}, "layerwise_resident_layers": {}, "layerwise_residency_policy": {}, "layerwise_residency_lifetime": {}, "offload_during_compile": true, "text_encoder_cpu_offload": true, "image_encoder_cpu_offload": false, "vae_cpu_offload": false, "use_fsdp_inference": false, "pin_cpu_memory": true, "ltx2_two_stage_device_mode": null, "comfyui_mode": false, "enable_torch_compile": false, "regional_compile": false, "enable_breakable_cuda_graph": false, "bcg_text_buckets": null, "enable_layerwise_nvtx_marker": false, "warmup_mode": "off", "warmup_resolutions": null, "warmup_num_frames": null, "warmup_steps": 1, "warmup_sampling_params": null, "disable_autocast": true, "master_port": 30005, "host": "127.0.0.1", "port": 30000, "enable_metrics": false, "webui": false, "webui_port": 12312, "scheduler_port": 5613, "scheduler_ports": [5613], "batching_mode": "dynamic", "batching_max_size": 1, "batching_delay_ms": 0.0, "batching_config": null, "enable_batching_metrics": false, "strict_ports": false, "output_path": "outputs/", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "disagg_role": "monolithic", "disagg_timeout": 3600, "disagg_downstream_wait_timeout": 1800, "disagg_dispatch_policy": "round_robin", "disagg_mode": false, "disagg_instance_id": 0, "disagg_max_slots_per_instance": 8, "disagg_transfer_redundancy": 1.25, "disagg_role_device": "auto", "disagg_transfer_backend": "auto", "disagg_transfer_pool_size": 268435456, "disagg_transfer_pin_memory": "auto", "disagg_p2p_hostname": "127.0.0.1", "disagg_ib_device": null, "disagg_server_addr": null, "encoder_urls": null, "denoiser_urls": null, "decoder_urls": null, "encoder_tp": null, "denoiser_tp": null, "denoiser_sp": null, "denoiser_ulysses": null, "denoiser_ring": null, "decoder_sp": null, "pool_work_endpoint": null, "pool_result_endpoint": null, "pool_control_endpoint": null, "pool_control_advertised_endpoint": null, "log_level": "info", "log_requests": false, "log_requests_level": 2, "log_requests_format": "text", "log_requests_target": null, "uvicorn_access_log_exclude_prefixes": [], "enable_cache_report": false, "disable_conditioning_cache": false, "conditioning_cache_max_size_mb": 512.0, "enable_trace": false, "otlp_traces_endpoint": "localhost:4317", "otlp_service_name": null, "srt_encoder_url": null, "srt_encoder_connect_timeout": 3.05, "srt_encoder_timeout": 100, "pe_server_url": null, "prompt_enhancer_config": null}
+[10-16 22:34:14] Local mode: True
+[10-16 22:34:14] Starting server...
+[10-16 22:34:21] Scheduler (dp replica 0) bind at endpoint: tcp://127.0.0.1:5613
+[10-16 22:34:22] torch.compile cache: TORCHINDUCTOR_CACHE_DIR=/home/liuyibo/.cache/sgl_diffusion/torch_compile_cache/inductor TRITON_CACHE_DIR=/home/liuyibo/.cache/sgl_diffusion/torch_compile_cache/triton
+[10-16 22:34:22] Initializing distributed environment with world_size=1, device=cuda:0, timeout=3600
+[10-16 22:34:22] Setting distributed timeout to 3600 seconds
+[10-16 22:34:22] No pipeline_class_name specified, using model_index.json
+[10-16 22:34:23] Diffusers version: 0.32.0.dev0
+[10-16 22:34:23] Using pipeline from model_index.json: SanaPipeline
+[10-16 22:34:23] Loading pipeline modules...
+[10-16 22:34:23] Model already exists locally and is complete
+[10-16 22:34:23] Model path: /path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers
+[10-16 22:34:23] Diffusers version: 0.32.0.dev0
+[10-16 22:34:23] Loading pipeline modules from config: {'_class_name': 'SanaPipeline', '_diffusers_version': '0.32.0.dev0', 'scheduler': ['diffusers', 'DPMSolverMultistepScheduler'], 'text_encoder': ['transformers', 'Gemma2Model'], 'tokenizer': ['transformers', 'GemmaTokenizerFast'], 'transformer': ['diffusers', 'SanaTransformer2DModel'], 'vae': ['diffusers', 'AutoencoderDC']}
+[10-16 22:34:23] Loading required components: ['text_encoder', 'tokenizer', 'vae', 'transformer', 'scheduler']
+[10-16 22:34:23] Memory-aware component load order: ['text_encoder', 'transformer', 'vae', 'tokenizer', 'scheduler']
+
+Loading required modules:   0%|          | 0/5 [00:00<?, ?it/s][10-16 22:34:23] Loading text_encoder from /path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers/text_encoder. avail mem: 29.63 GB
+
+
+Loading safetensors checkpoint shards: 0%|          | 0/2[A
+
+Loading safetensors checkpoint shards: 50%|█████     | 1/2[A
+
+Loading safetensors checkpoint shards: 100%|██████████| 2/2[A
+Loading safetensors checkpoint shards: 100%|██████████| 2/2
+[10-16 22:34:27] Loaded text_encoder: Gemma2Model (sgl-diffusion version). model size: 4.87 GB, vram: 4.87 GB. avail GPU mem: 24.65 GB
+
+Loading required modules:  20%|██        | 1/5 [00:04<00:17,  4.32s/it][10-16 22:34:27] Loading transformer from /path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers/transformer. avail mem: 24.65 GB
+[10-16 22:34:27] Loading SanaTransformer2DModel from 1 safetensors file(s) , param_dtype: torch.bfloat16
+
+
+Loading safetensors checkpoint shards: 0%|          | 0/1[A
+
+Loading safetensors checkpoint shards: 100%|██████████| 1/1[A
+Loading safetensors checkpoint shards: 100%|██████████| 1/1
+[10-16 22:34:31] Loaded transformer: SanaTransformer2DModel (sgl-diffusion version). model size: 1.1 GB, host pageable: 1.10 GB. avail GPU mem: 24.65 GB
+
+Loading required modules:  40%|████      | 2/5 [00:08<00:12,  4.07s/it][10-16 22:34:31] Loading vae from /path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers/vae. avail mem: 24.65 GB
+The config attributes {'stacked_params_mapping': [], 'param_names_mapping': {}, 'vae_scale_factor': 32, 'temporal_compression_ratio': 4, 'spatial_compression_ratio': 32} were passed to AutoencoderDC, but are not expected and will be ignored. Please verify your config.json configuration file.
+[10-16 22:34:34] Loaded vae: AutoencoderDC (sgl-diffusion version). model size: 1.16 GB, vram: 1.16 GB. avail GPU mem: 23.50 GB
+
+Loading required modules:  60%|██████    | 3/5 [00:11<00:07,  3.79s/it][10-16 22:34:34] Loading tokenizer from /path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers/tokenizer. avail mem: 23.50 GB
+[10-16 22:34:36] Loaded tokenizer: GemmaTokenizer (sgl-diffusion version). model size: NA GB, weights: none. avail GPU mem: 23.50 GB
+
+Loading required modules:  80%|████████  | 4/5 [00:13<00:02,  2.85s/it][10-16 22:34:36] Loading scheduler from /path/to/pr5090/gpu_payload/models/Sana_600M_1024px_diffusers/scheduler. avail mem: 23.50 GB
+[10-16 22:34:36] Loaded scheduler: DPMSolverMultistepScheduler (sgl-diffusion version). model size: NA GB, weights: none. avail GPU mem: 23.50 GB
+
+Loading required modules: 100%|██████████| 5/5 [00:13<00:00,  2.63s/it]
+[10-16 22:34:36] Creating pipeline stages...
+[10-16 22:34:36] Using torch_sdpa attention backend
+[10-16 22:34:36] Pipeline instantiated
+REAL_HOST_BUDGET_CGROUP 8394301440 8663830528
+REAL_HOST_BUDGET_INIT 2412277760 2147483648
+[10-16 22:34:37] Layerwise offload host memory: 2.2 GiB available (cgroup cap 7.8 GiB, in use 5.6 GiB)
+[10-16 22:34:37] Configuring layerwise offload for transformer (SanaTransformer2DModel): transformer_blocks (28 layers)
+[10-16 22:34:37] Layerwise offload: transformer.transformer_blocks placed 27 permanent resident layers (1.04 GiB) on the device at load; no host copy is kept.
+REAL_HOST_BUDGET_REQUEST transformer.transformer_blocks 41292288 True 41292288
+[10-16 22:34:37] Layerwise offload ready for transformer (SanaTransformer2DModel) in 0.36s: groups=1, layers=28, prefetch/group=1, resident=27/28 (permanent), policy=leading
+[10-16 22:34:37] Layerwise offload summary: transformer (vram: 1.10 GB, host pinned: 0.04 GB)
+[10-16 22:34:37] Worker 0: Initialized device, model, and distributed environment.
+[10-16 22:34:37] Worker 0: Scheduler loop started.
+[10-16 22:34:37] [server-load] workers_ready_monotonic_ns=481945566606394
+[10-16 22:34:37] Diffusers version: 0.32.0.dev0
+[10-16 22:34:37] Processing 1 grouped request(s)
+[10-16 22:34:37] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=109>
+                  neg_prompt: <redacted, len=173>
+                        seed: 42
+                 infer_steps: 12
+      num_outputs_per_prompt: 1
+              guidance_scale: 4.5
+     embedded_guidance_scale: 6.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: /path/to/pr5090/gpu_payload/sana-images/baseline-nested-0.png
+        
+[10-16 22:34:37] Running pipeline stages: ['InputValidationStage', 'prompt_encoding_stage_primary', 'TimestepPreparationStage', 'LatentPreparationStage', 'denoising_stage', 'decoding_stage']
+[10-16 22:34:37] [InputValidationStage] started...
+[10-16 22:34:37] [InputValidationStage] finished in 0.0008 seconds
+[10-16 22:34:37] [TextEncodingStage] started...
+[10-16 22:34:38] [TextEncodingStage] finished in 0.7680 seconds
+[10-16 22:34:38] [TimestepPreparationStage] started...
+[10-16 22:34:38] [TimestepPreparationStage] finished in 0.0132 seconds
+[10-16 22:34:38] [LatentPreparationStage] started...
+[10-16 22:34:38] [LatentPreparationStage] finished in 0.0053 seconds
+[10-16 22:34:38] [DenoisingStage] started...
+
+  0%|          | 0/12 [00:00<?, ?it/s]
+  8%|▊         | 1/12 [00:01<00:17,  1.60s/it]
+ 17%|█▋        | 2/12 [00:01<00:07,  1.36it/s]
+ 25%|██▌       | 3/12 [00:01<00:04,  2.14it/s]
+ 33%|███▎      | 4/12 [00:02<00:02,  2.71it/s]
+ 42%|████▏     | 5/12 [00:02<00:02,  3.27it/s]
+ 50%|█████     | 6/12 [00:02<00:01,  4.03it/s]
+ 50%|█████     | 6/12 [00:02<00:02,  2.47it/s]
+[10-16 22:34:40] [DenoisingStage] average time per step: 0.2024 seconds
+[10-16 22:34:40] [DenoisingStage] finished in 2.4315 seconds
+[10-16 22:34:40] [DecodingStage] started...
+[10-16 22:34:41] [DecodingStage] finished in 0.7828 seconds
+[10-16 22:34:41] Output saved to [1;36m/path/to/pr5090/gpu_payload/sana-images/baseline-nested-0.png[0;0m
+[10-16 22:34:41] Pixel data generated successfully in [92m4.07[0;0m seconds
+[10-16 22:34:41] Memory usage - Max peak: 8708.00 MB, Avg peak: 8708.00 MB
+REAL_SANA_CASE {"prompt": "A small red wooden cabin beside a calm lake, green pine trees and distant mountains, watercolor illustration.", "seed": 42, "seconds": 4.068060518999118, "generation_seconds": 0.0, "peak_memory_mb": 8708.0, "image_path": "/path/to/pr5090/gpu_payload/sana-images/baseline-nested-0.png", "pixel_sha256": "d5e2b9220d95ed7235da8842b56dc13a56722a820e5e355ce2e3f3e3b90c645a", "pixel_mean": 170.8458709716797, "pixel_std": 82.69937673387079}
+[10-16 22:34:41] Processing 1 grouped request(s)
+[10-16 22:34:41] Sampling params:
+                       width: 512
+                      height: 512
+                  num_frames: 1
+                         fps: 24
+                      prompt: <redacted, len=95>
+                  neg_prompt: <redacted, len=173>
+                        seed: 17
+                 infer_steps: 12
+      num_outputs_per_prompt: 1
+              guidance_scale: 4.5
+     embedded_guidance_scale: 6.0
+                    n_tokens: None
+                  flow_shift: None
+                  image_path: None
+                 save_output: True
+            output_file_path: /path/to/pr5090/gpu_payload/sana-images/baseline-nested-1.png
+        
+[10-16 22:34:41] Running pipeline stages: ['InputValidationStage', 'prompt_encoding_stage_primary', 'TimestepPreparationStage', 'LatentPreparationStage', 'denoising_stage', 'decoding_stage']
+[10-16 22:34:41] [InputValidationStage] started...
+[10-16 22:34:41] [InputValidationStage] finished in 0.0001 seconds
+[10-16 22:34:41] [TextEncodingStage] started...
+[10-16 22:34:41] [TextEncodingStage] finished in 0.0471 seconds
+[10-16 22:34:41] [TimestepPreparationStage] started...
+[10-16 22:34:41] [TimestepPreparationStage] finished in 0.0006 seconds
+[10-16 22:34:41] [LatentPreparationStage] started...
+[10-16 22:34:41] [LatentPreparationStage] finished in 0.0001 seconds
+[10-16 22:34:41] [DenoisingStage] started...
+
+  0%|          | 0/12 [00:00<?, ?it/s]
+  8%|▊         | 1/12 [00:00<00:01,  7.50it/s]
+ 17%|█▋        | 2/12 [00:00<00:01,  7.23it/s]
+ 25%|██▌       | 3/12 [00:00<00:01,  7.39it/s]
+ 33%|███▎      | 4/12 [00:00<00:01,  7.38it/s]
+ 42%|████▏     | 5/12 [00:00<00:00,  7.49it/s]
+ 50%|█████     | 6/12 [00:00<00:00,  7.41it/s]
+ 50%|█████     | 6/12 [00:00<00:00,  7.40it/s]
+[10-16 22:34:42] [DenoisingStage] average time per step: 0.0676 seconds
+[10-16 22:34:42] [DenoisingStage] finished in 0.8120 seconds
+[10-16 22:34:42] [DecodingStage] started...
+[10-16 22:34:42] [DecodingStage] finished in 0.0416 seconds
+[10-16 22:34:42] Output saved to [1;36m/path/to/pr5090/gpu_payload/sana-images/baseline-nested-1.png[0;0m
+[10-16 22:34:42] Pixel data generated successfully in [92m0.95[0;0m seconds
+[10-16 22:34:42] Memory usage - Max peak: 8710.00 MB, Avg peak: 8710.00 MB
+REAL_SANA_CASE {"prompt": "A ceramic teapot and two blue cups on a wooden table, soft window light, still life photograph.", "seed": 17, "seconds": 0.9522055470151827, "generation_seconds": 0.0, "peak_memory_mb": 8710.0, "image_path": "/path/to/pr5090/gpu_payload/sana-images/baseline-nested-1.png", "pixel_sha256": "7643616250442a55662bc1c604fc025ce6c27be5d22dcbc1b26f9b09afbff2dc", "pixel_mean": 111.74111557006836, "pixel_std": 91.1086827521719}
+[10-16 22:34:43] Worker 0: Shutdown complete.
+REAL_SANA_CGROUP {"arm": "baseline", "sibling_anonymous_bytes": 536870912, "exit_code": 0, "parent_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n", "outer_memory_events": "low 0\nhigh 0\nmax 2130\noom 0\noom_kill 0\noom_group_kill 0\n", "parent_limit": "8663830528", "leaf_limit": "8394301440", "setup": "Real cgroup v2; local file cache reclaimed first, limits calibrated once at first HostPinBudget construction to about 2.25 GiB leaf / 2 GiB parent headroom; real 512 MiB sibling; unchanged budget algorithm"}
+GPU guard result: {"max_temperature_c": 49.0, "power_limit_w": 400, "exit_code": 0, "interrupted": null}

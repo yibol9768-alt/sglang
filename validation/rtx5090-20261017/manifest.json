@@ -1,0 +1,439 @@
+{
+  "prepared_at_utc": "2026-10-17T06:27:18.775205+00:00",
+  "scope": "Read-only reproduction evidence; production fixes are on three separate PR branches.",
+  "path_redaction": "Local workspace and home paths replaced with /path/to placeholders; measurements unchanged.",
+  "files": [
+    {
+      "path": "evidence/competition-status-2026-10-17.json",
+      "sha256": "3ac2aee7b4f6315457e9c7093f7f5634bd474b9ed27b7b65fce29300af56dec8"
+    },
+    {
+      "path": "evidence/final-diff-audit.json",
+      "sha256": "29feaf5ede09e76b2f62a2ea7f47f370d1b94b957f4aa5113eb512410430efe1"
+    },
+    {
+      "path": "evidence/host-budget-baseline.log",
+      "sha256": "3e26f77fb7189e399841261ea3e476e04eb0137afa2add7676afe7ffb12f2722"
+    },
+    {
+      "path": "evidence/host-budget-live-cgroup.json",
+      "sha256": "4bbed5ada7c1059f659b22364fc52969517540ab6dc693186e3070ea67eb63b9"
+    },
+    {
+      "path": "evidence/host-budget-patched.log",
+      "sha256": "1a93dcc65fd2f5d14ec86fb4a67a3bc5b0c33caf74539c774ed2023853f40037"
+    },
+    {
+      "path": "evidence/latest-main-target-equivalence.json",
+      "sha256": "fc1a7e9e99569ff974d7bafbc9d3e1fc02602037d2d60c192b4afd4439d403cb"
+    },
+    {
+      "path": "evidence/lint-summary.json",
+      "sha256": "fa7dac68cf001ceaf4271ddf5ccca7e5e66f2553984cdda0ebfc58c7bfce185e"
+    },
+    {
+      "path": "evidence/native-fp8-pytest-baseline.log",
+      "sha256": "d11fe9d3a428d46a413b56f5cd56dad67d951a6557b78b41b70a79395cd86e58"
+    },
+    {
+      "path": "evidence/native-fp8-pytest-final.log",
+      "sha256": "df16275299abc3c88183fdf9959a5685268cb86bbcea25a22523df2664ad656a"
+    },
+    {
+      "path": "evidence/native-fp8-pytest-patched-k128.log",
+      "sha256": "9273fd7b1bcf013bd9fc52d8176f2cb36f4790bba79898b2f02a9e5563d6262f"
+    },
+    {
+      "path": "evidence/native-offload-pytest-baseline.log",
+      "sha256": "ddbe4bfc2661fab4235c930f3c8029d71b83af8828cefc23152cc3d557f52c4b"
+    },
+    {
+      "path": "evidence/native-offload-pytest-patched.log",
+      "sha256": "4ce79ddfa40f5263b99d7c97d40b844dbe0336a732e9d200f8ab7e82cd3fa088"
+    },
+    {
+      "path": "evidence/nvfp4-engine-baseline.json",
+      "sha256": "7fb95a6b9554c12e72a12c53be0d18bc6976c754776640f94a67168b1e33f5f0"
+    },
+    {
+      "path": "evidence/nvfp4-engine-patched.json",
+      "sha256": "ae3b866273bb64d07fdf7fa190e4269e5e62d7f2684059d6233c6b5a7fb7de6a"
+    },
+    {
+      "path": "evidence/nvfp4-engine-resident.json",
+      "sha256": "1d43cd3df8ccafd0832626b811b601a4a0bb51cbd826720468f1cd4bae5c7d2e"
+    },
+    {
+      "path": "evidence/nvfp4-layer-gpu-evidence.json",
+      "sha256": "6c9f4d25b63ab65fb1037f27bd9f6d3be22ca9669f304c88fda240bcd85e19eb"
+    },
+    {
+      "path": "evidence/nvfp4-main-wheel-equivalence.json",
+      "sha256": "e32a4eb79c555ad6fd75ef0a48c0d61204c2779170f44dec6b565fd6d67fab59"
+    },
+    {
+      "path": "evidence/nvfp4-real-baseline-repeat.json",
+      "sha256": "6f0c098c930ab9d39b467f73dd6d9f6b5b0d196bd56f8b34edcd8c039ded0d5b"
+    },
+    {
+      "path": "evidence/nvfp4-real-baseline-repeat.log",
+      "sha256": "402ab0ec6d1388744c283da1b48b2245a981f87781691ed003e37b3d1d7b28d6"
+    },
+    {
+      "path": "evidence/nvfp4-real-baseline.json",
+      "sha256": "54d975fafe42a68ecb4b66ad0554df5b309f86c578d57f62ab3ae9130a335937"
+    },
+    {
+      "path": "evidence/nvfp4-real-baseline.log",
+      "sha256": "05b4094afbe635fc846dc9b4359efbcb521d9aa7b3a5c860a825109ef3066e38"
+    },
+    {
+      "path": "evidence/nvfp4-real-comparison.json",
+      "sha256": "ae9cfa9b37794c3376e99647078fcb2d84587646a12d94b897d427155842dd8a"
+    },
+    {
+      "path": "evidence/nvfp4-real-patched-graph.json",
+      "sha256": "763b9d26ae56675ebe91b092010278b2b750d4bd902ec9969c36faf56f24c4dd"
+    },
+    {
+      "path": "evidence/nvfp4-real-patched-graph.log",
+      "sha256": "db8b1d89c64134296abfa1c6f99e00a8a8787b18fdc8ac9c98d362b275e72b08"
+    },
+    {
+      "path": "evidence/nvfp4-real-patched-repeat.json",
+      "sha256": "c892fb7a967555f38ef5d4c2d930d101dc082d04c2a31c8a7138e092d6da0ac5"
+    },
+    {
+      "path": "evidence/nvfp4-real-patched-repeat.log",
+      "sha256": "e2948d5e35bc23adaab67ba5994ec160185c37061464db7f1092677ce95a4380"
+    },
+    {
+      "path": "evidence/nvfp4-real-patched.json",
+      "sha256": "a8fcaaa1c8e8f210ba5ddad18c1a11cef951f3e48ebdcb3eb6a0dcf1cfc2c489"
+    },
+    {
+      "path": "evidence/nvfp4-real-patched.log",
+      "sha256": "03019b8783faa2d4521066055e3f6353b1bdf8c0af5e1be05247bea0ce415078"
+    },
+    {
+      "path": "evidence/nvfp4-real-resident.json",
+      "sha256": "69add7295a090d58defc40513f0baaabb99770330ed4bc33f54d4394fa69a756"
+    },
+    {
+      "path": "evidence/nvfp4-real-resident.log",
+      "sha256": "13a47c9935fd06e2d253880c8e2f52fd82051086c8914db647930bfb4dab35e5"
+    },
+    {
+      "path": "evidence/offload-regression-gpu-results.json",
+      "sha256": "6b386a9df1687573de6ebe9ef1697190b28e79b2d1b3a2632adca90c041bce09"
+    },
+    {
+      "path": "evidence/patch-application-check.json",
+      "sha256": "1767929f9e4e780ab2fe85651d1d5d3063b400ac8e2318a72118065c6a7af943"
+    },
+    {
+      "path": "evidence/sana-cgroup-baseline.json",
+      "sha256": "2a5e832270584dbd961f4b2d2012fc8bcee2b89c7fa9c035b8a89de024677e78"
+    },
+    {
+      "path": "evidence/sana-cgroup-patched.json",
+      "sha256": "1ebc4286fded2f1c794d8a6a7d1ef9a9e8c887b8cd312c3d6f8fd4ff88150e4a"
+    },
+    {
+      "path": "evidence/sana-nested-baseline-trim.log",
+      "sha256": "0c5b42c37f41d5b032456e62e3d14e6be2d3753c5434e8a964b52486baa7e3db"
+    },
+    {
+      "path": "evidence/sana-nested-patched-trim.log",
+      "sha256": "0cc294c32a2ab4b5466443dc58461519f360459f95b492a6b8e3fe2903e9246b"
+    },
+    {
+      "path": "evidence/sana-real-baseline-nested.json",
+      "sha256": "3277bdbf11f2e87d7898e4c0b368e0695958294ef2472e03b34b01901514da8c"
+    },
+    {
+      "path": "evidence/sana-real-baseline.json",
+      "sha256": "96155c65307845da8b821b09bf5369f0b2c9a77c8eda1cebfa2225bc3a762832"
+    },
+    {
+      "path": "evidence/sana-real-patched-nested.json",
+      "sha256": "c023dc544b32c1392486cdb6db8d18f710f7bb33129a9bc96345d460fb3ae9dc"
+    },
+    {
+      "path": "evidence/sana-real-patched.json",
+      "sha256": "354f4cdae8bd577436a1ae326c0fce4a5b2b179af9e2aaf1285854d583a88eb0"
+    },
+    {
+      "path": "evidence/sglang-fp8-gpu-evidence.json",
+      "sha256": "6d196833cf877758de42b71c76c129617d37fa90ff3c54721a654aa2ba05ef92"
+    },
+    {
+      "path": "evidence/sglang-gsm8k32-baseline.json",
+      "sha256": "1111882e77f90e7dbfbb4a7ef40a0bee03c2d2b6ce885edf0a34f5971ff22e17"
+    },
+    {
+      "path": "evidence/sglang-gsm8k32-patched.json",
+      "sha256": "2db87a4705ab540cbf52175275d58d719b11c8317e641121a0b65c55da3c5acb"
+    },
+    {
+      "path": "evidence/sglang-main-wheel-equivalence.json",
+      "sha256": "4aaaaf5a029bd11710d6595362852ce502d3ddd9e8c87c984388ce2a2b419f12"
+    },
+    {
+      "path": "evidence/sglang-memory-precommit.log",
+      "sha256": "cf8d6ac54e7852e6dea81616361aaa45ba267ebe5f8bdbaacf354a89e1b52ea6"
+    },
+    {
+      "path": "evidence/sglang-precommit.log",
+      "sha256": "a711af74f34d45c9f9f47728727691be54ead689bb5705a26649f17f8cc22d48"
+    },
+    {
+      "path": "evidence/sglang-real-baseline-graph.json",
+      "sha256": "c5ea2eb52b0aa22ef52c1b0aafe42682dcaed8968731898d91a597ecf3c75ba1"
+    },
+    {
+      "path": "evidence/sglang-real-baseline.json",
+      "sha256": "f14ae91a1900eee2530fc5bd363ada40e30499cb29bab6be8aea4ad6b70b378c"
+    },
+    {
+      "path": "evidence/sglang-real-patched-graph.json",
+      "sha256": "a070421710ba8dd00f2061934181bac32cc4e05a2b217a86bc2e9c5d63ec6a20"
+    },
+    {
+      "path": "evidence/sglang-real-patched.json",
+      "sha256": "a8724998e4a6a40db31d46b4981e1ea15f28894f3d22e1bd7f7716f4f4748feb"
+    },
+    {
+      "path": "evidence/vllm-precommit.log",
+      "sha256": "a6b120ed551bd22d69cd2057d19055cb31192daa3b5d369b7fdd6e22ce6cdea2"
+    },
+    {
+      "path": "patches/sglang-fp8-deterministic-experimental.patch",
+      "sha256": "6bbc86f3af39aad91b73330daf65197485186561982b084bb83742772797055e"
+    },
+    {
+      "path": "patches/sglang-host-memory-headroom.patch",
+      "sha256": "fbbb49b6b4e7968ef5a2d98dbd99c56afd0594a465cb7d2f35599e4a1f901442"
+    },
+    {
+      "path": "patches/vllm-nvfp4-cpu-offload.patch",
+      "sha256": "30e045e51c76b2ef0f9a80d5d4d2b4e4799c858c119cbf5e4661c7977187ed4b"
+    },
+    {
+      "path": "reproduce/build_tiny_nvfp4_checkpoint.py",
+      "sha256": "a8d8d7a11c11b6c13b7ee4a10b52f3e37cc312c093c47160d710d4ef727513e8"
+    },
+    {
+      "path": "reproduce/compare_nvfp4_real_runs.py",
+      "sha256": "bd866f60e7e2c11f3decece819caa90a446c20260f67e5dfc9cf365900a23494"
+    },
+    {
+      "path": "reproduce/download_one_model.py",
+      "sha256": "0a8ec8a980053b615c42942d5346e141508add6a9d411a8625058bcdaf626887"
+    },
+    {
+      "path": "reproduce/download_real_models.py",
+      "sha256": "83a6ff0827b786fa2d18db30f67e16c695c5dc6569b60e5f1af0b68ec42df1f6"
+    },
+    {
+      "path": "reproduce/env-sglang.freeze.txt",
+      "sha256": "c253b0812f884fd1075f30e44616ca9dcab77e3052bec635f6c7d198163c64a2"
+    },
+    {
+      "path": "reproduce/env-vllm.freeze.txt",
+      "sha256": "47cbc511d248f50727cddf1e08343f29a1feb28589fe5e895390c06280bb841f"
+    },
+    {
+      "path": "reproduce/gpu_guard.py",
+      "sha256": "ce9e0104684b3a5d7a42551b76df6a4af928d40fd84490cb1f921df9b35cff1a"
+    },
+    {
+      "path": "reproduce/gsm8k-LICENSE.txt",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b"
+    },
+    {
+      "path": "reproduce/gsm8k-first32.json",
+      "sha256": "23aec1e5269c09ebd99dad2898490f0b744cc48d1a385472e1622bc35e82b26e"
+    },
+    {
+      "path": "reproduce/host_budget_live_cgroup.py",
+      "sha256": "1c1cdfeb32836da4f2c15618301184b05dc63ec2b34374bc9956fd6db8f30f99"
+    },
+    {
+      "path": "reproduce/installed_precision.py",
+      "sha256": "d28ae6a07c0b5a6b1a4a9026a59d3b108505a19954251704db9869668fd59b84"
+    },
+    {
+      "path": "reproduce/installed_vae_loader.py",
+      "sha256": "4881371a0c6e200cbee2880a656dc002d1d0e329d07cc20351ad633c88386dc0"
+    },
+    {
+      "path": "reproduce/live_sana_cgroup.py",
+      "sha256": "190f9963e600416d9dc50a378a65fdb47d531959d6ae7dbf4ef919f2d144a4eb"
+    },
+    {
+      "path": "reproduce/nvfp4_engine_smoke.py",
+      "sha256": "facc3639feebba9642f49315cc943cd18f85949163a24c68f3ccc9c435a2643e"
+    },
+    {
+      "path": "reproduce/nvfp4_offload_layer_gpu.py",
+      "sha256": "8503f6340a3f412c07572112211b7c15781e20a1ed40c87a8788f5b66f954e91"
+    },
+    {
+      "path": "reproduce/nvfp4_pretrained_linear_preflight.py",
+      "sha256": "7375dc0f5609679436412949845bf47194fc56d02f62b5e962c9fcc2fb176014"
+    },
+    {
+      "path": "reproduce/nvfp4_real_model.py",
+      "sha256": "0488e7c0015c887d74279cfd68cb688dffa2c3a66022786cd8a4873313141587"
+    },
+    {
+      "path": "reproduce/nvfp4_real_model_initial.py",
+      "sha256": "19cc76bfe850377b2208a506d6a19227a1838d37f227e8526bdc9cfd1a96aa82"
+    },
+    {
+      "path": "reproduce/prepare_autoencoder_arm.py",
+      "sha256": "679a4cfdfff9b0296a8638a1d06e747f13d8ba5b97bbf7168fc094195139e09b"
+    },
+    {
+      "path": "reproduce/prepare_host_budget_arm.py",
+      "sha256": "6d38e7afc940421940f3a1647d213333e8d9f54be63669513f7d5d73c05da157"
+    },
+    {
+      "path": "reproduce/prepare_sglang_arm.py",
+      "sha256": "4bf61e90a9e52b83ed9537aa045be13f8b8b2c8f0f6fbf33a45302a1ba7ec10f"
+    },
+    {
+      "path": "reproduce/probe_sglang_fp8_gpu.py",
+      "sha256": "ec65e8351af07dde5fe511993183b1f6e32b6da5aee577eb39c2e9378891acc3"
+    },
+    {
+      "path": "reproduce/repro_offload_rename_gpu.py",
+      "sha256": "3724e83618b6b867c7ff89436d4a7e7b210b23968f9b41a067b6f67b0f3d5efb"
+    },
+    {
+      "path": "reproduce/run_guarded_model.sh",
+      "sha256": "94cec58e8cf1e4b6a9d05a58bac9e79e95341b5478f7f6220d04258b71d7820c"
+    },
+    {
+      "path": "reproduce/run_sglang_regression_pytest.py",
+      "sha256": "aff013ff3de03f1c785d8a2bd5c7f8f4ff4be5e96dbeeaaaa25618e1178bf926"
+    },
+    {
+      "path": "reproduce/run_vae_loader_pytest.py",
+      "sha256": "6f94b09e8c633d1dfb913f9d9d0613e75ce152ac2aeb91ae412907c0a8718dfa"
+    },
+    {
+      "path": "reproduce/run_vllm_regression_pytest.py",
+      "sha256": "5ce22f609a5c76e7e6b72f4540eec310c62238db63b0b384fbec2eda61e6178a"
+    },
+    {
+      "path": "reproduce/sana_real_model.py",
+      "sha256": "9d8b6d359660ff3b01ed720f41e3d53f3641abd4a11a738c3af918b317f4c006"
+    },
+    {
+      "path": "reproduce/sglang_gsm8k_smoke.py",
+      "sha256": "252782718ca7759c70ec6650129336f12282540300b57326515edf7655b94282"
+    },
+    {
+      "path": "reproduce/sglang_real_model.py",
+      "sha256": "98f6af861c7578413620216d734892c70cc803c1378906f994dc968ad9189f22"
+    },
+    {
+      "path": "reproduce/sources/autoencoder_dc_baseline.py",
+      "sha256": "a487b55fd3b3548106f109e26f3c69c6b0858a9c5b346e6bb465fbfba6076bf9"
+    },
+    {
+      "path": "reproduce/sources/autoencoder_dc_patched.py",
+      "sha256": "4328e45f7e355630512c909895b3d50339987792422d81f77b0137ad49f0f15c"
+    },
+    {
+      "path": "reproduce/sources/baseline_loader_utils.py",
+      "sha256": "f81091610299bd1a18333a1d7cd3cce7bf35211e82ae8cb05ad381e79f15554f"
+    },
+    {
+      "path": "reproduce/sources/conftest.py",
+      "sha256": "92abf3b50a0ec4b23ce0547011c4b239edebb398be2b371fe8930209ded451f7"
+    },
+    {
+      "path": "reproduce/sources/network_main.py",
+      "sha256": "335811df5b7125ffa02dd12a206c3f42977b35091fe83618db4b511ad1ad1968"
+    },
+    {
+      "path": "reproduce/sources/nvfp4_method.py",
+      "sha256": "23f060d634bb9322678a2b36685ecdc457488d77a11ddac0b3268aa4a1445eec"
+    },
+    {
+      "path": "reproduce/sources/patched_loader_utils.py",
+      "sha256": "e4f019d1bd7a842ad42070dc04e21924af526bce24237c507c6b09db616994d1"
+    },
+    {
+      "path": "reproduce/sources/sglang_fp8_utils.py",
+      "sha256": "3dfae879697353e75922e117d6a855e6d4d279ba261da8f5bf9657f666e5b73e"
+    },
+    {
+      "path": "reproduce/sources/sglang_gemm_fp8_kernel.py",
+      "sha256": "44574ba699f1e8905ff37ebeffbab402fac2536f932d517bcc9a4eccf99f2d32"
+    },
+    {
+      "path": "reproduce/sources/sglang_host_memory_budget.py",
+      "sha256": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"
+    },
+    {
+      "path": "reproduce/sources/sglang_host_memory_budget_baseline.py",
+      "sha256": "b080d9a5c8032633a0e36858e0500c8d476f9557fa30a5d3cdccfdc9bb3a987c"
+    },
+    {
+      "path": "reproduce/sources/sglang_modelopt_baseline.py",
+      "sha256": "1cb1793351a010ddeed1479866d4b8e6fbfcb6e1ed9034150610d0489ce14d79"
+    },
+    {
+      "path": "reproduce/sources/sglang_modelopt_quant.py",
+      "sha256": "c53e616fba52f973a4f85750e97d8089b6bee507aafddfec01b3d494a3e654d0"
+    },
+    {
+      "path": "reproduce/sources/sglang_quant_fp8_kernel.py",
+      "sha256": "f5b428f2cb51b7707b19dd7b55e9ef61818a5f99b1cb382cd5e811429dd46806"
+    },
+    {
+      "path": "reproduce/sources/test_cpu_offload.py",
+      "sha256": "d00863f158cd6cf2c324f67b91ea03d9d49ca8d4a702e24df51d6f8d97d64f66"
+    },
+    {
+      "path": "reproduce/sources/test_host_memory_budget.py",
+      "sha256": "f34310efb015d38ca600498122a43daa2c6e461ea64e0d696fcc59a3825944ea"
+    },
+    {
+      "path": "reproduce/sources/test_sm120_fp8_linear.py",
+      "sha256": "92c69c4372f2e4e9cd631f5d407018a4baabd2bcf49b3343d00192b123d1aedf"
+    },
+    {
+      "path": "reproduce/sources/test_vae_loader.py",
+      "sha256": "655caf914777b3d1ef086a52105c80f4d5087c0044e5f966792476b88376238a"
+    },
+    {
+      "path": "reproduce/sources/vae_loader_main.py",
+      "sha256": "7d08ccc3b8d9183146bdbc61964239f65dbf56c7b3447b834746b64b879b7986"
+    },
+    {
+      "path": "reproduce/test_host_budget_linux.py",
+      "sha256": "21b758178ce0b29e0815758665e91edbf81a0fb795789e566472d3f95bf0b032"
+    },
+    {
+      "path": "reproduce/test_offload_case_gpu.py",
+      "sha256": "b011d5787816570f30703445709b53afb90de6e1f65ee6e6179bdf2d72380a8e"
+    },
+    {
+      "path": "reproduce/tune_deterministic_fp8.py",
+      "sha256": "98dcc0c392d4016bef04a3622ed483aa5cc138bf6e653f8624cc2ff5130ee02f"
+    },
+    {
+      "path": "reproduce/validate_sglang_model_configs.py",
+      "sha256": "e0645c00c655cba38e6a75eb4e294d090fd40293d8f1c7377ae6be574156a7ad"
+    },
+    {
+      "path": "reproduce/wait_model_and_run.py",
+      "sha256": "d7976a49913f642f2a620464da4a177a3c15cc1524d689e3fb56c09e51e54d38"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "arm": "baseline",
+    "uva_enabled": true,
+    "passed": false
+  },
+  {
+    "arm": "baseline",
+    "uva_enabled": false,
+    "passed": false
+  },
+  {
+    "arm": "patched",
+    "uva_enabled": true,
+    "passed": true
+  },
+  {
+    "arm": "patched",
+    "uva_enabled": false,
+    "passed": true
+  }
+]

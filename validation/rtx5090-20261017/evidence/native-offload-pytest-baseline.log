@@ -1,0 +1,26 @@
+GPU guard: {"temperature_c": 42.0, "power_limit_w": 400.0, "utilization_pct": 0.0, "memory_used_mib": 1414.0}
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+____________ test_nvfp4_expert_rename_preserves_cpu_offload[False] _____________
+codex-workspaces/pr5090/selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py:141: in test_nvfp4_expert_rename_preserves_cpu_offload
+    assert _is_offloaded(parameter), name
+E   AssertionError: w13_weight
+E   assert False
+E    +  where False = _is_offloaded(Parameter containing:\ntensor([[[182, 167,  29,  ...,  79, 245,  27],\n         [ 43, 205,  72,  ...,   8, 111,  31],\n  ... 131,  ..., 166,  94, 245],\n         [ 73, 106, 105,  ..., 213,  80, 129]]], device='cuda:0',\n       dtype=torch.uint8))
+_____________ test_nvfp4_expert_rename_preserves_cpu_offload[True] _____________
+codex-workspaces/pr5090/selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py:141: in test_nvfp4_expert_rename_preserves_cpu_offload
+    assert _is_offloaded(parameter), name
+E   AssertionError: w13_weight
+E   assert False
+E    +  where False = _is_offloaded(Parameter containing:\ntensor([[[ 91, 159,  70,  ..., 201, 149,  58],\n         [ 41, 109, 221,  ...,  29, 137,   1],\n  ... 170,  ..., 242, 223,  27],\n         [253, 181,  99,  ..., 251,  89, 236]]], device='cuda:0',\n       dtype=torch.uint8))
+=============================== warnings summary ===============================
+codex-workspaces/pr5090/envs/vllm/lib/python3.12/site-packages/_pytest/config/__init__.py:1345
+  /path/to/pr5090/envs/vllm/lib/python3.12/site-packages/_pytest/config/__init__.py:1345: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED codex-workspaces/pr5090/selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py::test_nvfp4_expert_rename_preserves_cpu_offload[False]
+FAILED codex-workspaces/pr5090/selected-vllm/tests/basic_correctness/cpu_offload/test_cpu_offload.py::test_nvfp4_expert_rename_preserves_cpu_offload[True]
+2 failed, 8 deselected, 1 warning in 3.39s
+GPU guard result: {"max_temperature_c": 43.0, "power_limit_w": 400, "exit_code": 1, "interrupted": null}

@@ -1,0 +1,114 @@
+{
+  "scope": "Real pretrained Qwen3-30B-A3B NVFP4; TP1, Marlin MoE/Cutlass dense, eight greedy prompts capped at 48 output tokens. Repeated starts expose unmodified output variation; no bitwise output-equivalence claim.",
+  "capacity": {
+    "extra_cuda_allocated_bytes_freed": 1107296256,
+    "restored_expert_bytes": 1107296256,
+    "extra_freed_equals_restored": true
+  },
+  "comparisons": [
+    {
+      "arms": [
+        "resident",
+        "baseline"
+      ],
+      "same_expert_hashes": true,
+      "expert_tensors": 96,
+      "identical_token_sequences": 5,
+      "prompts": 8,
+      "first_step_common_topk_max_abs_logprob_difference": 3.8749637603759766,
+      "same_prefix_common_topk_max_abs_logprob_difference": 5.625
+    },
+    {
+      "arms": [
+        "baseline",
+        "patched"
+      ],
+      "same_expert_hashes": true,
+      "expert_tensors": 96,
+      "identical_token_sequences": 4,
+      "prompts": 8,
+      "first_step_common_topk_max_abs_logprob_difference": 4.374963760375977,
+      "same_prefix_common_topk_max_abs_logprob_difference": 4.875
+    },
+    {
+      "arms": [
+        "baseline",
+        "baseline-repeat"
+      ],
+      "same_expert_hashes": true,
+      "expert_tensors": 96,
+      "identical_token_sequences": 3,
+      "prompts": 8,
+      "first_step_common_topk_max_abs_logprob_difference": 5.749964714050293,
+      "same_prefix_common_topk_max_abs_logprob_difference": 5.749964714050293
+    },
+    {
+      "arms": [
+        "patched",
+        "patched-repeat"
+      ],
+      "same_expert_hashes": true,
+      "expert_tensors": 96,
+      "identical_token_sequences": 5,
+      "prompts": 8,
+      "first_step_common_topk_max_abs_logprob_difference": 3.0983638763427734,
+      "same_prefix_common_topk_max_abs_logprob_difference": 4.874992370605469
+    },
+    {
+      "arms": [
+        "baseline-repeat",
+        "patched-repeat"
+      ],
+      "same_expert_hashes": true,
+      "expert_tensors": 96,
+      "identical_token_sequences": 3,
+      "prompts": 8,
+      "first_step_common_topk_max_abs_logprob_difference": 7.105367183685303,
+      "same_prefix_common_topk_max_abs_logprob_difference": 7.105367183685303,
+      "same_expert_scale_hashes": true,
+      "scale_parameters": 384
+    },
+    {
+      "arms": [
+        "patched",
+        "patched-graph"
+      ],
+      "same_expert_hashes": true,
+      "expert_tensors": 96,
+      "identical_token_sequences": 4,
+      "prompts": 8,
+      "first_step_common_topk_max_abs_logprob_difference": 3.75,
+      "same_prefix_common_topk_max_abs_logprob_difference": 5.499988555908203
+    }
+  ],
+  "timing_medians_seconds": {
+    "resident": 1.2104327180422843,
+    "baseline": 1.2002646470209584,
+    "patched": 1.3855368919903412,
+    "patched-graph": 1.1783446109620854,
+    "baseline-repeat": 1.2299019569763914,
+    "patched-repeat": 1.3698891260428354
+  },
+  "gsm8k32": {
+    "baseline-repeat": {
+      "correct": 29,
+      "total": 32,
+      "missing_explicit_answer": 2,
+      "incorrect_indices": [
+        8,
+        12,
+        13
+      ]
+    },
+    "patched-repeat": {
+      "correct": 30,
+      "total": 32,
+      "missing_explicit_answer": 1,
+      "incorrect_indices": [
+        12,
+        13
+      ]
+    }
+  },
+  "limits": "The 32 examples are a small smoke check, not a full accuracy benchmark or proof of numerical equivalence. The same dataset, prompt, extraction and token cap are used in both repeated arms. Graph is candidate compatibility coverage, not a same-mode baseline comparison."
+}

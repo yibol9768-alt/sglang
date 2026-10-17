@@ -1,0 +1,39 @@
+{
+  "vllm_pre_commit": {
+    "exit_code": 0,
+    "files": [
+      "tests/basic_correctness/cpu_offload/test_cpu_offload.py",
+      "vllm/model_executor/layers/quantization/base_config.py",
+      "vllm/model_executor/layers/quantization/compressed_tensors/compressed_tensors_moe/compressed_tensors_moe_w4a4_nvfp4.py",
+      "vllm/model_executor/model_loader/utils.py"
+    ],
+    "passed": [
+      "ruff check",
+      "ruff format",
+      "typos",
+      "mypy",
+      "test CI tethering",
+      "SPDX headers",
+      "lazy imports",
+      "forbidden imports",
+      "new torch.cuda API check",
+      "config validation",
+      "boolean context manager check"
+    ],
+    "note": "Recorded from the successful full pre-commit invocation; irrelevant hooks skipped."
+  },
+  "sglang": [
+    "ruff selected checks passed",
+    "isort check passed",
+    "ruff format check passed",
+    "git diff --check passed"
+  ],
+  "sglang_full_pre_commit": {
+    "exit_code": 0,
+    "logs": [
+      "sglang-precommit.log",
+      "sglang-memory-precommit.log"
+    ],
+    "note": "All applicable hooks passed; sparse CI support files made available and Python 3.12 used."
+  }
+}

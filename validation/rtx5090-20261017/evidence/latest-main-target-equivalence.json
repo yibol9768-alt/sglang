@@ -1,0 +1,52 @@
+[
+  {
+    "repo": "sglang",
+    "path": "python/sglang/srt/layers/quantization/modelopt_quant.py",
+    "definition": "ModelOptFp8LinearMethod",
+    "hashes": [
+      "0aa7d97a2c94be6ad93cceb6f6d0adc2d4e37d56c27dcad0f59a5798b97e8171",
+      "0aa7d97a2c94be6ad93cceb6f6d0adc2d4e37d56c27dcad0f59a5798b97e8171"
+    ],
+    "unchanged": true
+  },
+  {
+    "repo": "sglang",
+    "path": "python/sglang/srt/layers/quantization/fp8_utils.py",
+    "definition": "apply_fp8_linear_bmm_flashinfer",
+    "hashes": [
+      "ba4d2a6f5c0f24ac9c1ccaa070388931acd4ba99722857d1a486cdc53cee0f3d",
+      "ba4d2a6f5c0f24ac9c1ccaa070388931acd4ba99722857d1a486cdc53cee0f3d"
+    ],
+    "unchanged": true
+  },
+  {
+    "repo": "sglang",
+    "path": "python/sglang/kernels/ops/gemm/fp8_kernel.py",
+    "definition": "scaled_mm_kernel",
+    "hashes": [
+      "f39ae23ec443a5f1aa3d0b3622e7472aefcde2031f97681454be7792426a5d9c",
+      "f39ae23ec443a5f1aa3d0b3622e7472aefcde2031f97681454be7792426a5d9c"
+    ],
+    "unchanged": true
+  },
+  {
+    "repo": "sglang",
+    "path": "python/sglang/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "definition": "cgroup_memory_limit_bytes",
+    "hashes": [
+      "716d391c9c795a3bedb1ce42b9155da2df97f7b8cc513042308a34c1b9f5e8dd",
+      "716d391c9c795a3bedb1ce42b9155da2df97f7b8cc513042308a34c1b9f5e8dd"
+    ],
+    "unchanged": true
+  },
+  {
+    "repo": "vllm",
+    "path": "vllm/model_executor/model_loader/utils.py",
+    "definition": "device_loading_context",
+    "hashes": [
+      "a8ec852491271279dd526c20e2d62a94ff935555b51398dc6eea11bca78b1af5",
+      "a8ec852491271279dd526c20e2d62a94ff935555b51398dc6eea11bca78b1af5"
+    ],
+    "unchanged": true
+  }
+]

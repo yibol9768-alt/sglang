@@ -1,0 +1,49 @@
+{
+  "level": "Real NVFP4 method, Marlin repack and CUDA forward; synthetic expert weights; no full model",
+  "vllm": "0.31.0",
+  "torch": "2.13.0+cu130",
+  "results": [
+    {
+      "arm": "resident",
+      "backend": "MARLIN",
+      "offload_markers": {
+        "w13_weight": false,
+        "w2_weight": false
+      },
+      "shape": [
+        8,
+        1024
+      ],
+      "finite": true,
+      "bitwise_matches_resident": true
+    },
+    {
+      "arm": "baseline",
+      "backend": "MARLIN",
+      "offload_markers": {
+        "w13_weight": false,
+        "w2_weight": false
+      },
+      "shape": [
+        8,
+        1024
+      ],
+      "finite": true,
+      "bitwise_matches_resident": true
+    },
+    {
+      "arm": "patched",
+      "backend": "MARLIN",
+      "offload_markers": {
+        "w13_weight": true,
+        "w2_weight": true
+      },
+      "shape": [
+        8,
+        1024
+      ],
+      "finite": true,
+      "bitwise_matches_resident": true
+    }
+  ]
+}

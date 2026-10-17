@@ -1,0 +1,152 @@
+{
+  "level": "Isolated main-source CUDA kernels; PDL disabled consistently in both arms",
+  "torch": "2.13.0+cu130",
+  "flashinfer": "0.7.0.post1",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cases": [
+    {
+      "n": 4096,
+      "k": 4096,
+      "small_m": 1,
+      "large_m": 64,
+      "baseline_equal": false,
+      "baseline_max_abs_delta": 0.0625,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016629163874313235,
+      "baseline_ms": 0.014800000004470348,
+      "candidate_ms": 0.018184000626206398
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "small_m": 8,
+      "large_m": 128,
+      "baseline_equal": false,
+      "baseline_max_abs_delta": 0.25,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.001659303205087781,
+      "baseline_ms": 0.01881599985063076,
+      "candidate_ms": 0.022407999262213707
+    },
+    {
+      "n": 4096,
+      "k": 4096,
+      "small_m": 120,
+      "large_m": 248,
+      "baseline_equal": true,
+      "baseline_max_abs_delta": 0.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016582738608121872,
+      "baseline_ms": 0.029055999591946602,
+      "candidate_ms": 0.0392879992723465
+    },
+    {
+      "n": 16384,
+      "k": 5120,
+      "small_m": 1,
+      "large_m": 64,
+      "baseline_equal": false,
+      "baseline_max_abs_delta": 0.25,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016558951465412974,
+      "baseline_ms": 0.03832799941301346,
+      "candidate_ms": 0.049031998962163925
+    },
+    {
+      "n": 16384,
+      "k": 5120,
+      "small_m": 8,
+      "large_m": 128,
+      "baseline_equal": true,
+      "baseline_max_abs_delta": 0.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016543177189305425,
+      "baseline_ms": 0.06439200043678284,
+      "candidate_ms": 0.0910160019993782
+    },
+    {
+      "n": 16384,
+      "k": 5120,
+      "small_m": 120,
+      "large_m": 248,
+      "baseline_equal": false,
+      "baseline_max_abs_delta": 0.5,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.00165643566288054,
+      "baseline_ms": 0.145687997341156,
+      "candidate_ms": 0.18613600730895996
+    },
+    {
+      "n": 5120,
+      "k": 6144,
+      "small_m": 1,
+      "large_m": 64,
+      "baseline_equal": true,
+      "baseline_max_abs_delta": 0.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016544394893571734,
+      "baseline_ms": 0.018991999328136444,
+      "candidate_ms": 0.025488000363111496
+    },
+    {
+      "n": 5120,
+      "k": 6144,
+      "small_m": 8,
+      "large_m": 128,
+      "baseline_equal": false,
+      "baseline_max_abs_delta": 0.015625,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016553171444684267,
+      "baseline_ms": 0.03468000143766403,
+      "candidate_ms": 0.04031199961900711
+    },
+    {
+      "n": 5120,
+      "k": 6144,
+      "small_m": 120,
+      "large_m": 248,
+      "baseline_equal": false,
+      "baseline_max_abs_delta": 1.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016554612666368484,
+      "baseline_ms": 0.049584001302719116,
+      "candidate_ms": 0.07210399955511093
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "small_m": 1,
+      "large_m": 64,
+      "baseline_equal": true,
+      "baseline_max_abs_delta": 0.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.001659488771110773,
+      "baseline_ms": 0.0043680001981556416,
+      "candidate_ms": 0.004920000210404396
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "small_m": 8,
+      "large_m": 128,
+      "baseline_equal": true,
+      "baseline_max_abs_delta": 0.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016623521223664284,
+      "baseline_ms": 0.009568000212311745,
+      "candidate_ms": 0.009127999655902386
+    },
+    {
+      "n": 96,
+      "k": 80,
+      "small_m": 120,
+      "large_m": 248,
+      "baseline_equal": true,
+      "baseline_max_abs_delta": 0.0,
+      "candidate_equal": true,
+      "candidate_reference_relative_rmse": 0.0016575590707361698,
+      "baseline_ms": 0.004600000102072954,
+      "candidate_ms": 0.00875999964773655
+    }
+  ]
+}

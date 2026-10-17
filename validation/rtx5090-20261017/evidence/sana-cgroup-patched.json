@@ -1,0 +1,10 @@
+{
+  "arm": "patched",
+  "sibling_anonymous_bytes": 536870912,
+  "exit_code": 0,
+  "parent_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "outer_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "parent_limit": "8658149376",
+  "leaf_limit": "8388612096",
+  "setup": "Real cgroup v2; local file cache reclaimed first, limits calibrated once at first HostPinBudget construction to about 2.25 GiB leaf / 2 GiB parent headroom; real 512 MiB sibling; unchanged budget algorithm"
+}
