@@ -1,0 +1,7 @@
+Using CPython 3.12.3 interpreter at: codex-workspaces/pr5090/envs/sglang-main-20261021/bin/python
+Resolved 4 packages in 1.20s
+Installed 4 packages in 522ms
+ + nvidia-cuda-cccl==13.0.85
+ + nvidia-cuda-crt==13.0.88
+ + nvidia-cuda-nvcc==13.0.88
+ + nvidia-cuda-runtime==13.0.96

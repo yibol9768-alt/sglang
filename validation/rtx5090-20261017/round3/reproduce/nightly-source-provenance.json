@@ -1,0 +1,28 @@
+{
+  "official_nightly": "55b2aef7ad",
+  "original_pr_base": "9c7b338a19350ae12f93321c525990fcb4165882",
+  "method": "Unchanged production diff from the two SGLang PRs applied cleanly to the official nightly files",
+  "patch_sha256": "f39ba8bd28aec86dd7aca42ef1ccb2b4da9320e0ad3f3c5e4d0631d496b90fbe",
+  "files": [
+    {
+      "path": "srt/layers/quantization/fp8_utils.py",
+      "baseline": "f4bad835fa33202e2144f4bcdc8410e8538c932752ba19a647f028e30cc5371d",
+      "patched": "7c5b75a59b3979773be06722b448ad3089941c59e756659e3d9ef374375ff854"
+    },
+    {
+      "path": "srt/layers/quantization/modelopt_quant.py",
+      "baseline": "1d70376af45d261e26d0e058ed813392ec06e62a4390a7be61d70cb37d5c0ed8",
+      "patched": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770"
+    },
+    {
+      "path": "kernels/ops/gemm/fp8_kernel.py",
+      "baseline": "2639985c5ea7980b2f07daace3bf2205d13381666e983d9be57f0d9032aaa69d",
+      "patched": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a"
+    },
+    {
+      "path": "multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+      "baseline": "b080d9a5c8032633a0e36858e0500c8d476f9557fa30a5d3cdccfdc9bb3a987c",
+      "patched": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"
+    }
+  ]
+}

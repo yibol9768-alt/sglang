@@ -1,0 +1,42 @@
+[
+  {
+    "arm": "baseline",
+    "path": "srt/layers/quantization/fp8_utils.py",
+    "sha256": "55b13edd5bd44b0c3c9d265410627bb65446e0ed7ab8f0c0415f77ba45b5bc4c"
+  },
+  {
+    "arm": "baseline",
+    "path": "srt/layers/quantization/modelopt_quant.py",
+    "sha256": "1c760811bf5903163a02251e9a89aa8a2f123300254869946792bcf414fe7c9a"
+  },
+  {
+    "arm": "baseline",
+    "path": "kernels/ops/gemm/fp8_kernel.py",
+    "sha256": "5acaab0445462335a9ef3673f15d5221aae7e6065d56b7ecdd38f882f92ca904"
+  },
+  {
+    "arm": "baseline",
+    "path": "multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "sha256": "b080d9a5c8032633a0e36858e0500c8d476f9557fa30a5d3cdccfdc9bb3a987c"
+  },
+  {
+    "arm": "patched",
+    "path": "srt/layers/quantization/fp8_utils.py",
+    "sha256": "d37730c18d8a5f4fe605068fac876458cbc5daea1e838c5e9f2166dbb5514ca3"
+  },
+  {
+    "arm": "patched",
+    "path": "srt/layers/quantization/modelopt_quant.py",
+    "sha256": "9fc2c227d1e7228ff9c7b015ca8d6820bc93d79b626b8aa819a42662750c58c4"
+  },
+  {
+    "arm": "patched",
+    "path": "kernels/ops/gemm/fp8_kernel.py",
+    "sha256": "44574ba699f1e8905ff37ebeffbab402fac2536f932d517bcc9a4eccf99f2d32"
+  },
+  {
+    "arm": "patched",
+    "path": "multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "sha256": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"
+  }
+]

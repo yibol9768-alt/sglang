@@ -1,0 +1,4 @@
+Using CPython 3.12.3 interpreter at: codex-workspaces/pr5090/envs/sglang-main-20261021/bin/python
+Resolved 1 package in 1.33s
+Installed 1 package in 98ms
+ + nvidia-nvvm==13.0.88

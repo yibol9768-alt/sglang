@@ -1,0 +1,457 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 7173,
+    "sha256": "11c2b27bc1a1db5dcbdf5c7acce721b06bf6eb6b4d7c757942535d197621eea1"
+  },
+  {
+    "path": "evidence/cuda130-install.log",
+    "bytes": 275,
+    "sha256": "f2b56e144fa6d5f2370e3ed50f6c85e0cfc6c31d44278a6f1387a51f073beec0"
+  },
+  {
+    "path": "evidence/cuda130-nvvm-install.log",
+    "bytes": 178,
+    "sha256": "c3b1d64e84228705349db95a5c9aaeffab634616ae8e79d3ca9b97ddacd6efe9"
+  },
+  {
+    "path": "evidence/fp8-baseline-ctk130-complete-thermal.json",
+    "bytes": 14889,
+    "sha256": "a5aac253a9e6dc0275e8729e31a9925dfa07c58342c981032947304e6dfdbeab"
+  },
+  {
+    "path": "evidence/fp8-baseline-ctk130-thermal.json",
+    "bytes": 4822,
+    "sha256": "3168e8eb4c7cdaeee1f336dfc8f2d7249f1e43c2a1f34d959d71632654d95925"
+  },
+  {
+    "path": "evidence/fp8-baseline-incomplete-toolchain.log",
+    "bytes": 110411,
+    "sha256": "785fc95c25b6d5f2582572c673284400ebcaa0fe8422146f2f6d74d4172ce84a"
+  },
+  {
+    "path": "evidence/fp8-baseline-setup-failed.log",
+    "bytes": 162135,
+    "sha256": "ca7f861b15aec7d9496a159210df4796cafb8951a5789dc14b3a4c09e37a14ea"
+  },
+  {
+    "path": "evidence/fp8-baseline-thermal.json",
+    "bytes": 8466,
+    "sha256": "408adfe511da60fd6463cd3b69408a812ff275e67cd40ee1b7d656958068a458"
+  },
+  {
+    "path": "evidence/fp8-baseline.log",
+    "bytes": 14069,
+    "sha256": "dcaff5007fc978d1221b35f48e3f4d72c89964636d2fa8c9e9dbc2709ee7d8ee"
+  },
+  {
+    "path": "evidence/fp8-model-eager-baseline-thermal.json",
+    "bytes": 24598,
+    "sha256": "343b0ea91ba8b59a34a49fa9535325897c86d1b1af6d9b46f871fcab9e7599c8"
+  },
+  {
+    "path": "evidence/fp8-model-eager-baseline.log",
+    "bytes": 57378,
+    "sha256": "316b0492d7a192ba59a0fd65b84b219e4f872293a216e25ec1ac6552e39ca44b"
+  },
+  {
+    "path": "evidence/fp8-model-eager-patched-thermal.json",
+    "bytes": 12342,
+    "sha256": "c22fe9be2a07416ba30afbb238940e4c77c5d6cf863187be88f91f78144e0880"
+  },
+  {
+    "path": "evidence/fp8-model-eager-patched.log",
+    "bytes": 57578,
+    "sha256": "524042aaaac90ee06ccef62a7058b45edbe1073ab5e34a74e2005e2ea0fdc7d6"
+  },
+  {
+    "path": "evidence/fp8-model-graph-baseline-thermal.json",
+    "bytes": 11625,
+    "sha256": "3e8ea8f73e97583f928ff41859a191001999f35232e5ddc9a70de2251d1e4dae"
+  },
+  {
+    "path": "evidence/fp8-model-graph-baseline.log",
+    "bytes": 60784,
+    "sha256": "6d1da6e79d2aeee13bc653bb86db4f78aa2d19381149376a3323ad346ca42eec"
+  },
+  {
+    "path": "evidence/fp8-model-graph-patched-thermal.json",
+    "bytes": 12879,
+    "sha256": "c9cd934592d8d0de12b3939860e7f3e697bf60821a78d1f922c60b30cb09cced"
+  },
+  {
+    "path": "evidence/fp8-model-graph-patched.log",
+    "bytes": 60928,
+    "sha256": "73625c2b31c7f31422b868852f3e4c32329667c28030ac484d7cb286af810395"
+  },
+  {
+    "path": "evidence/fp8-patched-ctk130-thermal.json",
+    "bytes": 5737,
+    "sha256": "1a1c3becb9facf842b211a4a9c20a183ad9e3a4768388b6e16a79902555f4d60"
+  },
+  {
+    "path": "evidence/fp8-patched-setup-aborted.log",
+    "bytes": 1121,
+    "sha256": "653edf80e4aa7108ea8b8f970a7c07fd9ac374705de790ac5339117ea9eca931"
+  },
+  {
+    "path": "evidence/fp8-patched.log",
+    "bytes": 11368,
+    "sha256": "12e9ad708d7b8bafd6615d286bb79037e0c49d861d9e4f2af0134b06404d9867"
+  },
+  {
+    "path": "evidence/fp8-text-baseline-thermal.json",
+    "bytes": 12173,
+    "sha256": "a1fc61e62b496e659b91266175743dcdcde7563acb0e26a37e76b9e474ef23fd"
+  },
+  {
+    "path": "evidence/fp8-text-baseline.log",
+    "bytes": 21743,
+    "sha256": "3d74375cafe0581b4b367c96ab7f86031ab4b22efb870fa24fc0a74f5537d222"
+  },
+  {
+    "path": "evidence/fp8-text-patched-thermal.json",
+    "bytes": 10009,
+    "sha256": "3e9d764b30229b8c732e009b67eb019a569bd59cc65c20543ffe57894a158b10"
+  },
+  {
+    "path": "evidence/fp8-text-patched.log",
+    "bytes": 22101,
+    "sha256": "cf71db4024461cefebb2d3530b318ab7586e9dea307389cbc4537dac28cc513d"
+  },
+  {
+    "path": "evidence/full-fp8-baseline.xml",
+    "bytes": 4600,
+    "sha256": "0bde357ee6cc4cac661c4d3e4b46b040f1687308f6d68fbfa77959bc9d6f0bc4"
+  },
+  {
+    "path": "evidence/full-fp8-patched.xml",
+    "bytes": 18811,
+    "sha256": "61180252b7eab2aeeb48248be71763e3bfdf10a1ca252a092d7527b97b54677a"
+  },
+  {
+    "path": "evidence/full-host-budget-baseline.xml",
+    "bytes": 6730,
+    "sha256": "8e91db0f3018252e0bee8a5bded5a4696712b6a9739ea4aeb47017f6ef355f57"
+  },
+  {
+    "path": "evidence/full-host-budget-patched.xml",
+    "bytes": 5190,
+    "sha256": "b59c443f89bb51a11884da627db1b8a1abedf9d2491d2a09f7bf19a382cb0d33"
+  },
+  {
+    "path": "evidence/heldout-eval-r3-full-text-baseline.json",
+    "bytes": 43068,
+    "sha256": "c7fdbb3a1be4ad4777dc01dbbe1b4aea9724f2412af4dcccdf29186647e17903"
+  },
+  {
+    "path": "evidence/heldout-eval-r3-full-text-patched.json",
+    "bytes": 41725,
+    "sha256": "6b928bc76a3eeb641ab68bfaf1e59c1879620c2de8b7a6309b6c1bc382fca5cb"
+  },
+  {
+    "path": "evidence/heldout-eval-r3-offload-base.json",
+    "bytes": 15706,
+    "sha256": "e586140e3a151de1ccf4e3b35f71ea4997eca983c9dd7a51b0646c9b1f06d764"
+  },
+  {
+    "path": "evidence/heldout-eval-r3-offload-model.json",
+    "bytes": 15453,
+    "sha256": "834662e68584cf61791f04c0292d3687ca518e2c906d12c9e5cea2a2013fb923"
+  },
+  {
+    "path": "evidence/host-budget-baseline-thermal.json",
+    "bytes": 1352,
+    "sha256": "1222350de45068b52355594ae731e316920331c80e038d648573b227fad42b18"
+  },
+  {
+    "path": "evidence/host-budget-baseline.log",
+    "bytes": 3256,
+    "sha256": "5aa80bdcd8ebdd7f5db85ef8c5eba87310a116af6031fbb6e4444891f2d36ce9"
+  },
+  {
+    "path": "evidence/host-budget-patched-thermal.json",
+    "bytes": 1352,
+    "sha256": "197bfec553be0b8770fa7d5ffaee1e0b1cc5dfacd00f85f4965bba68ef9e93f8"
+  },
+  {
+    "path": "evidence/host-budget-patched.log",
+    "bytes": 1287,
+    "sha256": "d1454475743fa612bf2f18e0f2a8b0698271efef4d1062e3f642298206f39598"
+  },
+  {
+    "path": "evidence/native-offload-exact-patched.xml",
+    "bytes": 574,
+    "sha256": "e2e49ea659d5b381914abf225917aae8f9c20cc0d1cc46b8cae74f9fb99cb1c1"
+  },
+  {
+    "path": "evidence/nightly-source-provenance.json",
+    "bytes": 1298,
+    "sha256": "820044258ce532f3429e3e103e8d912a7824511ac53fffcffee6c85ac7a42aac"
+  },
+  {
+    "path": "evidence/runtime-freeze.txt",
+    "bytes": 4323,
+    "sha256": "b900aac2919fa83c21432baa0f1dccaa0b9260fa72c25df20d923fef0e480c10"
+  },
+  {
+    "path": "evidence/sana-baseline-thermal.json",
+    "bytes": 9267,
+    "sha256": "a2ba9bcebf0737542e92d5b814abd822ccf6ff1b3e4d18f50abad4ebd167352a"
+  },
+  {
+    "path": "evidence/sana-baseline.log",
+    "bytes": 17639,
+    "sha256": "0d87f0bbc4c9d26e69d05a4e522bb0d5e2a9aa24ffe3f722264a2dbb637db2c9"
+  },
+  {
+    "path": "evidence/sana-cgroup-baseline.json",
+    "bytes": 544,
+    "sha256": "b01f46d8bad6248b90c47ec4e19e383165cf7eaabd798a6e15c86ec3df3c498e"
+  },
+  {
+    "path": "evidence/sana-cgroup-patched.json",
+    "bytes": 543,
+    "sha256": "7006e122cb623bb2f6f2c5d9f48ad82c7ae98f19144e2684cf38d168059f58a2"
+  },
+  {
+    "path": "evidence/sana-patched-thermal.json",
+    "bytes": 8579,
+    "sha256": "99ce1cdeae04a28b1d65bb4966aedd9867d2dec01da94c0437a8c092d3991c95"
+  },
+  {
+    "path": "evidence/sana-patched.log",
+    "bytes": 17805,
+    "sha256": "40e2fc6a3aa25d00cc9301c35898d344a4cc941d5a0490b3d4e67a0ccea4d3fe"
+  },
+  {
+    "path": "evidence/sana-real-baseline-nested.json",
+    "bytes": 1449,
+    "sha256": "0f7767ae66a9f28c755abcb055dce39eadc9ebfcd985ba156d24727135244587"
+  },
+  {
+    "path": "evidence/sana-real-patched-nested.json",
+    "bytes": 1446,
+    "sha256": "6b0f85589a990152b9f105135208642e734f6d267ef8b6db8ae773fb95327cf0"
+  },
+  {
+    "path": "evidence/sglang-fp8-extended-r3-full-eager-baseline.json",
+    "bytes": 10984,
+    "sha256": "40d7bc2b25d2432b5f3c5046e12453998dbcc9d555c11cd02c5c0971333da7f6"
+  },
+  {
+    "path": "evidence/sglang-fp8-extended-r3-full-eager-patched.json",
+    "bytes": 11292,
+    "sha256": "5c9bf55421daf4ab6be81fd36bf1415069745d9f41474eec28403420747fa791"
+  },
+  {
+    "path": "evidence/sglang-fp8-extended-r3-full-graph-baseline.json",
+    "bytes": 11321,
+    "sha256": "58cf21458b54b9da4df3a225490aa0c8cc432401e4e5e0da5fd2b4cdd14b02fc"
+  },
+  {
+    "path": "evidence/sglang-fp8-extended-r3-full-graph-patched.json",
+    "bytes": 11364,
+    "sha256": "544c0c80ec78295298f5f1b42275d1ba918826af07239944307d1c461c912a1f"
+  },
+  {
+    "path": "evidence/sglang-full-arm-baseline.json",
+    "bytes": 993,
+    "sha256": "2c2cbabcebdefe6fa90ce579af9c62fe3f39bbe207a1c5ac99c1589db7057176"
+  },
+  {
+    "path": "evidence/sglang-full-arm-patched.json",
+    "bytes": 992,
+    "sha256": "4c6dd1337961f6256cc930f71ffc5262593b442b4ae77e1712fa308638410b37"
+  },
+  {
+    "path": "evidence/sglang-install.log",
+    "bytes": 6421,
+    "sha256": "24eaacd57fe8e14bf9382ce2c93bb2f902253882fe7e6f3d86d7d7dfeecddb24"
+  },
+  {
+    "path": "evidence/sglang-resolve-direct.log",
+    "bytes": 5101,
+    "sha256": "40c5464f22e6cc28fb136248b4a7464b7a73a9b3a27cbc17f3d0ea176a1cc557"
+  },
+  {
+    "path": "evidence/sglang-resolve.log",
+    "bytes": 4916,
+    "sha256": "584d7d05d5faa66358016972fd069c57d5c938d05f9e4d0a677750f43e552ad1"
+  },
+  {
+    "path": "evidence/source-manifest.json",
+    "bytes": 1382,
+    "sha256": "ee7cfdd181f0d9964e4252fcf9ac62fbc24ebbdacaed39ef7d97eea3d1f56fac"
+  },
+  {
+    "path": "evidence/vllm-baseline-thermal.json",
+    "bytes": 10162,
+    "sha256": "55f1aef443d8eec67d0ec3727c5b20718e8c4ef412410ce464e6f8a837feef47"
+  },
+  {
+    "path": "evidence/vllm-native-thermal.json",
+    "bytes": 2806,
+    "sha256": "3f3e93f3745a4f2064f6e635422b205f50ce60ad187d9a8d0476ed2533fb0d57"
+  },
+  {
+    "path": "evidence/vllm-patched-thermal.json",
+    "bytes": 9428,
+    "sha256": "d070e920b998eb6f77a677fa14a1fec0f8239846af99a30bded9f13b6e04c0a3"
+  },
+  {
+    "path": "nightly-sources/baseline/kernels/ops/gemm/fp8_kernel.py",
+    "bytes": 36432,
+    "sha256": "2639985c5ea7980b2f07daace3bf2205d13381666e983d9be57f0d9032aaa69d"
+  },
+  {
+    "path": "nightly-sources/baseline/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "bytes": 13992,
+    "sha256": "b080d9a5c8032633a0e36858e0500c8d476f9557fa30a5d3cdccfdc9bb3a987c"
+  },
+  {
+    "path": "nightly-sources/baseline/srt/layers/quantization/fp8_utils.py",
+    "bytes": 103461,
+    "sha256": "f4bad835fa33202e2144f4bcdc8410e8538c932752ba19a647f028e30cc5371d"
+  },
+  {
+    "path": "nightly-sources/baseline/srt/layers/quantization/modelopt_quant.py",
+    "bytes": 136331,
+    "sha256": "1d70376af45d261e26d0e058ed813392ec06e62a4390a7be61d70cb37d5c0ed8"
+  },
+  {
+    "path": "nightly-sources/patched/kernels/ops/gemm/fp8_kernel.py",
+    "bytes": 36454,
+    "sha256": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a"
+  },
+  {
+    "path": "nightly-sources/patched/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "bytes": 13973,
+    "sha256": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"
+  },
+  {
+    "path": "nightly-sources/patched/srt/layers/quantization/fp8_utils.py",
+    "bytes": 104579,
+    "sha256": "7c5b75a59b3979773be06722b448ad3089941c59e756659e3d9ef374375ff854"
+  },
+  {
+    "path": "nightly-sources/patched/srt/layers/quantization/modelopt_quant.py",
+    "bytes": 136754,
+    "sha256": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770"
+  },
+  {
+    "path": "reproduce/cool_gpu.py",
+    "bytes": 1053,
+    "sha256": "aef0ada6f7c909b2ba3221795df0a93cdf6101e3cbccd5ebd3c6d0eb86309267"
+  },
+  {
+    "path": "reproduce/gpu_guard.py",
+    "bytes": 4956,
+    "sha256": "ce9e0104684b3a5d7a42551b76df6a4af928d40fd84490cb1f921df9b35cff1a"
+  },
+  {
+    "path": "reproduce/heldout_model_eval.py",
+    "bytes": 8288,
+    "sha256": "d830233872aeae6303c96eb8291e00e8eb2c1bad6916e50801aa9b65ba4be4b3"
+  },
+  {
+    "path": "reproduce/install_sglang_full.sh",
+    "bytes": 1566,
+    "sha256": "1e34f66f755f91fc3004aa7f66b2a0b747bd46279e75f978fb79358f0ce9699c"
+  },
+  {
+    "path": "reproduce/nightly-source-provenance.json",
+    "bytes": 1298,
+    "sha256": "820044258ce532f3429e3e103e8d912a7824511ac53fffcffee6c85ac7a42aac"
+  },
+  {
+    "path": "reproduce/prepare_sglang_full_arm.py",
+    "bytes": 2098,
+    "sha256": "d1158654a3a957930acf54d1a67c9cd1283cadd0af02cf5714ffdeff51b2d890"
+  },
+  {
+    "path": "reproduce/production-only.patch",
+    "bytes": 6125,
+    "sha256": "f39ba8bd28aec86dd7aca42ef1ccb2b4da9320e0ad3f3c5e4d0631d496b90fbe"
+  },
+  {
+    "path": "reproduce/round3_fp8_model.py",
+    "bytes": 6201,
+    "sha256": "293a2652c49c65c2afc93d1f600a189893bd1bbfd3af2aaf7b65ba5d894f5a3b"
+  },
+  {
+    "path": "reproduce/run_full_fp8_pytest.py",
+    "bytes": 873,
+    "sha256": "776708d3fb7ef78c1a07a4d948dbf35f5e46e3d1abfed84f0fb4418526e837d3"
+  },
+  {
+    "path": "reproduce/run_full_host_budget_pytest.py",
+    "bytes": 604,
+    "sha256": "51753f0187b304e408b61f6762376da3c061aa59872237ba61ecf7e17dcedaa5"
+  },
+  {
+    "path": "reproduce/run_sglang_full.sh",
+    "bytes": 1460,
+    "sha256": "29f5c932b3c15d79f102fdcde09c5e32f2743f576a51a46f4a39f952ef106db4"
+  },
+  {
+    "path": "reproduce/source-manifest.json",
+    "bytes": 1382,
+    "sha256": "ee7cfdd181f0d9964e4252fcf9ac62fbc24ebbdacaed39ef7d97eea3d1f56fac"
+  },
+  {
+    "path": "reproduce/test_host_memory_budget.py",
+    "bytes": 14499,
+    "sha256": "f34310efb015d38ca600498122a43daa2c6e461ea64e0d696fcc59a3825944ea"
+  },
+  {
+    "path": "reproduce/test_sm120_fp8_linear.py",
+    "bytes": 9302,
+    "sha256": "94eda962185bad957cca6871c27095db2a0b83c8abc12e8871632c27808e5c08"
+  },
+  {
+    "path": "sources/baseline/kernels/ops/gemm/fp8_kernel.py",
+    "bytes": 36950,
+    "sha256": "5acaab0445462335a9ef3673f15d5221aae7e6065d56b7ecdd38f882f92ca904"
+  },
+  {
+    "path": "sources/baseline/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "bytes": 13992,
+    "sha256": "b080d9a5c8032633a0e36858e0500c8d476f9557fa30a5d3cdccfdc9bb3a987c"
+  },
+  {
+    "path": "sources/baseline/srt/layers/quantization/fp8_utils.py",
+    "bytes": 104528,
+    "sha256": "55b13edd5bd44b0c3c9d265410627bb65446e0ed7ab8f0c0415f77ba45b5bc4c"
+  },
+  {
+    "path": "sources/baseline/srt/layers/quantization/modelopt_quant.py",
+    "bytes": 135346,
+    "sha256": "1c760811bf5903163a02251e9a89aa8a2f123300254869946792bcf414fe7c9a"
+  },
+  {
+    "path": "sources/patched/kernels/ops/gemm/fp8_kernel.py",
+    "bytes": 36972,
+    "sha256": "44574ba699f1e8905ff37ebeffbab402fac2536f932d517bcc9a4eccf99f2d32"
+  },
+  {
+    "path": "sources/patched/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py",
+    "bytes": 13973,
+    "sha256": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"
+  },
+  {
+    "path": "sources/patched/srt/layers/quantization/fp8_utils.py",
+    "bytes": 105646,
+    "sha256": "d37730c18d8a5f4fe605068fac876458cbc5daea1e838c5e9f2166dbb5514ca3"
+  },
+  {
+    "path": "sources/patched/srt/layers/quantization/modelopt_quant.py",
+    "bytes": 135769,
+    "sha256": "9fc2c227d1e7228ff9c7b015ca8d6820bc93d79b626b8aa819a42662750c58c4"
+  },
+  {
+    "path": "summary.json",
+    "bytes": 7086,
+    "sha256": "fd471ea53f263a5ff06809af9462f49269ac5880d2c34df4145b55d99739801a"
+  }
+]

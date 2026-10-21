@@ -1,0 +1,92 @@
+SGLANG_FULL_ARM {"arm": "patched", "official_nightly_commit": "55b2aef7ad", "package": "/home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/sglang", "versions": {"sglang": "0.5.23.dev20261020+g55b2aef7ad", "torch": "2.14.1", "triton": "3.8.0", "flashinfer-python": "0.7.2", "sglang-kernel": "0.4.10"}, "files": {"srt/layers/quantization/fp8_utils.py": "7c5b75a59b3979773be06722b448ad3089941c59e756659e3d9ef374375ff854", "srt/layers/quantization/modelopt_quant.py": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770", "kernels/ops/gemm/fp8_kernel.py": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a", "multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"}, "method": "Unchanged PR production patch applied to complete nightly files; official dependencies and extensions; no AST injection"}
+GPU guard: {"temperature_c": 46.0, "power_limit_w": 400.0, "memory_used_mib": 1254.1328125, "measured_monotonic": 256902.663702913}
+........................................................................ [ 52%]
+.................................................................        [100%]
+=============================== warnings summary ===============================
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell/blockscaled_contiguous_gather_grouped_gemm_act_fusion.py:3459
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell/blockscaled_contiguous_gather_grouped_gemm_act_fusion.py:3459: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    c_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell/moe_w4a16_kernel.py:2386
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell/moe_w4a16_kernel.py:2386: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    c_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/utils.py:29
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/utils.py:29: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    a_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/utils.py:31
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/utils.py:31: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    b_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/utils.py:34
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/utils.py:34: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    c_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/contiguous_grouped_gemm_finalize_fusion.py:968
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/contiguous_grouped_gemm_finalize_fusion.py:968: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    a_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/contiguous_grouped_gemm_finalize_fusion.py:970
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/hopper/contiguous_grouped_gemm_finalize_fusion.py:970: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    b_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_kernel_builder.py:316: 24 warnings
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_kernel_builder.py:316: DeprecationWarning: cutlass.utils.smem_allocator.SmemAllocator.capacity_in_bytes is deprecated; use cutlass.memory.SmemAllocator.capacity_in_bytes instead. It will be removed in a future release.
+    capacity = cutlass.utils.SmemAllocator.capacity_in_bytes() - cls.MBAR_RESERVE
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/fused_moe/cute_dsl/blackwell_sm12x/_moe_utils/moe_epilogue.py:319: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    cutlass.utils.LayoutEnum.COL_MAJOR, out_dtype, tile[0]
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:427
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:427: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    epi_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:2391
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/grouped_gemm_masked_blackwell.py:2391: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    c_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/cute_dsl/low_latency_blockscaled_gemm.py:102
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/cute_dsl/low_latency_blockscaled_gemm.py:102: DeprecationWarning: cutlass.utils.smem_allocator.get_smem_capacity_in_bytes is deprecated; use cutlass.memory.get_smem_capacity_in_bytes instead. It will be removed in a future release.
+    _SMEM_CAPACITY_BYTES = cutlass.utils.get_smem_capacity_in_bytes("sm_100")
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/grouped_gemm_masked_rubin.py:218
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gemm/kernels/grouped_gemm_masked_rubin.py:218: DeprecationWarning: cutlass.utils.LayoutEnum is deprecated; use cutlass.tensor_utils.LayoutEnum instead. It will be removed in a future release.
+    c_layout: utils.LayoutEnum,
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:95
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:95
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_chunked.py:95: DeprecationWarning: cutlass.utils.TensorMapUpdateMode is deprecated; use cutlass.tensor_utils.TensorMapUpdateMode instead. It will be removed in a future release.
+    from cutlass.utils import TensorMapManager, TensorMapUpdateMode
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/delta_rule_dsl/collective_store_tma.py:6
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/delta_rule_dsl/collective_store_tma.py:6: DeprecationWarning: cutlass.utils.tensormap_manager.TensorMapUpdateMode is deprecated; use cutlass.tensor_utils.TensorMapUpdateMode instead. It will be removed in a future release.
+    from cutlass.utils.tensormap_manager import TensorMapManager, TensorMapUpdateMode
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py:55
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py:55
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/gdn_kernels/blackwell/gated_delta_net_cp_prefill.py:55: DeprecationWarning: cutlass.utils.TensorMapUpdateMode is deprecated; use cutlass.tensor_utils.TensorMapUpdateMode instead. It will be removed in a future release.
+    from cutlass.utils import TensorMapManager, TensorMapUpdateMode
+
+../envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:136
+  /home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/flashinfer/cute_dsl/availability.py:136: DeprecationWarning: Arch from arch.py is deprecated. Use Arch from enums.py instead.
+    from cutlass.base_dsl.arch import Arch
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+137 passed, 51 warnings in 27.95s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+GPU guard result: {"max_temperature_c": 50.0, "power_limit_w": 400, "exit_code": 0, "interrupted": null}

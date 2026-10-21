@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-21",
+  "scope": [
+    "sglang#44860",
+    "sglang#44861",
+    "vllm#62146"
+  ],
+  "sglang_nightly": {
+    "arm": "patched",
+    "official_nightly_commit": "55b2aef7ad",
+    "package": "/home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/sglang",
+    "versions": {
+      "sglang": "0.5.23.dev20261020+g55b2aef7ad",
+      "torch": "2.14.1",
+      "triton": "3.8.0",
+      "flashinfer-python": "0.7.2",
+      "sglang-kernel": "0.4.10"
+    },
+    "files": {
+      "srt/layers/quantization/fp8_utils.py": "7c5b75a59b3979773be06722b448ad3089941c59e756659e3d9ef374375ff854",
+      "srt/layers/quantization/modelopt_quant.py": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770",
+      "kernels/ops/gemm/fp8_kernel.py": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a",
+      "multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py": "70a441058fbfec3de23373bd977e51fb28707f8c503356f5aff4f436118bf6c6"
+    },
+    "method": "Unchanged PR production patch applied to complete nightly files; official dependencies and extensions; no AST injection"
+  },
+  "fp8_units": {
+    "baseline": {
+      "tests": "12",
+      "failures": "4",
+      "errors": "0",
+      "skipped": "0",
+      "time": "77.717"
+    },
+    "patched": {
+      "tests": "137",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "27.943"
+    }
+  },
+  "host_budget_units": {
+    "baseline": {
+      "tests": "36",
+      "failures": "4",
+      "errors": "0",
+      "skipped": "0",
+      "time": "4.476"
+    },
+    "patched": {
+      "tests": "36",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "4.577"
+    }
+  },
+  "native_vllm": {
+    "tests": "2",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "2.329"
+  },
+  "fp8_real_model": {
+    "eager": {
+      "baseline_max_cold_warm": 2.874847412109375,
+      "patched_max_cold_warm": 0.0,
+      "patched_max_warm_repeat": 0.0,
+      "cache_cases_per_arm": 6,
+      "timings": [
+        {
+          "prefix_tokens": 128,
+          "batch": 1,
+          "baseline_median_s": 1.4380916759837419,
+          "patched_median_s": 1.4458869159861933,
+          "change_percent": 0.5420544554031403
+        },
+        {
+          "prefix_tokens": 128,
+          "batch": 4,
+          "baseline_median_s": 2.0761545239947736,
+          "patched_median_s": 1.4880271549918689,
+          "change_percent": -28.327726197916913
+        },
+        {
+          "prefix_tokens": 2048,
+          "batch": 1,
+          "baseline_median_s": 1.4603403869841713,
+          "patched_median_s": 1.509412079991307,
+          "change_percent": 3.3602914392086625
+        },
+        {
+          "prefix_tokens": 2048,
+          "batch": 4,
+          "baseline_median_s": 2.4905503720219713,
+          "patched_median_s": 2.0259294180141296,
+          "change_percent": -18.655352617125974
+        }
+      ]
+    },
+    "graph": {
+      "baseline_max_cold_warm": 2.874847412109375,
+      "patched_max_cold_warm": 0.0,
+      "patched_max_warm_repeat": 0.0,
+      "cache_cases_per_arm": 6,
+      "timings": [
+        {
+          "prefix_tokens": 128,
+          "batch": 1,
+          "baseline_median_s": 0.25982397299958393,
+          "patched_median_s": 0.3087964349833783,
+          "change_percent": 18.848323123699128
+        },
+        {
+          "prefix_tokens": 128,
+          "batch": 4,
+          "baseline_median_s": 0.33135763701284304,
+          "patched_median_s": 0.3503291840024758,
+          "change_percent": 5.725399046377633
+        },
+        {
+          "prefix_tokens": 2048,
+          "batch": 1,
+          "baseline_median_s": 0.4511858560144901,
+          "patched_median_s": 0.5675381479959469,
+          "change_percent": 25.788107147073358
+        },
+        {
+          "prefix_tokens": 2048,
+          "batch": 4,
+          "baseline_median_s": 0.7811983300198335,
+          "patched_median_s": 0.9135103689914104,
+          "change_percent": 16.93706116450833
+        }
+      ]
+    }
+  },
+  "sglang_text_smoke": {
+    "dataset_indices": [
+      32,
+      47
+    ],
+    "baseline_correct": 15,
+    "patched_correct": 16,
+    "completed_per_arm": 16,
+    "missing_final": [
+      0,
+      0
+    ],
+    "same_complete_texts": 2,
+    "limitation": "Small reused subset of round2 evaluation; no general accuracy gain or statistical equivalence claim"
+  },
+  "vllm_real_model": {
+    "runtime": "0.32.0rc1.dev323+gce49c47cb",
+    "base_commit": "ce49c47cbb241b59a32ef110079a5261dbd08e49",
+    "baseline_offloaded": 0,
+    "patched_offloaded": 1107296256,
+    "baseline_allocated": 19267828224,
+    "patched_allocated": 18160531968,
+    "allocation_saving": 1107296256,
+    "completed_per_arm": 8,
+    "correct": [
+      7,
+      7
+    ],
+    "limitation": "Same matching official base as round2; subset smoke check only; stock Marlin non-determinism and non-UVA limitation unchanged"
+  },
+  "sana": {
+    "same_pixels": [
+      true,
+      true
+    ],
+    "baseline_cgroup": {
+      "arm": "baseline",
+      "sibling_anonymous_bytes": 536870912,
+      "exit_code": 0,
+      "parent_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+      "outer_memory_events": "low 0\nhigh 0\nmax 20327\noom 0\noom_kill 0\noom_group_kill 0\n",
+      "parent_limit": "8464281600",
+      "leaf_limit": "8199892992",
+      "setup": "Real cgroup v2; local file cache reclaimed first, limits calibrated once at first HostPinBudget construction to about 2.25 GiB leaf / 2 GiB parent headroom; real 512 MiB sibling; unchanged budget algorithm"
+    },
+    "patched_cgroup": {
+      "arm": "patched",
+      "sibling_anonymous_bytes": 536870912,
+      "exit_code": 0,
+      "parent_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+      "outer_memory_events": "low 0\nhigh 0\nmax 68225\noom 0\noom_kill 0\noom_group_kill 0\n",
+      "parent_limit": "8453001216",
+      "leaf_limit": "8205737984",
+      "setup": "Real cgroup v2; local file cache reclaimed first, limits calibrated once at first HostPinBudget construction to about 2.25 GiB leaf / 2 GiB parent headroom; real 512 MiB sibling; unchanged budget algorithm"
+    },
+    "baseline_pinned_bytes": 41292288,
+    "patched_pinned_bytes": 0,
+    "runtime": "SGLang0.5.21 diffusion dependencies plus complete main-source host-budget module, same known VAE checkpoint prerequisite in both arms; not a full nightly diffusion run"
+  },
+  "thermal": {
+    "power_limit_w": 400,
+    "stop_temperature_c": 72,
+    "max_temperature_c": 67.0,
+    "successful_run_maxima": {
+      "fp8-patched-ctk130": 50.0,
+      "host-budget-patched": 46.0,
+      "fp8-model-eager-baseline": 67.0,
+      "fp8-model-eager-patched": 63.0,
+      "fp8-model-graph-baseline": 62.0,
+      "fp8-model-graph-patched": 63.0,
+      "fp8-text-baseline": 46.0,
+      "fp8-text-patched": 47.0,
+      "sana-baseline": 51.0,
+      "sana-patched": 52.0,
+      "vllm-native": 38.0,
+      "vllm-patched": 47.0,
+      "vllm-baseline": 49.0
+    }
+  }
+}

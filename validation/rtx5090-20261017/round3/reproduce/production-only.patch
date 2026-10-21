@@ -1,0 +1,135 @@
+diff --git a/python/sglang/kernels/ops/gemm/fp8_kernel.py b/python/sglang/kernels/ops/gemm/fp8_kernel.py
+index ff32551..ff7c9f5 100644
+--- a/python/sglang/kernels/ops/gemm/fp8_kernel.py
++++ b/python/sglang/kernels/ops/gemm/fp8_kernel.py
+@@ -990,10 +990,10 @@ def scaled_mm_kernel(
+     for k in range(0, tl.cdiv(K, BLOCK_SIZE_K)):
+         masks_k = offsets_k < K
+         masks_a = masks_am[:, None] & masks_k[None, :]
+-        a = tl.load(a_ptrs, mask=masks_a)
++        a = tl.load(a_ptrs, mask=masks_a, other=0.0)
+ 
+         masks_b = masks_k[:, None] & masks_bn[None, :]
+-        b = tl.load(b_ptrs, mask=masks_b)
++        b = tl.load(b_ptrs, mask=masks_b, other=0.0)
+ 
+         # Accumulate results.
+         accumulator = tl.dot(a, b, accumulator, out_dtype=accumulator_dtype)
+diff --git a/python/sglang/srt/layers/quantization/fp8_utils.py b/python/sglang/srt/layers/quantization/fp8_utils.py
+index 39acc95..da1eb9f 100755
+--- a/python/sglang/srt/layers/quantization/fp8_utils.py
++++ b/python/sglang/srt/layers/quantization/fp8_utils.py
+@@ -2381,6 +2381,39 @@ def use_aiter_bpreshuffle_gemm(output_size: int) -> bool:
+     return _use_aiter and output_size % 64 == 0
+ 
+ 
++def apply_fp8_linear_deterministic(
++    input: torch.Tensor,
++    weight: torch.Tensor,
++    weight_scale: torch.Tensor,
++    input_scale: torch.Tensor,
++    bias: Optional[torch.Tensor] = None,
++) -> torch.Tensor:
++    """Static FP8 linear with one reduction schedule across batch sizes."""
++    output_shape = [*input.shape[:-1], weight.shape[1]]
++    input_2d = input.reshape(-1, input.shape[-1]).contiguous()
++    qinput, x_scale = static_quant_fp8(input_2d, input_scale, repeat_scale=False)
++    # Keep K reduction and N tiling fixed so prefill and cache hits agree.
++    # Only the row tile varies, avoiding wasted decode work and small tiles
++    # on long prefills without changing each row's reduction.
++    m = input_2d.shape[0]
++    block_m = 16 if m <= 16 else 32 if m < 128 else 128
++    output = triton_scaled_mm(
++        qinput,
++        weight,
++        x_scale,
++        weight_scale,
++        input.dtype,
++        bias,
++        block_size_m=block_m,
++        block_size_n=64,
++        block_size_k=128,
++        use_heuristic=False,
++        num_warps=4,
++        num_stages=2,
++    )
++    return output.view(*output_shape)
++
++
+ def apply_fp8_linear_bmm_flashinfer(
+     input: torch.Tensor,
+     weight: torch.Tensor,
+diff --git a/python/sglang/srt/layers/quantization/modelopt_quant.py b/python/sglang/srt/layers/quantization/modelopt_quant.py
+index ce72eed..5836447 100755
+--- a/python/sglang/srt/layers/quantization/modelopt_quant.py
++++ b/python/sglang/srt/layers/quantization/modelopt_quant.py
+@@ -42,6 +42,7 @@ from sglang.srt.layers.quantization.fp8 import Fp8Config, Fp8LinearMethod, Fp8Mo
+ from sglang.srt.layers.quantization.fp8_utils import (
+     apply_fp8_linear,
+     apply_fp8_linear_bmm_flashinfer,
++    apply_fp8_linear_deterministic,
+     can_auto_enable_marlin_fp8,
+     cutlass_fp8_supported,
+     flashinfer_per_tensor_fp8_supported,
+@@ -65,7 +66,7 @@ from sglang.srt.layers.quantization.utils import (
+ )
+ from sglang.srt.layers.radix_attention import RadixAttention
+ from sglang.srt.layers.utils import alias_or_bind_derived_param, copy_or_rebind_param
+-from sglang.srt.runtime_context import get_platform
++from sglang.srt.runtime_context import get_exec, get_platform
+ from sglang.srt.utils.common import (
+     get_device_capability,
+     is_cuda,
+@@ -657,6 +658,17 @@ class ModelOptFp8LinearMethod(LinearMethodBase):
+                 size_k=layer.input_size_per_partition,
+                 bias=bias,
+             )
++        if (
++            self.use_sm120_fp8
++            and get_exec().deterministic.enable_deterministic_inference
++        ):
++            return apply_fp8_linear_deterministic(
++                input=x,
++                weight=layer.weight,
++                weight_scale=layer.weight_scale,
++                input_scale=layer.input_scale,
++                bias=bias,
++            )
+         if self.use_sm120_fp8:
+             from sglang.kernels.ops.gemm import try_sm120_fp8_linear
+ 
+diff --git a/python/sglang/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py b/python/sglang/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py
+index 0bbdde9..cb911f3 100644
+--- a/python/sglang/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py
++++ b/python/sglang/multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py
+@@ -127,10 +127,9 @@ def cgroup_memory_limit_bytes(
+ ) -> tuple[int, int] | None:
+     """This process's (cap, usage) under its cgroup, or None when uncapped.
+ 
+-    The tightest cap in the chain wins. A nested cgroup -- a systemd scope with
+-    MemoryMax, a container started with --cgroup-parent -- holds this process
+-    below whatever the mount root allows, and planning against the root would
+-    commit memory the process cannot have.
++    The least remaining headroom in the chain wins. A parent with a larger
++    limit can still constrain this process when sibling cgroups consume its
++    budget, so comparing limits alone would overcommit host memory.
+ 
+     A cgroup is charged for the page cache it touches, so its usage grows by
+     the whole checkpoint the process maps. ``exclude_file_cache`` reports the
+@@ -143,12 +142,13 @@ def cgroup_memory_limit_bytes(
+             limit = _read_int(os.path.join(directory, limit_name))
+             if limit is None or limit >= _UNLIMITED_ABOVE:
+                 continue
+-            if tightest is not None and limit >= tightest[0]:
+-                continue
+             usage = _read_int(os.path.join(directory, usage_name)) or 0
+             if exclude_file_cache:
+                 usage = max(0, usage - _cgroup_file_cache_bytes(directory))
+-            tightest = (limit, usage)
++            if tightest is None or max(0, limit - usage) < max(
++                0, tightest[0] - tightest[1]
++            ):
++                tightest = (limit, usage)
+         if tightest is not None:
+             return tightest
+     return None

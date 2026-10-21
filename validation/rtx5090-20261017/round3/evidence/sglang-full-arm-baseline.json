@@ -1,0 +1,19 @@
+{
+  "arm": "baseline",
+  "official_nightly_commit": "55b2aef7ad",
+  "package": "/home/liuyibo/codex-workspaces/pr5090/envs/sglang-main-20261021/lib/python3.12/site-packages/sglang",
+  "versions": {
+    "sglang": "0.5.23.dev20261020+g55b2aef7ad",
+    "torch": "2.14.1",
+    "triton": "3.8.0",
+    "flashinfer-python": "0.7.2",
+    "sglang-kernel": "0.4.10"
+  },
+  "files": {
+    "srt/layers/quantization/fp8_utils.py": "f4bad835fa33202e2144f4bcdc8410e8538c932752ba19a647f028e30cc5371d",
+    "srt/layers/quantization/modelopt_quant.py": "1d70376af45d261e26d0e058ed813392ec06e62a4390a7be61d70cb37d5c0ed8",
+    "kernels/ops/gemm/fp8_kernel.py": "2639985c5ea7980b2f07daace3bf2205d13381666e983d9be57f0d9032aaa69d",
+    "multimodal_gen/runtime/managers/memory_managers/host_memory_budget.py": "b080d9a5c8032633a0e36858e0500c8d476f9557fa30a5d3cdccfdc9bb3a987c"
+  },
+  "method": "Unchanged PR production patch applied to complete nightly files; official dependencies and extensions; no AST injection"
+}
