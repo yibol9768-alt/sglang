@@ -1,0 +1,262 @@
+{
+  "status": "all_required_validation_passed",
+  "change": "SM12x deterministic FP8 GEMM num_stages 2 -> 3 only; N64/K128, row tiles16/32/128, warps4 and arithmetic unchanged",
+  "runtime": "Official SGLang0.5.23.dev20261020+g55b2aef7ad, Torch2.14.1, Triton3.8.0, FlashInfer0.7.2, sglang-kernel0.4.10; complete files, normal imports",
+  "model": "nvidia/Qwen3-8B-FP8@2cebc4c89e25abc17668c81b01dceaf3d8b914d5",
+  "native_tests_passed": 137,
+  "extra_exact_tensor_comparisons": 288,
+  "paired_cache_cases_exact": 18,
+  "fixed_work_outputs_exact": 180,
+  "quality_regression": {
+    "count": 128,
+    "exact_complete_texts": 128,
+    "exact_token_sequences": 128,
+    "correct_each_arm": 120,
+    "missing_final_each_arm": 0,
+    "reused_subset": true
+  },
+  "graph_boot_order": "current A1, candidate B1 (+quality), candidate B2, current A2 (+quality), then upstream reference",
+  "timing": [
+    {
+      "prefix": 128,
+      "batch": 1,
+      "current_boot_medians_s": [
+        0.3119222779641859,
+        0.31113633600762114
+      ],
+      "candidate_boot_medians_s": [
+        0.279955696023535,
+        0.2792570280143991
+      ],
+      "current_samples_s": [
+        0.3165120939956978,
+        0.31181144603760913,
+        0.3119222779641859,
+        0.3121703790384345,
+        0.30936121504055336,
+        0.34471518103964627,
+        0.3034512450103648,
+        0.35240805201465264,
+        0.31113633600762114,
+        0.30458648898638785
+      ],
+      "candidate_samples_s": [
+        0.3656749419751577,
+        0.28268081200076267,
+        0.27922228997340426,
+        0.279955696023535,
+        0.2757172809797339,
+        0.2792570280143991,
+        0.2818624959909357,
+        0.2804813309921883,
+        0.27398033801000565,
+        0.2760361079708673
+      ],
+      "current_pooled_median_s": 0.3118668620008975,
+      "candidate_pooled_median_s": 0.27960636201896705,
+      "graph_wall_time_reduction_percent": 10.34431801280562,
+      "candidate_vs_current_sample_ranges_disjoint": false,
+      "upstream_median_s": 0.2683568790089339,
+      "candidate_extra_wall_time_vs_upstream_percent": 4.19198607897755,
+      "eager_current_median_s": 1.4867562180152163,
+      "eager_candidate_median_s": 1.4838770179776475,
+      "eager_wall_time_reduction_percent": 0.19365649880466185
+    },
+    {
+      "prefix": 128,
+      "batch": 4,
+      "current_boot_medians_s": [
+        0.35388007503934205,
+        0.3540051309973933
+      ],
+      "candidate_boot_medians_s": [
+        0.32569466799031943,
+        0.32438969501527026
+      ],
+      "current_samples_s": [
+        0.35295941098593175,
+        0.35422170703532174,
+        0.3542710469919257,
+        0.35388007503934205,
+        0.3511814730009064,
+        0.3560808600159362,
+        0.3498683330253698,
+        0.43243825098033994,
+        0.3540051309973933,
+        0.35197937302291393
+      ],
+      "candidate_samples_s": [
+        0.32569466799031943,
+        0.3225807779817842,
+        0.325833803974092,
+        0.3263790679629892,
+        0.32518465002067387,
+        0.3228831180022098,
+        0.3808866110048257,
+        0.32510108599672094,
+        0.32438969501527026,
+        0.3243892469909042
+      ],
+      "current_pooled_median_s": 0.35394260301836766,
+      "candidate_pooled_median_s": 0.3251428680086974,
+      "graph_wall_time_reduction_percent": 8.13683765787746,
+      "candidate_vs_current_sample_ranges_disjoint": false,
+      "upstream_median_s": 0.33216231601545587,
+      "candidate_extra_wall_time_vs_upstream_percent": -2.1132583885379197,
+      "eager_current_median_s": 1.5319775670068339,
+      "eager_candidate_median_s": 1.527520197967533,
+      "eager_wall_time_reduction_percent": 0.29095524211948387
+    },
+    {
+      "prefix": 2048,
+      "batch": 1,
+      "current_boot_medians_s": [
+        0.5285361760179512,
+        0.5895410670200363
+      ],
+      "candidate_boot_medians_s": [
+        0.49823100405046716,
+        0.5433745900518261
+      ],
+      "current_samples_s": [
+        0.5252166100544855,
+        0.5276194659527391,
+        0.5285361760179512,
+        0.533218635013327,
+        0.5295604179846123,
+        0.564510494004935,
+        0.5255775059922598,
+        0.5895410670200363,
+        0.5958868140005507,
+        0.5977690669824369
+      ],
+      "candidate_samples_s": [
+        0.5872817910276353,
+        0.4976539899944328,
+        0.4999979439890012,
+        0.49823100405046716,
+        0.49732677900465205,
+        0.5691461540409364,
+        0.5776174780330621,
+        0.5284336360055022,
+        0.5433745900518261,
+        0.5001629170146771
+      ],
+      "current_pooled_median_s": 0.5313895264989696,
+      "candidate_pooled_median_s": 0.5142982765100896,
+      "graph_wall_time_reduction_percent": 3.216331737188116,
+      "candidate_vs_current_sample_ranges_disjoint": false,
+      "upstream_median_s": 0.47655877098441124,
+      "candidate_extra_wall_time_vs_upstream_percent": 7.919171322294871,
+      "eager_current_median_s": 1.5629072990268469,
+      "eager_candidate_median_s": 1.564160811016336,
+      "eager_wall_time_reduction_percent": -0.08020386047653538
+    },
+    {
+      "prefix": 2048,
+      "batch": 4,
+      "current_boot_medians_s": [
+        0.8876940879854374,
+        0.8910463509964757
+      ],
+      "candidate_boot_medians_s": [
+        0.8693204650189728,
+        0.868377220002003
+      ],
+      "current_samples_s": [
+        0.9288520669797435,
+        0.8574347199755721,
+        0.8876940879854374,
+        0.8999889530241489,
+        0.8758503120043315,
+        0.8910463509964757,
+        0.9191352389752865,
+        0.8890286239911802,
+        0.9161679850076325,
+        0.8846813180134632
+      ],
+      "candidate_samples_s": [
+        0.9014084790251218,
+        0.8693204650189728,
+        0.845789531012997,
+        0.8893368999706581,
+        0.8614270149846561,
+        0.8928164680255577,
+        0.868377220002003,
+        0.8513087700121105,
+        0.8879380020080134,
+        0.8635126140434295
+      ],
+      "current_pooled_median_s": 0.8900374874938279,
+      "candidate_pooled_median_s": 0.8688488425104879,
+      "graph_wall_time_reduction_percent": 2.3806463526612975,
+      "candidate_vs_current_sample_ranges_disjoint": false,
+      "upstream_median_s": 0.7952559569966979,
+      "candidate_extra_wall_time_vs_upstream_percent": 9.253987331539793,
+      "eager_current_median_s": 2.0842822800041176,
+      "eager_candidate_median_s": 2.074667226988822,
+      "eager_wall_time_reduction_percent": 0.4613124195095297
+    }
+  ],
+  "thermal": {
+    "eager-candidate-thermal.json": {
+      "max_temperature_c": 65.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "eager-current-thermal.json": {
+      "max_temperature_c": 66.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "equality-thermal.json": {
+      "max_temperature_c": 47.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "graph-candidate-1-thermal.json": {
+      "max_temperature_c": 63.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "graph-candidate-2-thermal.json": {
+      "max_temperature_c": 66.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "graph-current-2-thermal.json": {
+      "max_temperature_c": 65.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "graph-current-thermal.json": {
+      "max_temperature_c": 59.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "graph-upstream-thermal.json": {
+      "max_temperature_c": 65.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "native-tests-thermal.json": {
+      "max_temperature_c": 44.0,
+      "exit_code": 0,
+      "interrupted": null
+    },
+    "schedule-thermal.json": {
+      "max_temperature_c": 43.0,
+      "exit_code": 0,
+      "interrupted": null
+    }
+  },
+  "max_temperature_c": 66.0,
+  "limits": [
+    "One RTX5090 at400W, TP1, WSL2; no other GPU, TP2 or torch.compile validation.",
+    "Two boots per PR arm, five measured samples per cell per boot; pooled medians are bounded observations, not broad performance guarantees.",
+    "Upstream Graph reference and eager PR arms have one boot each.",
+    "Cooling <=55C is outside timings; 32 forced output tokens per request, one warmup per cell, cache flushed.",
+    "The128 questions reuse earlier data and are an output-preservation regression, not independent accuracy evidence.",
+    "Official-nightly runtime is not a latest-main rebuild or upstream CI."
+  ]
+}

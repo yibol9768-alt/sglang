@@ -1,0 +1,35 @@
+SOURCE_ARM {"arm": "candidate", "files": {"srt/layers/quantization/fp8_utils.py": "15a41cf2129ebdaf291ca16772b4af6efe0e6303b964e48812816c46c5a1d90c", "srt/layers/quantization/modelopt_quant.py": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770", "kernels/ops/gemm/fp8_kernel.py": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a"}, "sglang": "0.5.23.dev20261020+g55b2aef7ad"}
+GPU guard: {"temperature_c": 47.0, "power_limit_w": 400.0, "memory_used_mib": 1254.0078125, "measured_monotonic": 369482.742480726}
+QUALIFIED 6144 4096 torch.bfloat16 13 cases 9
+QUALIFIED 6144 4096 torch.bfloat16 97 cases 18
+QUALIFIED 6144 4096 torch.float16 13 cases 27
+QUALIFIED 6144 4096 torch.float16 97 cases 36
+QUALIFIED 4096 4096 torch.bfloat16 13 cases 45
+QUALIFIED 4096 4096 torch.bfloat16 97 cases 54
+QUALIFIED 4096 4096 torch.float16 13 cases 63
+QUALIFIED 4096 4096 torch.float16 97 cases 72
+QUALIFIED 24576 4096 torch.bfloat16 13 cases 81
+QUALIFIED 24576 4096 torch.bfloat16 97 cases 90
+QUALIFIED 24576 4096 torch.float16 13 cases 99
+QUALIFIED 24576 4096 torch.float16 97 cases 108
+QUALIFIED 4096 12288 torch.bfloat16 13 cases 117
+QUALIFIED 4096 12288 torch.bfloat16 97 cases 126
+QUALIFIED 4096 12288 torch.float16 13 cases 135
+QUALIFIED 4096 12288 torch.float16 97 cases 144
+QUALIFIED 16384 5120 torch.bfloat16 13 cases 153
+QUALIFIED 16384 5120 torch.bfloat16 97 cases 162
+QUALIFIED 16384 5120 torch.float16 13 cases 171
+QUALIFIED 16384 5120 torch.float16 97 cases 180
+QUALIFIED 5120 6144 torch.bfloat16 13 cases 189
+QUALIFIED 5120 6144 torch.bfloat16 97 cases 198
+QUALIFIED 5120 6144 torch.float16 13 cases 207
+QUALIFIED 5120 6144 torch.float16 97 cases 216
+QUALIFIED 96 80 torch.bfloat16 13 cases 225
+QUALIFIED 96 80 torch.bfloat16 97 cases 234
+QUALIFIED 96 80 torch.float16 13 cases 243
+QUALIFIED 96 80 torch.float16 97 cases 252
+QUALIFIED 97 129 torch.bfloat16 13 cases 261
+QUALIFIED 97 129 torch.bfloat16 97 cases 270
+QUALIFIED 97 129 torch.float16 13 cases 279
+QUALIFIED 97 129 torch.float16 97 cases 288
+GPU guard result: {"max_temperature_c": 47.0, "power_limit_w": 400, "exit_code": 0, "interrupted": null}

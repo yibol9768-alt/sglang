@@ -1,0 +1,9 @@
+{
+  "arm": "current",
+  "files": {
+    "srt/layers/quantization/fp8_utils.py": "7c5b75a59b3979773be06722b448ad3089941c59e756659e3d9ef374375ff854",
+    "srt/layers/quantization/modelopt_quant.py": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770",
+    "kernels/ops/gemm/fp8_kernel.py": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a"
+  },
+  "sglang": "0.5.23.dev20261020+g55b2aef7ad"
+}

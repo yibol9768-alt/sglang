@@ -1,0 +1,9 @@
+{
+  "arm": "upstream",
+  "files": {
+    "srt/layers/quantization/fp8_utils.py": "f4bad835fa33202e2144f4bcdc8410e8538c932752ba19a647f028e30cc5371d",
+    "srt/layers/quantization/modelopt_quant.py": "1d70376af45d261e26d0e058ed813392ec06e62a4390a7be61d70cb37d5c0ed8",
+    "kernels/ops/gemm/fp8_kernel.py": "2639985c5ea7980b2f07daace3bf2205d13381666e983d9be57f0d9032aaa69d"
+  },
+  "sglang": "0.5.23.dev20261020+g55b2aef7ad"
+}

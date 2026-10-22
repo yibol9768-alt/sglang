@@ -1,0 +1,3133 @@
+{
+  "arm": "upstream",
+  "cuda_graph": true,
+  "model": "nvidia/Qwen3-8B-FP8",
+  "revision": "2cebc4c89e25abc17668c81b01dceaf3d8b914d5",
+  "sglang": "0.5.23.dev20261020+g55b2aef7ad",
+  "mode": "TP1, deterministic, BF16, Triton attention, prefill ceiling 8192; cooldown <=55C before each measured repetition",
+  "prefill_graph_capture_tokens": [
+    4,
+    128,
+    256,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "source_manifest": {
+    "arm": "upstream",
+    "files": {
+      "srt/layers/quantization/fp8_utils.py": "f4bad835fa33202e2144f4bcdc8410e8538c932752ba19a647f028e30cc5371d",
+      "srt/layers/quantization/modelopt_quant.py": "1d70376af45d261e26d0e058ed813392ec06e62a4390a7be61d70cb37d5c0ed8",
+      "kernels/ops/gemm/fp8_kernel.py": "2639985c5ea7980b2f07daace3bf2205d13381666e983d9be57f0d9032aaa69d"
+    },
+    "sglang": "0.5.23.dev20261020+g55b2aef7ad"
+  },
+  "cache_cases": [
+    {
+      "prefix_tokens": 128,
+      "batch": 1,
+      "repetition": 0,
+      "input_lengths": [
+        168
+      ],
+      "runs": [
+        [
+          [
+            -2.264974000354414e-06,
+            -25.125001907348633,
+            -31.625001907348633,
+            -29.625001907348633
+          ]
+        ],
+        [
+          [
+            -5.960462772236497e-07,
+            -27.0,
+            -33.375,
+            -31.625
+          ]
+        ],
+        [
+          [
+            -5.960462772236497e-07,
+            -27.0,
+            -33.375,
+            -31.625
+          ]
+        ]
+      ],
+      "cached_tokens": [
+        [
+          0
+        ],
+        [
+          167
+        ],
+        [
+          167
+        ]
+      ],
+      "cold_warm_max_abs": 1.9999980926513672,
+      "warm_repeat_max_abs": 0.0
+    },
+    {
+      "prefix_tokens": 128,
+      "batch": 1,
+      "repetition": 1,
+      "input_lengths": [
+        168
+      ],
+      "runs": [
+        [
+          [
+            -2.264974000354414e-06,
+            -25.125001907348633,
+            -31.625001907348633,
+            -29.625001907348633
+          ]
+        ],
+        [
+          [
+            -5.960462772236497e-07,
+            -27.0,
+            -33.375,
+            -31.625
+          ]
+        ],
+        [
+          [
+            -5.960462772236497e-07,
+            -27.0,
+            -33.375,
+            -31.625
+          ]
+        ]
+      ],
+      "cached_tokens": [
+        [
+          0
+        ],
+        [
+          167
+        ],
+        [
+          167
+        ]
+      ],
+      "cold_warm_max_abs": 1.9999980926513672,
+      "warm_repeat_max_abs": 0.0
+    },
+    {
+      "prefix_tokens": 1024,
+      "batch": 4,
+      "repetition": 0,
+      "input_lengths": [
+        1064,
+        1064,
+        1064,
+        1064
+      ],
+      "runs": [
+        [
+          [
+            -3.576278118089249e-07,
+            -27.125,
+            -32.625,
+            -31.5
+          ],
+          [
+            -4.768370445162873e-07,
+            -28.0,
+            -34.0,
+            -31.875
+          ],
+          [
+            -0.00015937011630740017,
+            -24.250160217285156,
+            -32.750160217285156,
+            -30.375160217285156
+          ],
+          [
+            -2.0265558760002023e-06,
+            -26.000001907348633,
+            -33.250003814697266,
+            -30.500001907348633
+          ]
+        ],
+        [
+          [
+            -8.344646857949556e-07,
+            -28.75,
+            -34.25,
+            -32.875
+          ],
+          [
+            -1.9073468138230965e-06,
+            -27.250001907348633,
+            -34.25,
+            -32.25
+          ],
+          [
+            -8.106198947643861e-06,
+            -26.87500762939453,
+            -35.37500762939453,
+            -33.25000762939453
+          ],
+          [
+            -1.1920922133867862e-06,
+            -26.625001907348633,
+            -33.875,
+            -31.750001907348633
+          ]
+        ],
+        [
+          [
+            -8.344646857949556e-07,
+            -28.75,
+            -34.25,
+            -32.875
+          ],
+          [
+            -1.9073468138230965e-06,
+            -27.250001907348633,
+            -34.25,
+            -32.25
+          ],
+          [
+            -8.106198947643861e-06,
+            -26.87500762939453,
+            -35.37500762939453,
+            -33.25000762939453
+          ],
+          [
+            -1.1920922133867862e-06,
+            -26.625001907348633,
+            -33.875,
+            -31.750001907348633
+          ]
+        ]
+      ],
+      "cached_tokens": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1063,
+          1063,
+          1063,
+          1063
+        ],
+        [
+          1063,
+          1063,
+          1063,
+          1063
+        ]
+      ],
+      "cold_warm_max_abs": 2.874847412109375,
+      "warm_repeat_max_abs": 0.0
+    },
+    {
+      "prefix_tokens": 1024,
+      "batch": 4,
+      "repetition": 1,
+      "input_lengths": [
+        1064,
+        1064,
+        1064,
+        1064
+      ],
+      "runs": [
+        [
+          [
+            -3.576278118089249e-07,
+            -27.125,
+            -32.625,
+            -31.5
+          ],
+          [
+            -4.768370445162873e-07,
+            -28.0,
+            -34.0,
+            -31.875
+          ],
+          [
+            -0.00015937011630740017,
+            -24.250160217285156,
+            -32.750160217285156,
+            -30.375160217285156
+          ],
+          [
+            -2.0265558760002023e-06,
+            -26.000001907348633,
+            -33.250003814697266,
+            -30.500001907348633
+          ]
+        ],
+        [
+          [
+            -8.344646857949556e-07,
+            -28.75,
+            -34.25,
+            -32.875
+          ],
+          [
+            -1.9073468138230965e-06,
+            -27.250001907348633,
+            -34.25,
+            -32.25
+          ],
+          [
+            -8.106198947643861e-06,
+            -26.87500762939453,
+            -35.37500762939453,
+            -33.25000762939453
+          ],
+          [
+            -1.1920922133867862e-06,
+            -26.625001907348633,
+            -33.875,
+            -31.750001907348633
+          ]
+        ],
+        [
+          [
+            -8.344646857949556e-07,
+            -28.75,
+            -34.25,
+            -32.875
+          ],
+          [
+            -1.9073468138230965e-06,
+            -27.250001907348633,
+            -34.25,
+            -32.25
+          ],
+          [
+            -8.106198947643861e-06,
+            -26.87500762939453,
+            -35.37500762939453,
+            -33.25000762939453
+          ],
+          [
+            -1.1920922133867862e-06,
+            -26.625001907348633,
+            -33.875,
+            -31.750001907348633
+          ]
+        ]
+      ],
+      "cached_tokens": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1063,
+          1063,
+          1063,
+          1063
+        ],
+        [
+          1063,
+          1063,
+          1063,
+          1063
+        ]
+      ],
+      "cold_warm_max_abs": 2.874847412109375,
+      "warm_repeat_max_abs": 0.0
+    },
+    {
+      "prefix_tokens": 4096,
+      "batch": 2,
+      "repetition": 0,
+      "input_lengths": [
+        4136,
+        4136
+      ],
+      "runs": [
+        [
+          [
+            -4.637133679352701e-05,
+            -23.875045776367188,
+            -27.625045776367188,
+            -26.625045776367188
+          ],
+          [
+            -1.8954096958623268e-05,
+            -26.375019073486328,
+            -32.00001907348633,
+            -30.750019073486328
+          ]
+        ],
+        [
+          [
+            -4.6491513785440475e-06,
+            -25.500003814697266,
+            -29.250003814697266,
+            -28.500003814697266
+          ],
+          [
+            -4.291525328881107e-06,
+            -25.250003814697266,
+            -32.625003814697266,
+            -29.875003814697266
+          ]
+        ],
+        [
+          [
+            -4.6491513785440475e-06,
+            -25.500003814697266,
+            -29.250003814697266,
+            -28.500003814697266
+          ],
+          [
+            -4.291525328881107e-06,
+            -25.250003814697266,
+            -32.625003814697266,
+            -29.875003814697266
+          ]
+        ]
+      ],
+      "cached_tokens": [
+        [
+          0,
+          0
+        ],
+        [
+          4135,
+          4135
+        ],
+        [
+          4135,
+          4135
+        ]
+      ],
+      "cold_warm_max_abs": 1.8749580383300781,
+      "warm_repeat_max_abs": 0.0
+    },
+    {
+      "prefix_tokens": 4096,
+      "batch": 2,
+      "repetition": 1,
+      "input_lengths": [
+        4136,
+        4136
+      ],
+      "runs": [
+        [
+          [
+            -4.637133679352701e-05,
+            -23.875045776367188,
+            -27.625045776367188,
+            -26.625045776367188
+          ],
+          [
+            -1.8954096958623268e-05,
+            -26.375019073486328,
+            -32.00001907348633,
+            -30.750019073486328
+          ]
+        ],
+        [
+          [
+            -4.6491513785440475e-06,
+            -25.500003814697266,
+            -29.250003814697266,
+            -28.500003814697266
+          ],
+          [
+            -4.291525328881107e-06,
+            -25.250003814697266,
+            -32.625003814697266,
+            -29.875003814697266
+          ]
+        ],
+        [
+          [
+            -4.6491513785440475e-06,
+            -25.500003814697266,
+            -29.250003814697266,
+            -28.500003814697266
+          ],
+          [
+            -4.291525328881107e-06,
+            -25.250003814697266,
+            -32.625003814697266,
+            -29.875003814697266
+          ]
+        ]
+      ],
+      "cached_tokens": [
+        [
+          0,
+          0
+        ],
+        [
+          4135,
+          4135
+        ],
+        [
+          4135,
+          4135
+        ]
+      ],
+      "cold_warm_max_abs": 1.8749580383300781,
+      "warm_repeat_max_abs": 0.0
+    }
+  ],
+  "fixed_work_performance": [
+    {
+      "prefix_tokens": 128,
+      "batch": 1,
+      "generated_tokens_per_request": 32,
+      "repetitions": 5,
+      "warmups": 1,
+      "seconds": [
+        0.2683568790089339,
+        0.32327965600416064,
+        0.26930718502262607,
+        0.264670463046059,
+        0.26757174398517236
+      ],
+      "outputs": [
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ]
+      ],
+      "median_s": 0.2683568790089339,
+      "min_s": 0.264670463046059,
+      "max_s": 0.32327965600416064
+    },
+    {
+      "prefix_tokens": 128,
+      "batch": 4,
+      "generated_tokens_per_request": 32,
+      "repetitions": 5,
+      "warmups": 1,
+      "seconds": [
+        0.3307007679832168,
+        0.3713504649931565,
+        0.33216231601545587,
+        0.3269274719641544,
+        0.35923376004211605
+      ],
+      "outputs": [
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard and that the apple was red. This",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**\n\nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the apple was red.",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              25,
+              56177,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard and that the apple was red. This",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**\n\nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the apple was red.",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              25,
+              56177,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard and that the apple was red. This",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**\n\nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the apple was red.",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              25,
+              56177,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard and that the apple was red. This",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**\n\nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the apple was red.",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              25,
+              56177,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard and that the apple was red. This",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**\n\nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the apple was red.",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              25,
+              56177,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "**Case 0: Summary of the Record**  \nThe record repeatedly states that an apple was picked from an orchard and that the apple was red. This",
+            "output_ids": [
+              334,
+              4207,
+              220,
+              15,
+              25,
+              21517,
+              315,
+              279,
+              13583,
+              334,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**  \nThe record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is mentioned multiple",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              66963,
+              2303,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              9733,
+              5248
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "**Summary of the Record:**\n\nThe record repeatedly states that an apple was picked from an orchard, and each time it specifies that the apple was red.",
+            "output_ids": [
+              334,
+              19237,
+              315,
+              279,
+              13583,
+              25,
+              56177,
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              1817,
+              882,
+              432,
+              29102,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ]
+      ],
+      "median_s": 0.33216231601545587,
+      "min_s": 0.3269274719641544,
+      "max_s": 0.3713504649931565
+    },
+    {
+      "prefix_tokens": 2048,
+      "batch": 1,
+      "generated_tokens_per_request": 32,
+      "repetitions": 5,
+      "warmups": 1,
+      "seconds": [
+        0.5054188540088944,
+        0.47655877098441124,
+        0.46713899803580716,
+        0.4939854950061999,
+        0.4715633580344729
+      ],
+      "outputs": [
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ]
+      ],
+      "median_s": 0.47655877098441124,
+      "min_s": 0.46713899803580716,
+      "max_s": 0.5054188540088944
+    },
+    {
+      "prefix_tokens": 2048,
+      "batch": 4,
+      "generated_tokens_per_request": 32,
+      "repetitions": 5,
+      "warmups": 1,
+      "seconds": [
+        0.796898388012778,
+        0.794247664976865,
+        0.794231834996026,
+        0.7970438610063866,
+        0.7952559569966979
+      ],
+      "outputs": [
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated throughout the record without any variation or",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              6814,
+              279,
+              3255,
+              2041,
+              894,
+              22990,
+              476
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record consists of repeated statements, each indicating that an apple was picked from an orchard and that the apple was red. The repetition suggests a pattern or a",
+            "output_ids": [
+              785,
+              3255,
+              17167,
+              315,
+              11504,
+              12239,
+              11,
+              1817,
+              18860,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              576,
+              53415,
+              13230,
+              264,
+              5383,
+              476,
+              264
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation. Therefore",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              13,
+              15277
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated throughout the record without any variation or",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              6814,
+              279,
+              3255,
+              2041,
+              894,
+              22990,
+              476
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record consists of repeated statements, each indicating that an apple was picked from an orchard and that the apple was red. The repetition suggests a pattern or a",
+            "output_ids": [
+              785,
+              3255,
+              17167,
+              315,
+              11504,
+              12239,
+              11,
+              1817,
+              18860,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              576,
+              53415,
+              13230,
+              264,
+              5383,
+              476,
+              264
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation. Therefore",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              13,
+              15277
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated throughout the record without any variation or",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              6814,
+              279,
+              3255,
+              2041,
+              894,
+              22990,
+              476
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record consists of repeated statements, each indicating that an apple was picked from an orchard and that the apple was red. The repetition suggests a pattern or a",
+            "output_ids": [
+              785,
+              3255,
+              17167,
+              315,
+              11504,
+              12239,
+              11,
+              1817,
+              18860,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              576,
+              53415,
+              13230,
+              264,
+              5383,
+              476,
+              264
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation. Therefore",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              13,
+              15277
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated throughout the record without any variation or",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              6814,
+              279,
+              3255,
+              2041,
+              894,
+              22990,
+              476
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record consists of repeated statements, each indicating that an apple was picked from an orchard and that the apple was red. The repetition suggests a pattern or a",
+            "output_ids": [
+              785,
+              3255,
+              17167,
+              315,
+              11504,
+              12239,
+              11,
+              1817,
+              18860,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              576,
+              53415,
+              13230,
+              264,
+              5383,
+              476,
+              264
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation. Therefore",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              13,
+              15277
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated throughout the record without any variation or",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              6814,
+              279,
+              3255,
+              2041,
+              894,
+              22990,
+              476
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record consists of repeated statements, each indicating that an apple was picked from an orchard and that the apple was red. The repetition suggests a pattern or a",
+            "output_ids": [
+              785,
+              3255,
+              17167,
+              315,
+              11504,
+              12239,
+              11,
+              1817,
+              18860,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              576,
+              53415,
+              13230,
+              264,
+              5383,
+              476,
+              264
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation. Therefore",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              13,
+              15277
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ],
+        [
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently repeated throughout the record without any variation or",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              11504,
+              6814,
+              279,
+              3255,
+              2041,
+              894,
+              22990,
+              476
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record consists of repeated statements, each indicating that an apple was picked from an orchard and that the apple was red. The repetition suggests a pattern or a",
+            "output_ids": [
+              785,
+              3255,
+              17167,
+              315,
+              11504,
+              12239,
+              11,
+              1817,
+              18860,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              323,
+              429,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              576,
+              53415,
+              13230,
+              264,
+              5383,
+              476,
+              264
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation. Therefore",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              13,
+              15277
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          },
+          {
+            "text": "The record repeatedly states that an apple was picked from an orchard, and the apple was red. This information is consistently mentioned multiple times without any variation or additional",
+            "output_ids": [
+              785,
+              3255,
+              18822,
+              5302,
+              429,
+              458,
+              23268,
+              572,
+              12771,
+              504,
+              458,
+              40145,
+              567,
+              11,
+              323,
+              279,
+              23268,
+              572,
+              2518,
+              13,
+              1096,
+              1995,
+              374,
+              20699,
+              9733,
+              5248,
+              3039,
+              2041,
+              894,
+              22990,
+              476,
+              5107
+            ],
+            "finish_reason": {
+              "type": "length",
+              "length": 32
+            },
+            "completion_tokens": 32
+          }
+        ]
+      ],
+      "median_s": 0.7952559569966979,
+      "min_s": 0.794231834996026,
+      "max_s": 0.7970438610063866
+    }
+  ],
+  "quality": null
+}

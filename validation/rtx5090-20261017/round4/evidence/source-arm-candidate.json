@@ -1,0 +1,9 @@
+{
+  "arm": "candidate",
+  "files": {
+    "srt/layers/quantization/fp8_utils.py": "15a41cf2129ebdaf291ca16772b4af6efe0e6303b964e48812816c46c5a1d90c",
+    "srt/layers/quantization/modelopt_quant.py": "30f4e7dc44f8bb20cb98c7f6aaa16553d9f1e12e2a13d453f272942ad2b26770",
+    "kernels/ops/gemm/fp8_kernel.py": "3b5052ff189cda7c2c62f191fade3950099fe45cbfde297da12a204dbe85c30a"
+  },
+  "sglang": "0.5.23.dev20261020+g55b2aef7ad"
+}
